@@ -1,0 +1,26 @@
+{
+  "threshold": 0.007,
+  "train_auc": 0.7208,
+  "eval_auc": 0.7253,
+  "train_refused_unanswerable_pct": 11.5,
+  "train_false_refusal_pct": 3.58,
+  "eval_refused_unanswerable_pct": 24.0,
+  "eval_false_refusal_pct": 5.33,
+  "eval_refused_by_category": {
+    "unknown_attribute": 6
+  },
+  "eval_answerable_refused": {
+    "alias_paraphrase": [
+      2,
+      25
+    ],
+    "multi_hop": [
+      0,
+      25
+    ],
+    "near_miss": [
+      2,
+      25
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "model": "H:\\modelscope_cache\\ibm-granite\\granite-3___0-3b-a800m-instruct",
+    "full_stack": false,
+    "dtype": "bfloat16",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "GraniteMoeForCausalLM",
+    "model_type": "granitemoe",
+    "hidden_size": 1536,
+    "num_layers": 32,
+    "vocab_size": 49155,
+    "text_config_present": false,
+    "backbone_class": "GraniteMoeForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "past_key_values",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  }
+]

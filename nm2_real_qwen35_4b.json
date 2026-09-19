@@ -1,0 +1,8 @@
+[
+  {
+    "model": "H:\\Memory",
+    "stages": {
+      "0_probe": "FAIL ValueError: Pointer argument (at 0) cannot be accessed from Triton (cpu tensor?)"
+    }
+  }
+]

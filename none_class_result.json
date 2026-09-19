@@ -1,0 +1,40 @@
+{
+  "vocabulary_attributes": [
+    "主管姓名",
+    "入职年份",
+    "出生城市",
+    "办公城市",
+    "午餐偏好",
+    "咖啡口味",
+    "团队名称",
+    "客户名称",
+    "宿舍楼号",
+    "工位楼层",
+    "常住城市",
+    "常用编辑器"
+  ],
+  "none_train_attributes": [
+    "手机尾号",
+    "档案标识",
+    "紧急联系人姓氏",
+    "设备型号",
+    "课程名称",
+    "起床时间"
+  ],
+  "none_eval_attributes": [
+    "运动习惯",
+    "通勤方式",
+    "邮箱域名",
+    "阅读工具",
+    "项目代号",
+    "默认语言"
+  ],
+  "train_rows": 890,
+  "eval_vocabulary_queries": 133,
+  "eval_never_seen_queries": 52,
+  "chance_pct": 7.69,
+  "vocabulary_accuracy_pct": 100.0,
+  "never_seen_rejected_pct": 100.0,
+  "known_false_rejection_pct": 0.0,
+  "note": "an explicit NONE class trained on held-out attributes; the never-seen attributes used for testing are disjoint from both the vocabulary and the NONE training set"
+}

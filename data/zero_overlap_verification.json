@@ -1,0 +1,44 @@
+{
+  "verified_by": "verify_zero_overlap_dataset.py",
+  "data_dir": "V2_dpskw\\data\\zero_overlap",
+  "train": {
+    "split": "train",
+    "episodes": 1200,
+    "distinct_queries": 48,
+    "candidate_counts": [
+      24
+    ],
+    "unknown_episodes": 199,
+    "unknown_share_pct": 16.58,
+    "episodes_whose_query_lexically_matches_its_own_target": 0,
+    "episodes_with_a_lexical_distractor": 528,
+    "distractor_share_pct": 44.0,
+    "problems": 0,
+    "problem_examples": []
+  },
+  "eval": {
+    "split": "eval",
+    "episodes": 300,
+    "distinct_queries": 24,
+    "candidate_counts": [
+      24
+    ],
+    "unknown_episodes": 50,
+    "unknown_share_pct": 16.67,
+    "episodes_whose_query_lexically_matches_its_own_target": 0,
+    "episodes_with_a_lexical_distractor": 150,
+    "distractor_share_pct": 50.0,
+    "problems": 0,
+    "problem_examples": []
+  },
+  "split_disjointness": {
+    "shared_query_strings": [],
+    "disjoint": true
+  },
+  "checks": {
+    "no_query_overlaps_its_own_target": true,
+    "no_structural_problems": true,
+    "splits_disjoint": true
+  },
+  "all_checks_passed": true
+}

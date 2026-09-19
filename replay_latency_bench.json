@@ -1,0 +1,26 @@
+{
+  "V2-128 v6 final": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.149349998740945,
+    "single_ms_median": 1.2042000016663224,
+    "single_ms_max": 1.3496499996108469,
+    "single_ms_spread_pct": 17.427241579094304,
+    "batch64_qps_median": 53455.38981773372,
+    "batch256_qps_median": 190102.7742132792,
+    "batch64_qps_spread_pct": 20.531002864672395,
+    "batch256_qps_spread_pct": 13.093009305269373
+  },
+  "REPLAY-128 final": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.167499998700805,
+    "single_ms_median": 1.2087499999324791,
+    "single_ms_max": 1.2399500010360498,
+    "single_ms_spread_pct": 6.205567658746657,
+    "batch64_qps_median": 48526.02206733375,
+    "batch256_qps_median": 192599.94881524373,
+    "batch64_qps_spread_pct": 78.07160732122072,
+    "batch256_qps_spread_pct": 33.117117099551436
+  }
+}

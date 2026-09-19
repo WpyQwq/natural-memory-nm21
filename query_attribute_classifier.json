@@ -1,0 +1,124 @@
+{
+  "attributes": 24,
+  "chance_pct": 4.17,
+  "train_queries": 1200,
+  "eval_queries": 300,
+  "distinct_train_queries": null,
+  "train_accuracy_pct": 83.42,
+  "eval_accuracy_pct": 83.33,
+  "eval_accuracy_answerable_pct": 100.0,
+  "note": "eval queries are different paraphrases of the same attributes, so this is generalisation to unseen wording",
+  "per_attribute": {
+    "主管姓名": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "入职年份": {
+      "eval_queries": 11,
+      "correct_pct": 100.0
+    },
+    "出生城市": {
+      "eval_queries": 9,
+      "correct_pct": 100.0
+    },
+    "办公城市": {
+      "eval_queries": 9,
+      "correct_pct": 100.0
+    },
+    "午餐偏好": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "咖啡口味": {
+      "eval_queries": 19,
+      "correct_pct": 100.0
+    },
+    "团队名称": {
+      "eval_queries": 10,
+      "correct_pct": 100.0
+    },
+    "客户名称": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "宿舍楼号": {
+      "eval_queries": 14,
+      "correct_pct": 100.0
+    },
+    "工位楼层": {
+      "eval_queries": 6,
+      "correct_pct": 100.0
+    },
+    "常住城市": {
+      "eval_queries": 13,
+      "correct_pct": 100.0
+    },
+    "常用编辑器": {
+      "eval_queries": 6,
+      "correct_pct": 100.0
+    },
+    "手机尾号": {
+      "eval_queries": 11,
+      "correct_pct": 100.0
+    },
+    "档案标识": {
+      "eval_queries": 16,
+      "correct_pct": 100.0
+    },
+    "紧急联系人姓氏": {
+      "eval_queries": 7,
+      "correct_pct": 100.0
+    },
+    "设备型号": {
+      "eval_queries": 7,
+      "correct_pct": 100.0
+    },
+    "课程名称": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "起床时间": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "运动习惯": {
+      "eval_queries": 6,
+      "correct_pct": 100.0
+    },
+    "通勤方式": {
+      "eval_queries": 8,
+      "correct_pct": 100.0
+    },
+    "邮箱域名": {
+      "eval_queries": 7,
+      "correct_pct": 100.0
+    },
+    "阅读工具": {
+      "eval_queries": 7,
+      "correct_pct": 100.0
+    },
+    "项目代号": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    },
+    "默认语言": {
+      "eval_queries": 12,
+      "correct_pct": 100.0
+    }
+  },
+  "coverage_rule": {
+    "rule": "predict the asked-about attribute; refuse when the candidate set lacks it",
+    "answerable_inside_pct": 100.0,
+    "unknown_inside_pct": 0.0,
+    "answerable_cases": 250,
+    "unknown_cases": 50,
+    "unknown_refusal_pct": 100.0,
+    "known_false_refusal_pct": 0.0,
+    "counts": {
+      "tp": 50,
+      "fn": 0,
+      "fp": 0,
+      "tn": 250
+    }
+  }
+}

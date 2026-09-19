@@ -1,0 +1,832 @@
+{
+  "V2-128 deployed": {
+    "checkpoint": "H:\\Memory\\dynamic_memory_lab\\checkpoints\\natural_memory_v2_qwen_router_entities\\memory_router_v2.pt",
+    "router": {
+      "kind": "router_v2",
+      "step": null,
+      "arch_config": {
+        "arch": "router_v2",
+        "hidden_size": 2560,
+        "router_dim": 128,
+        "num_heads": 8,
+        "max_hops": 3
+      },
+      "parameters": 2037774,
+      "checkpoint_bytes": 8157561
+    },
+    "storage": {
+      "address_bytes_per_record": 512,
+      "address_mb_per_1m_records": 512,
+      "checkpoint_bytes": 8157561
+    },
+    "latency": {
+      "cpu": {
+        "single_query_latency_ms_mean": 0.4756599897518754,
+        "single_query_latency_ms_p50": 0.5036999937146902,
+        "single_query_latency_ms_p95": 0.6246999837458134,
+        "queries_per_second": 2102.3420542931153,
+        "samples": 5
+      }
+    },
+    "metrics": {
+      "episodes": 21920,
+      "answerable_episodes": 21814,
+      "unknown_episodes": 106,
+      "top1": 0.37274227560282386,
+      "recall1": 0.37274227560282386,
+      "recall3": 0.5745392866966168,
+      "recall5": 0.7406252865132483,
+      "recall8": 0.8605941138718254,
+      "mrr": 0.4984150474242403,
+      "ndcg3": 0.46099764820049244,
+      "mean_first_positive_rank": 8.257541028697167,
+      "all_evidence_in_top3": 0.5159988997891263,
+      "multi_positive_episodes": 2000,
+      "all_evidence_in_top3_multi": 0.436,
+      "hop_accuracy": 0.7322992700729927,
+      "hop_accuracy_answerable": 0.7358577060603282,
+      "hop_under_prediction": 0.1299165673420739,
+      "hop_over_prediction": 0.13422572659759788,
+      "mean_score_margin": -10.438775865636897,
+      "median_score_margin": -12.105871319770813,
+      "negative_margin_rate": 0.6272577243971761,
+      "hop_confusion": {
+        "true_0_pred_0": 0,
+        "true_0_pred_1": 42,
+        "true_0_pred_2": 64,
+        "true_1_pred_0": 834,
+        "true_1_pred_1": 16052,
+        "true_1_pred_2": 2928,
+        "true_2_pred_0": 0,
+        "true_2_pred_1": 2000,
+        "true_2_pred_2": 0
+      },
+      "known_mean_need_prob": 0.9804023649948944,
+      "unknown_mean_need_prob": 0.9999472358316746,
+      "thr0.30": {
+        "need_precision": 0.9951642335766423,
+        "need_recall": 1.0,
+        "need_f1": 0.9975762564595051,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9951642335766423,
+        "known_question_refusal_rate": 0.0,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21814,
+          "tn": 0,
+          "fp": 106,
+          "fn": 0
+        }
+      },
+      "thr0.40": {
+        "need_precision": 0.9951642335766423,
+        "need_recall": 1.0,
+        "need_f1": 0.9975762564595051,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9951642335766423,
+        "known_question_refusal_rate": 0.0,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21814,
+          "tn": 0,
+          "fp": 106,
+          "fn": 0
+        }
+      },
+      "thr0.50": {
+        "need_precision": 0.99515716374269,
+        "need_recall": 0.9985330521683322,
+        "need_f1": 0.9968422497826185,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9937043795620438,
+        "known_question_refusal_rate": 0.0014669478316677363,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21782,
+          "tn": 0,
+          "fp": 106,
+          "fn": 32
+        }
+      },
+      "thr0.60": {
+        "need_precision": 0.995134936662383,
+        "need_recall": 0.9939488401943706,
+        "need_f1": 0.994541534791982,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9891423357664234,
+        "known_question_refusal_rate": 0.0060511598056294125,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21682,
+          "tn": 0,
+          "fp": 106,
+          "fn": 132
+        }
+      },
+      "thr0.70": {
+        "need_precision": 0.9951266608431796,
+        "need_recall": 0.9922526817640047,
+        "need_f1": 0.9936875932514634,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9874543795620438,
+        "known_question_refusal_rate": 0.0077473182359952325,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21645,
+          "tn": 0,
+          "fp": 106,
+          "fn": 169
+        }
+      },
+      "thr0.80": {
+        "need_precision": 0.9951118284528476,
+        "need_recall": 0.9892271018611901,
+        "need_f1": 0.9921607393273408,
+        "specificity_unknown_refusal": 0.0,
+        "abstention_accuracy": 0.9844434306569343,
+        "known_question_refusal_rate": 0.010772898138809939,
+        "unknown_question_read_rate": 1.0,
+        "counts": {
+          "tp": 21579,
+          "tn": 0,
+          "fp": 106,
+          "fn": 235
+        }
+      }
+    },
+    "by_family": {
+      "benchmark_qa": {
+        "episodes": 64,
+        "answerable_episodes": 0,
+        "unknown_episodes": 64,
+        "top1": 0.0,
+        "recall1": 0.0,
+        "recall3": 0.0,
+        "recall5": 0.0,
+        "recall8": 0.0,
+        "mrr": 0.0,
+        "ndcg3": 0.0,
+        "mean_first_positive_rank": 0.0,
+        "all_evidence_in_top3": 0.0,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.0,
+        "hop_accuracy_answerable": 0.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": 0.0,
+        "median_score_margin": 0.0,
+        "negative_margin_rate": 0.0,
+        "hop_confusion": {
+          "true_0_pred_0": 0,
+          "true_0_pred_2": 64
+        },
+        "known_mean_need_prob": 0.0,
+        "unknown_mean_need_prob": 0.9999341862276196,
+        "thr0.50": {
+          "need_precision": 0.0,
+          "need_recall": 0.0,
+          "need_f1": 0.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 0.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 1.0,
+          "counts": {
+            "tp": 0,
+            "tn": 0,
+            "fp": 64,
+            "fn": 0
+          }
+        }
+      },
+      "mega_validation": {
+        "episodes": 20000,
+        "answerable_episodes": 20000,
+        "unknown_episodes": 0,
+        "top1": 0.39425,
+        "recall1": 0.39425,
+        "recall3": 0.6039,
+        "recall5": 0.7746,
+        "recall8": 0.88695,
+        "mrr": 0.5189064291859179,
+        "ndcg3": 0.48454538178459833,
+        "mean_first_positive_rank": 8.22755,
+        "all_evidence_in_top3": 0.54005,
+        "multi_positive_episodes": 2000,
+        "all_evidence_in_top3_multi": 0.436,
+        "hop_accuracy": 0.74955,
+        "hop_accuracy_answerable": 0.74955,
+        "hop_under_prediction": 0.11285,
+        "hop_over_prediction": 0.1376,
+        "mean_score_margin": -9.574584903246164,
+        "median_score_margin": -10.816837549209595,
+        "negative_margin_rate": 0.60575,
+        "hop_confusion": {
+          "true_1_pred_0": 257,
+          "true_1_pred_1": 14991,
+          "true_1_pred_2": 2752,
+          "true_2_pred_0": 0,
+          "true_2_pred_1": 2000,
+          "true_2_pred_2": 0
+        },
+        "known_mean_need_prob": 0.9854895650088787,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 20000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "memory_policy": {
+        "episodes": 1728,
+        "answerable_episodes": 1707,
+        "unknown_episodes": 21,
+        "top1": 0.14411247803163443,
+        "recall1": 0.14411247803163443,
+        "recall3": 0.26362038664323373,
+        "recall5": 0.380199179847686,
+        "recall8": 0.5752782659636789,
+        "mrr": 0.2814257926451813,
+        "ndcg3": 0.21245701956649282,
+        "mean_first_positive_rank": 8.519625073227886,
+        "all_evidence_in_top3": 0.26362038664323373,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.5740740740740741,
+        "hop_accuracy_answerable": 0.5811364967779731,
+        "hop_under_prediction": 0.3380199179847686,
+        "hop_over_prediction": 0.08084358523725835,
+        "mean_score_margin": -19.398099298226114,
+        "median_score_margin": -18.179970741271973,
+        "negative_margin_rate": 0.8558875219683656,
+        "hop_confusion": {
+          "true_0_pred_0": 0,
+          "true_0_pred_1": 21,
+          "true_0_pred_2": 0,
+          "true_1_pred_0": 577,
+          "true_1_pred_1": 992,
+          "true_1_pred_2": 138
+        },
+        "known_mean_need_prob": 0.9195722369471697,
+        "unknown_mean_need_prob": 0.9999671209426153,
+        "thr0.50": {
+          "need_precision": 0.9876179245283019,
+          "need_recall": 0.981253661394259,
+          "need_f1": 0.9844255069056715,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 0.9693287037037037,
+          "known_question_refusal_rate": 0.018746338605741066,
+          "unknown_question_read_rate": 1.0,
+          "counts": {
+            "tp": 1675,
+            "tn": 0,
+            "fp": 21,
+            "fn": 32
+          }
+        }
+      },
+      "native_memory": {
+        "episodes": 128,
+        "answerable_episodes": 107,
+        "unknown_episodes": 21,
+        "top1": 0.0,
+        "recall1": 0.0,
+        "recall3": 0.04672897196261682,
+        "recall5": 0.14018691588785046,
+        "recall8": 0.48598130841121495,
+        "mrr": 0.12993862381957846,
+        "ndcg3": 0.024588128538051007,
+        "mean_first_positive_rank": 9.682242990654206,
+        "all_evidence_in_top3": 0.04672897196261682,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.5390625,
+        "hop_accuracy_answerable": 0.6448598130841121,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.35514018691588783,
+        "mean_score_margin": -29.03928192530837,
+        "median_score_margin": -29.07152795791626,
+        "negative_margin_rate": 1.0,
+        "hop_confusion": {
+          "true_0_pred_0": 0,
+          "true_0_pred_1": 21,
+          "true_0_pred_2": 0,
+          "true_1_pred_0": 0,
+          "true_1_pred_1": 69,
+          "true_1_pred_2": 38
+        },
+        "known_mean_need_prob": 0.9999633771236812,
+        "unknown_mean_need_prob": 0.9999671209426153,
+        "thr0.50": {
+          "need_precision": 0.8359375,
+          "need_recall": 1.0,
+          "need_f1": 0.9106382978723404,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 0.8359375,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 1.0,
+          "counts": {
+            "tp": 107,
+            "tn": 0,
+            "fp": 21,
+            "fn": 0
+          }
+        }
+      }
+    },
+    "by_category": {
+      "conflict_update": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.8285,
+        "recall1": 0.8285,
+        "recall3": 0.968,
+        "recall5": 0.9915,
+        "recall8": 1.0,
+        "mrr": 0.9000553571428571,
+        "ndcg3": 0.9126522728928603,
+        "mean_first_positive_rank": 1.2975,
+        "all_evidence_in_top3": 0.968,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.4955,
+        "hop_accuracy_answerable": 0.4955,
+        "hop_under_prediction": 0.1285,
+        "hop_over_prediction": 0.376,
+        "mean_score_margin": 23.08462015709281,
+        "median_score_margin": 23.422454118728638,
+        "negative_margin_rate": 0.1715,
+        "hop_confusion": {
+          "true_1_pred_0": 257,
+          "true_1_pred_1": 991,
+          "true_1_pred_2": 752
+        },
+        "known_mean_need_prob": 0.9764632487297058,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "distractor_128": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.2455,
+        "recall1": 0.2455,
+        "recall3": 0.375,
+        "recall5": 0.539,
+        "recall8": 0.632,
+        "mrr": 0.36134907557720053,
+        "ndcg3": 0.3170583471857158,
+        "mean_first_positive_rank": 13.3785,
+        "all_evidence_in_top3": 0.375,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -23.816504290685057,
+        "median_score_margin": -35.661601066589355,
+        "negative_margin_rate": 0.7545,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9723067943453789,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "distractor_32": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.238,
+        "recall1": 0.238,
+        "recall3": 0.3575,
+        "recall5": 0.5285,
+        "recall8": 0.64,
+        "mrr": 0.3534111817914967,
+        "ndcg3": 0.30423102280178715,
+        "mean_first_positive_rank": 13.3855,
+        "all_evidence_in_top3": 0.3575,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -24.995892224468292,
+        "median_score_margin": -35.90759539604187,
+        "negative_margin_rate": 0.762,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9724746745526791,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "forget_correction": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.416,
+        "recall1": 0.416,
+        "recall3": 1.0745,
+        "recall5": 1.532,
+        "recall8": 1.909,
+        "mrr": 0.5771349386724387,
+        "ndcg3": 0.4913475872584595,
+        "mean_first_positive_rank": 2.921,
+        "all_evidence_in_top3": 0.436,
+        "multi_positive_episodes": 2000,
+        "all_evidence_in_top3_multi": 0.436,
+        "hop_accuracy": 0.0,
+        "hop_accuracy_answerable": 0.0,
+        "hop_under_prediction": 1.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": 4.576246764823795,
+        "median_score_margin": -5.306148529052734,
+        "negative_margin_rate": 0.584,
+        "hop_confusion": {
+          "true_2_pred_1": 2000,
+          "true_2_pred_2": 0
+        },
+        "known_mean_need_prob": 0.99774328109622,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "long_context": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.2345,
+        "recall1": 0.2345,
+        "recall3": 0.2865,
+        "recall5": 0.3325,
+        "recall8": 0.3705,
+        "mrr": 0.2950555862194011,
+        "ndcg3": 0.26455882236071515,
+        "mean_first_positive_rank": 19.348,
+        "all_evidence_in_top3": 0.2865,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -15.633986071705818,
+        "median_score_margin": -15.739282608032227,
+        "negative_margin_rate": 0.7655,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9875293919146061,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "multi_hop": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.715,
+        "recall1": 0.715,
+        "recall3": 0.9805,
+        "recall5": 0.998,
+        "recall8": 0.999,
+        "mrr": 0.8446400793650793,
+        "ndcg3": 0.8766200106625064,
+        "mean_first_positive_rank": 1.383,
+        "all_evidence_in_top3": 0.9805,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.0,
+        "hop_accuracy_answerable": 0.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 1.0,
+        "mean_score_margin": 3.2684113913476467,
+        "median_score_margin": 5.575284242630005,
+        "negative_margin_rate": 0.285,
+        "hop_confusion": {
+          "true_1_pred_1": 0,
+          "true_1_pred_2": 2000
+        },
+        "known_mean_need_prob": 0.9993210689723492,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "paraphrase": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.4255,
+        "recall1": 0.4255,
+        "recall3": 0.605,
+        "recall5": 0.7305,
+        "recall8": 0.809,
+        "mrr": 0.5507020870945611,
+        "ndcg3": 0.5297832026464318,
+        "mean_first_positive_rank": 7.688,
+        "all_evidence_in_top3": 0.605,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -4.418384120300412,
+        "median_score_margin": -5.730679512023926,
+        "negative_margin_rate": 0.5745,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9880377072393894,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "random_position": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.2755,
+        "recall1": 0.2755,
+        "recall3": 0.474,
+        "recall5": 0.7665,
+        "recall8": 0.9335,
+        "mrr": 0.4512681556346879,
+        "ndcg3": 0.38633728319107397,
+        "mean_first_positive_rank": 4.9905,
+        "all_evidence_in_top3": 0.474,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -17.09528378547728,
+        "median_score_margin": -19.91835129261017,
+        "negative_margin_rate": 0.7245,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9656237260401249,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "single_fact": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.3585,
+        "recall1": 0.3585,
+        "recall3": 0.5315,
+        "recall5": 0.748,
+        "recall8": 0.8755,
+        "mrr": 0.5041280494591153,
+        "ndcg3": 0.4566527480678597,
+        "mean_first_positive_rank": 6.2835,
+        "all_evidence_in_top3": 0.5315,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -5.610978243432939,
+        "median_score_margin": -14.75244402885437,
+        "negative_margin_rate": 0.6415,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9954859737157822,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "unknown": {
+        "episodes": 1920,
+        "answerable_episodes": 1814,
+        "unknown_episodes": 106,
+        "top1": 0.13561190738699008,
+        "recall1": 0.13561190738699008,
+        "recall3": 0.2508269018743109,
+        "recall5": 0.36604189636163176,
+        "recall8": 0.5700110253583242,
+        "mrr": 0.2724902209448839,
+        "ndcg3": 0.20137544771420876,
+        "mean_first_positive_rank": 8.588202866593164,
+        "all_evidence_in_top3": 0.2508269018743109,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 0.5526041666666667,
+        "hop_accuracy_answerable": 0.5848952590959207,
+        "hop_under_prediction": 0.31808158765159866,
+        "hop_over_prediction": 0.0970231532524807,
+        "mean_score_margin": -19.966790886482894,
+        "median_score_margin": -18.91780662536621,
+        "negative_margin_rate": 0.86438809261301,
+        "hop_confusion": {
+          "true_0_pred_0": 0,
+          "true_0_pred_1": 42,
+          "true_0_pred_2": 64,
+          "true_1_pred_0": 577,
+          "true_1_pred_1": 1061,
+          "true_1_pred_2": 176
+        },
+        "known_mean_need_prob": 0.9243141619741194,
+        "unknown_mean_need_prob": 0.9999472358316746,
+        "thr0.50": {
+          "need_precision": 0.9438559322033898,
+          "need_recall": 0.9823594266813671,
+          "need_f1": 0.9627228525121555,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 0.928125,
+          "known_question_refusal_rate": 0.017640573318632856,
+          "unknown_question_read_rate": 1.0,
+          "counts": {
+            "tp": 1782,
+            "tn": 0,
+            "fp": 106,
+            "fn": 32
+          }
+        }
+      },
+      "unknown_abstention": {
+        "episodes": 2000,
+        "answerable_episodes": 2000,
+        "unknown_episodes": 0,
+        "top1": 0.2055,
+        "recall1": 0.2055,
+        "recall3": 0.3865,
+        "recall5": 0.5795,
+        "recall8": 0.701,
+        "mrr": 0.3513197809023414,
+        "ndcg3": 0.30621252077857364,
+        "mean_first_positive_rank": 11.6,
+        "all_evidence_in_top3": 0.3865,
+        "multi_positive_episodes": 0,
+        "all_evidence_in_top3_multi": 0.0,
+        "hop_accuracy": 1.0,
+        "hop_accuracy_answerable": 1.0,
+        "hop_under_prediction": 0.0,
+        "hop_over_prediction": 0.0,
+        "mean_score_margin": -35.1040986096561,
+        "median_score_margin": -36.334869384765625,
+        "negative_margin_rate": 0.7945,
+        "hop_confusion": {
+          "true_1_pred_1": 2000
+        },
+        "known_mean_need_prob": 0.9999097834825516,
+        "unknown_mean_need_prob": 0.0,
+        "thr0.50": {
+          "need_precision": 1.0,
+          "need_recall": 1.0,
+          "need_f1": 1.0,
+          "specificity_unknown_refusal": 0.0,
+          "abstention_accuracy": 1.0,
+          "known_question_refusal_rate": 0.0,
+          "unknown_question_read_rate": 0.0,
+          "counts": {
+            "tp": 2000,
+            "tn": 0,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      }
+    }
+  }
+}

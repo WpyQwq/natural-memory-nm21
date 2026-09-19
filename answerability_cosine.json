@@ -1,0 +1,63 @@
+{
+  "overall_auc": 0.6741,
+  "per_category": {
+    "alias_paraphrase": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.8255,
+      "mean_neg": null
+    },
+    "long_fact": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.7631,
+      "mean_neg": null
+    },
+    "multi_entity": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.7077,
+      "mean_neg": null
+    },
+    "multi_hop": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.7697,
+      "mean_neg": null
+    },
+    "near_miss": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.7452,
+      "mean_neg": null
+    },
+    "noise_context": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.6853,
+      "mean_neg": null
+    },
+    "unknown_attribute": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": null,
+      "mean_neg": 0.7149
+    },
+    "update_conflict": {
+      "n": 25,
+      "auc": null,
+      "mean_pos": 0.7203,
+      "mean_neg": null
+    }
+  },
+  "best_threshold": {
+    "margin": 0.02,
+    "refused_unknown_pct": 40.0,
+    "false_refusal_pct": 3.43
+  },
+  "auc": {
+    "max": 0.6741,
+    "margin": 0.9413,
+    "zscore": 0.1767
+  }
+}

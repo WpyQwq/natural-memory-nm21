@@ -1,0 +1,18 @@
+{
+  "package_label": "NM2.1",
+  "output_package": "H:\\Memory\\dynamic_memory_lab\\qwen3_5_4b_natural_memory_v2_1",
+  "source_package": "H:\\Memory\\dynamic_memory_lab\\qwen3_5_4b_natural_memory_v2",
+  "router_checkpoint": "checkpoints\\router_replay_v7_v2_128\\memory_router_v2.pt",
+  "router_sha256": "69f8295e78821e52c0b41b248e7eddbfa47d7e409539f4a13382c0c82d189deb",
+  "shard": "model.safetensors-00005-of-00005.safetensors",
+  "files_copied": 22,
+  "router_tensors_replaced": 16,
+  "tensors_left_untouched": 47,
+  "verification": {
+    "router_tensors_bit_exact": true,
+    "router_mismatches": [],
+    "non_router_tensors_unchanged": true,
+    "changed_non_router": []
+  },
+  "passed": true
+}

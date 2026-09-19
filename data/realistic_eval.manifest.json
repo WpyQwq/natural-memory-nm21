@@ -1,0 +1,59 @@
+{
+  "generator": "make_realistic_memory_eval.py",
+  "purpose": "realistic-shaped memory evaluation corpus (multi-entity, aliases, updates, multi-hop, near-miss, noise, long facts, unknowns)",
+  "per_category": 25,
+  "seed": 20260913,
+  "episodes": 200,
+  "sha256": "333a3c02c6b5fede753bea15d597de655287677ad5b08230da36039867238035",
+  "categories": {
+    "multi_entity": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 3
+    },
+    "alias_paraphrase": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 5
+    },
+    "update_conflict": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 5
+    },
+    "multi_hop": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 5
+    },
+    "near_miss": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 4
+    },
+    "noise_context": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 9
+    },
+    "long_fact": {
+      "episodes": 25,
+      "answerable": 25,
+      "unknown": 0,
+      "max_candidates": 4
+    },
+    "unknown_attribute": {
+      "episodes": 25,
+      "answerable": 0,
+      "unknown": 25,
+      "max_candidates": 5
+    }
+  },
+  "note": "episodes use the schema consumed by eval_end_to_end_memory (query / candidates[].text / positive_indices / metadata.acceptable)"
+}

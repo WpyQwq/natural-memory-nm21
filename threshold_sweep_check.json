@@ -1,0 +1,493 @@
+{
+  "baseline": "V2-128 deployed(v3)",
+  "thresholds": [
+    "thr0.30",
+    "thr0.40",
+    "thr0.50",
+    "thr0.60",
+    "thr0.70",
+    "thr0.80"
+  ],
+  "candidates": {
+    "V2-128 v6 final": {
+      "rows": [
+        {
+          "axis": "need F1",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 召回",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 精确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知拒答率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "已知问题被误拒率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知问题被误读率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "仲裁准确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        }
+      ],
+      "sweep_dominates": true
+    },
+    "REPLAY-128 v7 final": {
+      "rows": [
+        {
+          "axis": "need F1",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 召回",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 精确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知拒答率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "已知问题被误拒率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知问题被误读率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "仲裁准确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        }
+      ],
+      "sweep_dominates": true
+    },
+    "V2-512 v6 final": {
+      "rows": [
+        {
+          "axis": "need F1",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 召回",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 精确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知拒答率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "已知问题被误拒率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知问题被误读率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "仲裁准确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        }
+      ],
+      "sweep_dominates": true
+    },
+    "XL-512 v6 final": {
+      "rows": [
+        {
+          "axis": "need F1",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 召回",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 精确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知拒答率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "已知问题被误拒率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知问题被误读率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "仲裁准确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        }
+      ],
+      "sweep_dominates": true
+    },
+    "XL-128 v6 final": {
+      "rows": [
+        {
+          "axis": "need F1",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 召回",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "need 精确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知拒答率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "已知问题被误拒率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "未知问题被误读率",
+          "direction": "min",
+          "values_pct": [
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%",
+            "0.00%"
+          ],
+          "axis_passed": true
+        },
+        {
+          "axis": "仲裁准确率",
+          "direction": "max",
+          "values_pct": [
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%",
+            "100.00%"
+          ],
+          "axis_passed": true
+        }
+      ],
+      "sweep_dominates": true
+    }
+  }
+}

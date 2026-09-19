@@ -1,0 +1,25 @@
+{
+  "source": "V2_dpskw\\data\\net_locomo\\locomo10.json",
+  "dataset": "LoCoMo (snap-research/locomo) locomo10.json",
+  "provenance": "real published benchmark; dialogue, questions and answers are the dataset's own",
+  "conversations": 10,
+  "written": 195,
+  "pool_cap": 16,
+  "per_category_cap": 40,
+  "seed": 20260915,
+  "by_category": {
+    "multi_hop": 40,
+    "temporal": 39,
+    "open_domain": 36,
+    "single_hop": 40,
+    "adversarial": 40
+  },
+  "skipped": {
+    "no_evidence_in_index": 5
+  },
+  "caveats": [
+    "candidate pool is bounded per question, so this is not a full 5,882-turn haystack run",
+    "category adversarial is scored as 'must refuse': the dataset provides a plausible wrong answer",
+    "answers phrased differently from the benchmark string fail exact-anchor matching; metadata.answer_tokens supports a paraphrase-tolerant secondary metric"
+  ]
+}

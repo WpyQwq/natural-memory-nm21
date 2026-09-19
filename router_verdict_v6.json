@@ -1,0 +1,899 @@
+{
+  "candidates": [
+    "XL-512 v6 best",
+    "XL-512 v6 final",
+    "V2-512 v6 best",
+    "V2-512 v6 final"
+  ],
+  "baselines": [
+    "V2-128 deployed(v3)",
+    "V2-512 v3 best",
+    "V2-512 v3 final"
+  ],
+  "passed_axes": 66,
+  "failed_axes": 22,
+  "skipped_axes": 0,
+  "dominates": false,
+  "rows": [
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.807510946446615,
+      "candidate_value": 0.957842146626249,
+      "delta": 0.15033120017963397,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.807510946446615,
+      "candidate_value": 0.9502077018075671,
+      "delta": 0.14269675536095205,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.807510946446615,
+      "candidate_value": 0.950488379925901,
+      "delta": 0.14297743347928593,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.807510946446615,
+      "candidate_value": 0.941843493881217,
+      "delta": 0.134332547434602,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.7698439429662064,
+      "candidate_value": 0.9024082182553048,
+      "delta": 0.13256427528909842,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.7698439429662064,
+      "candidate_value": 0.8948299090602897,
+      "delta": 0.1249859660940833,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.7698439429662064,
+      "candidate_value": 0.8971034018187942,
+      "delta": 0.12725945885258783,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.7698439429662064,
+      "candidate_value": 0.8864657011339396,
+      "delta": 0.11662175816773324,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9501515661839003,
+      "candidate_value": 0.9758897496351184,
+      "delta": 0.025738183451218144,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9501515661839003,
+      "candidate_value": 0.965336252385764,
+      "delta": 0.01518468620186375,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9501515661839003,
+      "candidate_value": 0.9884079937128102,
+      "delta": 0.0382564275289099,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9501515661839003,
+      "candidate_value": 0.9666273717300999,
+      "delta": 0.01647580554619965,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9730829684517796,
+      "candidate_value": 0.9834399910183003,
+      "delta": 0.010357022566520713,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9730829684517796,
+      "candidate_value": 0.9760862243179522,
+      "delta": 0.0030032558661726716,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9730829684517796,
+      "candidate_value": 0.9934882676546536,
+      "delta": 0.02040529920287404,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9730829684517796,
+      "candidate_value": 0.9764230380599529,
+      "delta": 0.003340069608173346,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "MRR",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8845870538857731,
+      "candidate_value": 0.9724377931581535,
+      "delta": 0.08785073927238041,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "MRR",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8845870538857731,
+      "candidate_value": 0.9664213223997663,
+      "delta": 0.08183426851399322,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "MRR",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8845870538857731,
+      "candidate_value": 0.9711571604054701,
+      "delta": 0.08657010651969699,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "MRR",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8845870538857731,
+      "candidate_value": 0.958724954839147,
+      "delta": 0.07413790095337391,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8953026178367461,
+      "candidate_value": 0.9664212737428025,
+      "delta": 0.07111865590605637,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8953026178367461,
+      "candidate_value": 0.9560053718886551,
+      "delta": 0.06070275405190895,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8953026178367461,
+      "candidate_value": 0.9723689530227545,
+      "delta": 0.07706633518600836,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.8953026178367461,
+      "candidate_value": 0.9548399733910118,
+      "delta": 0.05953735555426565,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9418996295048838,
+      "candidate_value": 0.9686201863702706,
+      "delta": 0.02672055686538677,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9418996295048838,
+      "candidate_value": 0.9534635679802402,
+      "delta": 0.011563938475356417,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9418996295048838,
+      "candidate_value": 0.9863590434489727,
+      "delta": 0.04445941394408892,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 best",
+      "baseline_value": 0.9418996295048838,
+      "candidate_value": 0.9644100145952621,
+      "delta": 0.022510385090378282,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.849,
+      "candidate_value": 0.8705,
+      "delta": 0.021500000000000075,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.849,
+      "candidate_value": 0.7885,
+      "delta": -0.0605,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.849,
+      "candidate_value": 0.9635,
+      "delta": 0.11450000000000005,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.849,
+      "candidate_value": 0.9605,
+      "delta": 0.11150000000000004,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.046817110138093636,
+      "candidate_value": 0.0,
+      "delta": -0.046817110138093636,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.046817110138093636,
+      "candidate_value": 0.0,
+      "delta": -0.046817110138093636,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.046817110138093636,
+      "candidate_value": 0.0,
+      "delta": -0.046817110138093636,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.046817110138093636,
+      "candidate_value": 0.0,
+      "delta": -0.046817110138093636,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.895773512669387,
+      "candidate_value": 1.0,
+      "delta": 0.10422648733061302,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.895773512669387,
+      "candidate_value": 1.0,
+      "delta": 0.10422648733061302,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.895773512669387,
+      "candidate_value": 0.999775507913346,
+      "delta": 0.10400199524395903,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.895773512669387,
+      "candidate_value": 1.0,
+      "delta": 0.10422648733061302,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.998203660042663,
+      "candidate_value": 1.0,
+      "delta": 0.0017963399573369676,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.998203660042663,
+      "candidate_value": 1.0,
+      "delta": 0.0017963399573369676,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.998203660042663,
+      "candidate_value": 1.0,
+      "delta": 0.0017963399573369676,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.998203660042663,
+      "candidate_value": 1.0,
+      "delta": 0.0017963399573369676,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.5129079396005846,
+      "candidate_value": 1.0,
+      "delta": 0.48709206039941544,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.5129079396005846,
+      "candidate_value": 1.0,
+      "delta": 0.48709206039941544,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.5129079396005846,
+      "candidate_value": 0.9980516317584024,
+      "delta": 0.48514369215781783,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.5129079396005846,
+      "candidate_value": 1.0,
+      "delta": 0.48709206039941544,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.001796339957336926,
+      "candidate_value": 0.0,
+      "delta": -0.001796339957336926,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.001796339957336926,
+      "candidate_value": 0.0,
+      "delta": -0.001796339957336926,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.001796339957336926,
+      "candidate_value": 0.0,
+      "delta": -0.001796339957336926,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.001796339957336926,
+      "candidate_value": 0.0,
+      "delta": -0.001796339957336926,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.4870920603994155,
+      "candidate_value": 0.0,
+      "delta": -0.4870920603994155,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.4870920603994155,
+      "candidate_value": 0.0,
+      "delta": -0.4870920603994155,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.4870920603994155,
+      "candidate_value": 0.001948368241597662,
+      "delta": -0.48514369215781783,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.4870920603994155,
+      "candidate_value": 0.0,
+      "delta": -0.4870920603994155,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 0.9996350364963503,
+      "delta": 0.18211678832116784,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 0.8175182481751825,
+      "candidate_value": 1.0,
+      "delta": 0.18248175182481752,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 53.160489893678886,
+      "candidate_value": 45.56406442258217,
+      "delta": -7.596425471096715,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 53.160489893678886,
+      "candidate_value": 215.75331382084113,
+      "delta": 162.59282392716224,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 53.160489893678886,
+      "candidate_value": 12.36926158705623,
+      "delta": -40.791228306622656,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-512 v3 final",
+      "baseline_value": 53.160489893678886,
+      "candidate_value": 73.24820388849786,
+      "delta": 20.08771399481897,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.8439246668907193,
+      "candidate_value": 1.2161159999474573,
+      "delta": 0.372191333056738,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.8439246668907193,
+      "candidate_value": 1.2505186665900208,
+      "delta": 0.40659399969930143,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.8439246668907193,
+      "candidate_value": 0.8750353333986519,
+      "delta": 0.031110666507932594,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 0.8439246668907193,
+      "candidate_value": 0.8725079999809774,
+      "delta": 0.028583333090258067,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU, 单查询)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 1184.9398876848934,
+      "candidate_value": 822.2899789520122,
+      "delta": -362.64990873288116,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU, 单查询)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 1184.9398876848934,
+      "candidate_value": 799.6681910609555,
+      "delta": -385.27169662393794,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU, 单查询)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 1184.9398876848934,
+      "candidate_value": 1142.8109949754637,
+      "delta": -42.12889270942969,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU, 单查询)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 1184.9398876848934,
+      "candidate_value": 1146.121296334019,
+      "delta": -38.818591350874385,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=64)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 72916.19191648123,
+      "candidate_value": 57386.75086015149,
+      "delta": -15529.441056329735,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=64)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 72916.19191648123,
+      "candidate_value": 53291.58828255585,
+      "delta": -19624.603633925377,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=64)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 72916.19191648123,
+      "candidate_value": 73617.37369428946,
+      "delta": 701.1817778082332,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=64)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 72916.19191648123,
+      "candidate_value": 61636.8434007473,
+      "delta": -11279.348515733931,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=256)",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 264812.97583671653,
+      "candidate_value": 96746.88596045674,
+      "delta": -168066.0898762598,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=256)",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 264812.97583671653,
+      "candidate_value": 94345.88082639035,
+      "delta": -170467.0950103262,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=256)",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 264812.97583671653,
+      "candidate_value": 161941.27100652116,
+      "delta": -102871.70483019538,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "批量 QPS (GPU, batch=256)",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 264812.97583671653,
+      "candidate_value": 164167.81025689258,
+      "delta": -100645.16557982395,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "XL-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 512,
+      "candidate_value": 2048,
+      "delta": 1536,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "XL-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 512,
+      "candidate_value": 2048,
+      "delta": 1536,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "V2-512 v6 best",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 512,
+      "candidate_value": 2048,
+      "delta": 1536,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "V2-512 v6 final",
+      "baseline": "V2-128 deployed(v3)",
+      "baseline_value": 512,
+      "candidate_value": 2048,
+      "delta": 1536,
+      "direction": "min",
+      "pass": false
+    }
+  ]
+}

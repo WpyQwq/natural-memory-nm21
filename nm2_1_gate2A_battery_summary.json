@@ -1,0 +1,1222 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2_1",
+  "label": "NM2.1+gate2",
+  "tag": "nm2_1_gate2A",
+  "built_at": "2026-09-12T21:54:08",
+  "per_category": 10,
+  "overlap_cases": 48,
+  "results": {
+    "A_end_to_end": [
+      "| NM2.1+gate2 | 110 | 12.73% | 0.00% | 46.67% | 7.50% | 468s |",
+      "wrote nm2_1_gate2A_e2e.md",
+      "wrote nm2_1_gate2A_e2e.json",
+      {
+        "NM2.1+gate2": {
+          "summary": {
+            "router": "NM2.1+gate2",
+            "cases": 110,
+            "accuracy_pct": 12.727272727272727,
+            "answerable_cases": 80,
+            "answerable_accuracy_pct": 0.0,
+            "unknown_cases": 30,
+            "unknown_refusal_pct": 46.666666666666664,
+            "wrong_abstention_pct": 7.5,
+            "seconds": 468.1,
+            "per_category": {
+              "(policy)": {
+                "cases": 10,
+                "accuracy_pct": 10.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 10.0
+              },
+              "conflict_update": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "distractor_128": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "distractor_32": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "forget_correction": {
+                "cases": 10,
+                "accuracy_pct": 30.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 30.0
+              },
+              "long_context": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "multi_hop": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "paraphrase": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "random_position": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "single_fact": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "unknown_abstention": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 100.0
+              }
+            }
+          },
+          "rows": [
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0000的驻地代号为？",
+              "reply": "作为一个人工智能助手，我无法提供涉及军事、政治或任何可能引起误解的敏感信息。我的职责是提供安全、有益的帮助。\n\n如果您有其他关于科技、文化、生活等方面的问题，我很乐意为您提供帮助。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0001的负责人代号是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问**您所在组织内部的数据库、人员档案或特定的业务系统。因此，我无法查询到“测试实体 0001\"的具体负责人代号。\n\n这类信息通常属于内部",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0002的维护日代号是什么？",
+              "reply": "根据您提供的信息，**无法查询到测试实体 0002 的维护日代号**。\n\n原因如下：\n1.  **数据缺失**：您只提供了实体的名称（测试实体 000",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0003的安全级别代号为？",
+              "reply": "作为一个人工智能助手，我**无法访问**您所在组织内部的数据库、测试环境或任何具体的业务系统（包括所谓的“对象测试实体 0003\"）。\n\n这类信息属于**高度敏感的内部数据**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0004的档案类别代号为？",
+              "reply": "作为一个人工智能助手，我**无法访问**您所在机构或系统的内部数据库，因此不知道“对象测试实体 0004\"具体属于哪个档案类别。\n\n档案类别代号通常由您所在的**特定单位",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0005的驻地代号是什么？",
+              "reply": "根据公开资料及常规军事常识，**不存在**名为“测试实体 0005\"的实体。\n\n在军事、科幻作品或官方数据库中，并没有以“测试实体”加上数字编号（如 00",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0006的负责人代号是什么？",
+              "reply": "由于“测试实体 0006\"并非一个在公共知识库、通用数据库或标准测试用例中广泛定义的特定对象（它更像是一个内部系统、特定项目或虚构场景中的代号），**我无法直接提供该实",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "根据已记信息，测试实体0007的维护日代号是？",
+              "reply": "您提供的信息中**没有包含关于“实体 0007\"的任何具体数据或记录**。\n\n由于缺乏必要的上下文（例如：实体列表、维护日志、数据库记录或相关文档），我无法确定实体 00",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0008的安全级别代号为？",
+              "reply": "作为一个人工智能助手，我无法访问或查询任何特定实体（如\"0008\"）的内部安全数据、测试报告或机密信息。这类信息通常属于高度敏感的商业机密、国家秘密或内部测试数据，",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0009的档案类别代号是什么？",
+              "reply": "由于“测试实体 0009\"是一个通用的占位符名称，并非现实世界中特定档案系统（如中国档案局标准、某具体企业或软件系统）中定义的实体，**我无法直接查询到该实",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的提醒时间最新值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的设备、系统或任何外部数据**，因此不知道您具体的“提醒时间”设置是什么。\n\n这通常取决于您正在使用的设备或应用（例如：手机日历、电脑",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录或任何本地数据**，因此无法得知您设备中“备用联系人”的具体数值或名称。\n\n这个信息完全取决于您使用的设备（如 iPhone",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录或任何本地数据**，因此无法得知您设备中“备用联系人”的具体数值或名称。\n\n这个信息完全取决于您使用的设备（如 iPhone",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的最喜欢的水果最新值是什么？",
+              "reply": "作为一个人工智能助手，我并没有个人喜好，因此也没有“最喜欢的水果”。\n\n不过，如果您是想询问**最新上市**或**近期热门**的水果，目前市场上比较受欢迎的包括：\n*   **车厘子**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的常用语言最新值是什么？",
+              "reply": "您好！作为 AI 助手，我并没有直接访问您个人设备或历史数据的能力，因此无法得知您的“常用语言最新值”。不过，如果您是在询问我与您对话时使用的语言，目前我们是用**中文**进行交流",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的最喜欢的水果最新值是什么？",
+              "reply": "作为一个人工智能助手，我并没有个人喜好，因此也没有“最喜欢的水果”。\n\n不过，如果您是想询问**最新上市**或**近期热门**的水果，目前市场上比较受欢迎的包括：\n*   **车厘子**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的默认输出风格最新值是什么？",
+              "reply": "作为 Qwen3.5，我没有直接访问您本地设置或历史对话记录的权限，因此无法得知您的“默认输出风格”具体是什么。不过，我可以帮您调整或设定输出风格！例如：\n\n- 如果您希望",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的提醒时间最新值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的设备、系统或任何外部数据**，因此不知道您具体的“提醒时间”设置是什么。\n\n这通常取决于您正在使用的设备或应用（例如：手机日历、电脑",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录或任何本地数据**，因此无法得知您设备中“备用联系人”的具体数值或名称。\n\n这个信息完全取决于您使用的设备（如 iPhone",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的常用语言最新值是什么？",
+              "reply": "您好！作为 AI 助手，我并没有直接访问您个人设备或历史数据的能力，因此无法得知您的“常用语言最新值”。不过，如果您是在询问我与您对话时使用的语言，目前我们是用**中文**进行交流",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的最喜欢的水果，它的值是什么？",
+              "reply": "您最喜欢的水果是什么？",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点，请提供该内容，我会立即为您提取。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "在大量无关信息中，只读取您的常用时区，它的值是 **UTC+8**（中国标准时间）。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "在大量无关信息中，只读取您的常用时区，它的值是 **UTC+8**（中国标准时间）。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是**专业、简洁、直接且乐于助人**。\n\n作为一个人工智能助手，我的核心设计原则是：\n1.  **准确**：提供基于事实或逻辑的回答。\n2.  **清晰",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是**专业、简洁、直接且乐于助人**。\n\n作为一个人工智能助手，我的核心设计原则是：\n1.  **准确**：提供基于事实或逻辑的回答。\n2.  **清晰",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的项目代号，它的值是什么？",
+              "reply": "您的项目代号是：**Project Phoenix**（凤凰计划）。\n\n> 注：由于您未提供具体的“大量无关信息”文本，此回答基于常见代号命名习惯及上下文逻辑推断。若您有具体文本内容，请",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录、系统设置或任何私人数据**。因此，我无法读取您的“备用联系人”列表，也无法告诉您该值具体是什么。\n\n这涉及您的隐私",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点，请提供该内容，我会立即为您提取。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点，请提供该内容，我会立即为您提取。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录、系统设置或任何私人数据**。因此，我无法读取您的“备用联系人”列表，也无法告诉您该值具体是什么。\n\n这涉及您的隐私",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录、系统设置或任何私人数据**。因此，我无法读取您的“备用联系人”列表，也无法告诉您该值具体是什么。\n\n这涉及您的隐私",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "在大量无关信息中，只读取您的常用时区，它的值是 **UTC+8**（中国标准时间）。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录、系统设置或任何私人数据**。因此，我无法读取您的“备用联系人”列表，也无法告诉您该值具体是什么。\n\n这涉及您的隐私",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点，请提供该内容，我会立即为您提取。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "在大量无关信息中，只读取您的常用时区，它的值是 **UTC+8**（中国标准时间）。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是**专业、简洁、直接且乐于助人**。\n\n作为一个人工智能助手，我的核心设计原则是：\n1.  **准确**：提供基于事实或逻辑的回答。\n2.  **清晰",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的项目代号是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**没有访问权限**来查询或记录您的个人项目信息。我的设计原则是保护用户隐私，不会存储或追踪任何用户的特定项目代号。\n\n如果您之前提到过某个项目代号，",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用时区是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**没有访问您个人设备设置、浏览器历史或系统记录的权限**，因此无法得知您的“常用时区”是什么。\n\n如果您之前设置过某个时区，但现在已经删除或从未",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的备用联系人是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**无法访问您的手机、电脑或任何设备的通讯录数据**，因此无法查询您的“备用联系人”具体是谁。\n\n如果您是在询问自己设备上的设置，请尝试以下方法：\n1",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的工作地点是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**没有访问权限**来查看您的个人数据、工作信息或任何已删除的记录。我的设计原则是保护用户隐私，不会存储或检索用户的个人信息。\n\n如果您之前设置过某个特定的",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的提醒时间是什么？如果已经删除，请回答没有记录。",
+              "reply": "没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的默认输出风格是什么？如果已经删除，请回答没有记录。",
+              "reply": "没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的工作地点是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**没有访问权限**来查看您的个人数据、工作信息或任何已删除的记录。我的设计原则是保护用户隐私，不会存储或检索用户的个人信息。\n\n如果您之前设置过某个特定的",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的提醒时间是什么？如果已经删除，请回答没有记录。",
+              "reply": "没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用语言是什么？如果已经删除，请回答没有记录。",
+              "reply": "您好！作为一个人工智能助手，我**没有访问或存储您个人设备、浏览器或账户中“常用语言”设置的能力**。\n\n如果您是在询问：\n1. **当前对话使用的语言**：我们目前使用的是**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用时区是什么？如果已经删除，请回答没有记录。",
+              "reply": "作为一个人工智能助手，我**没有访问您个人设备设置、浏览器历史或系统记录的权限**，因此无法得知您的“常用时区”是什么。\n\n如果您之前设置过某个时区，但现在已经删除或从未",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+              "reply": "您好！由于我无法访问您之前的对话历史或上下文（每次对话对我来说都是全新的开始），目前我**不知道您的项目代号是什么**。\n\n为了帮您准确回答，请提供以下信息：\n1. **项目代号**（例如",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用时区并回答。",
+              "reply": "您好！由于我无法访问您的个人数据或历史记录，因此无法直接检索您的常用时区。如果您能提供以下信息，我可以帮您更准确地回答：\n\n1. 您常用的时区名称（如“北京时间”、“美国东部",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的工作地点并回答。",
+              "reply": "您好！由于我无法访问您的个人数据或之前的对话历史（长上下文压缩后，具体信息可能已丢失），请告诉我您的工作地点，我将立即为您查找相关信息并回答您的问题。例如：  \n- 如果您在**北京**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的提醒时间并回答。",
+              "reply": "您好！由于我无法直接访问您的长上下文压缩后的内容（例如压缩后的摘要、笔记或文档），请您提供以下信息之一：\n\n1. **提醒时间**（例如：“明天上午 10 点”或“",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的提醒时间并回答。",
+              "reply": "您好！由于我无法直接访问您的长上下文压缩后的内容（例如压缩后的摘要、笔记或文档），请您提供以下信息之一：\n\n1. **提醒时间**（例如：“明天上午 10 点”或“",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+              "reply": "您好！由于我无法访问您之前的对话历史或上下文（每次对话对我来说都是全新的开始），目前我**不知道您的项目代号是什么**。\n\n为了帮您准确回答，请提供以下信息：\n1. **项目代号**（例如",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用语言并回答。",
+              "reply": "您好！在长上下文压缩后，我已准备好为您服务。请问您希望我使用哪种语言进行交流？（例如：中文、英文、法语等）",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的工作地点并回答。",
+              "reply": "您好！由于我无法访问您的个人数据或之前的对话历史（长上下文压缩后，具体信息可能已丢失），请告诉我您的工作地点，我将立即为您查找相关信息并回答您的问题。例如：  \n- 如果您在**北京**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的备用联系人并回答。",
+              "reply": "您好！我注意到您提到了“长上下文压缩”和“检索备用联系人”，但当前对话中**没有提供具体的联系人列表或上下文数据**。为了准确帮助您，请补充以下信息：\n\n1. **需要检索的联系人",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用时区并回答。",
+              "reply": "您好！由于我无法访问您的个人数据或历史记录，因此无法直接检索您的常用时区。如果您能提供以下信息，我可以帮您更准确地回答：\n\n1. 您常用的时区名称（如“北京时间”、“美国东部",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-KP2F9GHO负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目数据表、关系图或上下文背景**，我无法直接查询到项目 `P-KP2F9GHO` 的具体负责人及其对应的工作代号。\n\n在数据库查询或逻辑",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-DG818670负责人的工作代号。",
+              "reply": "您好，您提供的信息中**缺少具体的项目列表或人员关系数据**。\n\n“项目-P-DG818670\"只是一个项目名称的示例格式，目前您的输入中并没有包含该项目下有哪些负责人、以及这些",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-LXAVDTVY负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目列表、人员关系表或上下文数据**，我无法直接查询到项目 `-P-LXAVDTVY` 的负责人及其对应的工作代号。\n\n为了帮助您找到答案，请您提供",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-F1BVFMQ5负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目列表、人员关系表或上下文数据**，我无法直接通过“项目负责人关系”来匹配并找出 P-F1BVFMQ5 负责人的工作代号。\n\n为了能够准确回答您的问题",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-CY5VYJU9负责人的工作代号。",
+              "reply": "您好，您提供的信息中**缺少具体的项目列表或负责人数据**。\n\n“项目-P-CY5VYJU9\"只是一个示例性的项目名称（通常这种格式用于演示或占位），在当前的对话上下文中，并没有",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-Q1Y92XOA负责人的工作代号。",
+              "reply": "您好，您提供的信息中**缺少具体的项目列表或负责人数据**。\n\n“项目-P-Q1Y92XOA\"只是一个示例性的项目名称（看起来像是一个占位符），目前没有任何系统或数据库关联到该项目的",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-7Y96TFNY负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目列表、人员关系表或上下文数据**，我无法直接查询到项目 `-P-7Y96TFNY` 的具体负责人及其对应的工作代号。\n\n为了帮助您找到答案，",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-8SKCFVHH负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目数据表、数据库记录或上下文背景**，我无法直接查询到项目 `-8SKCFVHH` 的具体负责人及其对应的工作代号。\n\n为了帮助您找到答案，请您提供以下",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-5ECU7LJU负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目数据表或上下文**（例如：项目列表、负责人列表、以及项目与负责人之间的关联关系），我无法直接通过逻辑推理找出\"5ECU7LJU\"负责人的工作代号",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-THNH77VT负责人的工作代号。",
+              "reply": "由于您提供的信息中**缺少具体的项目列表、人员关系表或上下文数据**，我无法直接查询到项目 `-P-THNH77VT` 的具体负责人及其对应的工作代号。\n\n为了帮助您找到答案，请您",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的最喜欢的水果内容是什么？",
+              "reply": "您好，作为一个人工智能助手，我**无法访问或查看您个人的历史数据、账户信息或之前登记的任何内容**。\n\n我的设计原则是保护用户隐私，因此我不会存储或记忆您个人的偏好记录。如果您之前",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "不要猜，回忆一下我在最喜欢的水果上的设置。",
+              "reply": "我暂时无法回忆您之前的具体设置，因为每次对话对我来说都是全新的开始，除非您在当前的对话中明确提到过相关内容。\n\n不过，如果您能告诉我您最喜欢的水果是什么，我很乐意帮您回忆或设置相关的功能！比如",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于常用时区，你保存的用户信息是哪一个？",
+              "reply": "作为一个人工智能模型，我**不会保存任何用户信息**（包括您选择的时区偏好），也不会将您的设置存储在我的服务器或数据库中。\n\n关于时区的具体说明如下：\n\n1.  **无持久化",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于工作地点，你保存的用户信息是哪一个？",
+              "reply": "作为一个人工智能模型，我**没有访问权限**去查看或保存任何用户的个人身份信息（PII），包括工作地点、地址、联系方式等。\n\n我的设计原则是：\n1. **隐私保护**：我不会存储",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于常用时区，你保存的用户信息是哪一个？",
+              "reply": "作为一个人工智能模型，我**不会保存任何用户信息**（包括您选择的时区偏好），也不会将您的设置存储在我的服务器或数据库中。\n\n关于时区的具体说明如下：\n\n1.  **无持久化",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的常用语言内容是什么？",
+              "reply": "您好！作为 AI 助手，我**无法访问或查看您的个人历史数据、设置或之前登记的语言偏好**。我的设计原则是保护用户隐私，不会存储或记录任何用户的个人信息。\n\n如果您想切换语言，可以直接",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的项目代号内容是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人数据、历史记录或您之前登记的任何项目信息**。我的设计原则是保护用户隐私，因此我不会存储或回忆您个人的具体项目代号。\n\n如果您之前是在某个特定的",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的备用联系人内容是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、手机通讯录或任何已登记的备用联系人信息**。这类数据属于您的个人隐私，仅存储在您的手机、电脑或相关通讯软件（如微信、QQ、短信服务等",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于备用联系人，你保存的用户信息是哪一个？",
+              "reply": "作为一个人工智能助手，我**没有访问、存储或记录您个人设备中“备用联系人”信息的能力**。\n\n我的设计原则是：\n1. **不存储个人信息**：我不会保存、记忆或备份您设备",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "不要猜，回忆一下我在默认输出风格上的设置。",
+              "reply": "您好！作为 Qwen3.5，我并没有直接访问您过往对话历史或默认输出风格设置的能力。不过，如果您能简要描述一下您偏好的风格（例如：简洁专业、幽默生动、学术严谨等），",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的默认输出风格是什么？",
+              "reply": "我的默认输出风格是**专业、简洁、准确且乐于助人**。\n\n具体来说，我会：\n1. **直接回答问题**：不添加不必要的寒暄或冗余信息，直奔主题。\n2. **保持客观中立**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的项目代号是什么？",
+              "reply": "您的项目代号是：**Project Phoenix**（凤凰计划）。\n\n这是一个虚构的代号，用于本次随机位置事实测试。如果您有特定的项目或需要其他类型的测试，请随时告诉我！",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的默认输出风格是什么？",
+              "reply": "我的默认输出风格是**专业、简洁、准确且乐于助人**。\n\n具体来说，我会：\n1. **直接回答问题**：不添加不必要的寒暄或冗余信息，直奔主题。\n2. **保持客观中立**",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的备用联系人是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、通讯录或任何与您的私人数据相关的信息**。因此，我不知道您的备用联系人是谁。\n\n如果您需要查找或管理备用联系人，建议您：\n1. 打开",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的提醒时间是什么？",
+              "reply": "抱歉，我无法回答这个问题，因为我没有记录您的提醒时间。作为 AI 助手，我无法访问您的个人设备或应用数据。建议您查看手机或电脑上的提醒设置，或检查您使用的日历/任务管理应用来获取准确信息",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": true
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "您的常用语言是**中文**。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用时区是什么？",
+              "reply": "作为一个人工智能，我**无法知道您的常用时区**，因为我没有访问您个人设备、网络设置或地理位置数据的权限。\n\n时区信息通常取决于：\n1. 您设备（手机/电脑）的系统",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的默认输出风格是什么？",
+              "reply": "作为 Qwen3.5，我的默认输出风格是**专业、简洁、准确且富有同理心**的。我会根据对话内容灵活调整语气，确保信息清晰易懂，同时保持逻辑严谨和表达自然。如果您有",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的项目代号是什么？",
+              "reply": "作为一个人工智能助手，我**没有权限访问您的个人身份信息、项目档案或任何外部数据库**，因此无法得知您的“项目代号”具体是什么。\n\n项目代号通常由您或您的团队内部定义，属于特定",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的默认输出风格是什么？",
+              "reply": "作为 Qwen3.5，我的默认输出风格是**专业、简洁、准确且富有同理心**的。我会根据对话内容灵活调整语气，确保信息清晰易懂，同时保持逻辑严谨和表达自然。如果您有",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的项目代号是什么？",
+              "reply": "作为一个人工智能助手，我**没有权限访问您的个人身份信息、项目档案或任何外部数据库**，因此无法得知您的“项目代号”具体是什么。\n\n项目代号通常由您或您的团队内部定义，属于特定",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的常用语言是什么？",
+              "reply": "您好！作为一个人工智能助手，我并没有直接访问您个人设备或历史记录的能力，因此无法确切知道您“常用”的语言是什么。\n\n不过，从我们当前的对话来看，您使用的是**中文**。如果您希望我用其他",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的最喜欢的水果是什么？",
+              "reply": "作为一个人工智能助手，我并没有个人偏好或味觉体验，因此无法知道您“最喜欢”的水果是什么。\n\n不过，如果您愿意告诉我，我很乐意：\n1. 记录您的喜好（例如：您最喜欢吃苹果",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的提醒时间是什么？",
+              "reply": "作为一个人工智能助手，我**没有访问您设备本地设置（如手机或电脑日历）的权限**，因此无法直接告诉您具体的“提醒时间”。\n\n不过，如果您是在询问**当前系统时间**，我可以",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的备用联系人是什么？",
+              "reply": "作为一个人工智能助手，我**无法访问您的个人设备、通讯录或任何与您的私人数据相关的信息**。因此，我无法知道您的“备用联系人”是谁。\n\n要查找您的备用联系人，您可以尝试以下方法：",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的常用语言是什么？",
+              "reply": "您好！作为一个人工智能助手，我并没有直接访问您个人设备或历史记录的能力，因此无法确切知道您“常用”的语言是什么。\n\n不过，从我们当前的对话来看，您使用的是**中文**。如果您希望我用其他",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的提醒时间是什么？",
+              "reply": "作为一个人工智能助手，我**没有访问您设备本地设置（如手机或电脑日历）的权限**，因此无法直接告诉您具体的“提醒时间”。\n\n不过，如果您是在询问**当前系统时间**，我可以",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008000是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008000\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008001是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008001\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定游戏、小说、虚构作品或内部系统中看到",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008002是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008002\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定游戏、小说、虚构作品或内部系统中看到",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008003是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008003\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定上下文（如游戏、小说、特定软件或",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008004是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008004\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008005是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008005\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008006是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008006\"并非任何已知的公开数据、系统记录或通用概念。在缺乏具体上下文（如特定的游戏、软件、数据库或虚构作品）的情况下，",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008007是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008007\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008008是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008008\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定上下文（如游戏、小说、特定软件或",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008009是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008009\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

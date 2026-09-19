@@ -1,0 +1,315 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2",
+  "facts": 20,
+  "phases": {
+    "A_distinct_facts": {
+      "records": 20,
+      "status_counts": {
+        "active": 20
+      },
+      "active": 20,
+      "superseded": 0,
+      "retracted": 0,
+      "attribute_status": {
+        "主管姓名": [
+          "active"
+        ],
+        "入职年份": [
+          "active"
+        ],
+        "出生城市": [
+          "active"
+        ],
+        "办公城市": [
+          "active"
+        ],
+        "午餐偏好": [
+          "active"
+        ],
+        "咖啡口味": [
+          "active"
+        ],
+        "团队名称": [
+          "active"
+        ],
+        "工位楼层": [
+          "active"
+        ],
+        "常住城市": [
+          "active"
+        ],
+        "常用编辑器": [
+          "active"
+        ],
+        "手机尾号": [
+          "active"
+        ],
+        "档案标识": [
+          "active"
+        ],
+        "紧急联系人姓氏": [
+          "active"
+        ],
+        "起床时间": [
+          "active"
+        ],
+        "运动习惯": [
+          "active"
+        ],
+        "通勤方式": [
+          "active"
+        ],
+        "邮箱域名": [
+          "active"
+        ],
+        "阅读工具": [
+          "active"
+        ],
+        "项目代号": [
+          "active"
+        ],
+        "默认语言": [
+          "active"
+        ]
+      }
+    },
+    "B_positive_control": {
+      "before": {
+        "records": 20,
+        "status_counts": {
+          "active": 20
+        },
+        "active": 20,
+        "superseded": 0,
+        "retracted": 0,
+        "attribute_status": {
+          "主管姓名": [
+            "active"
+          ],
+          "入职年份": [
+            "active"
+          ],
+          "出生城市": [
+            "active"
+          ],
+          "办公城市": [
+            "active"
+          ],
+          "午餐偏好": [
+            "active"
+          ],
+          "咖啡口味": [
+            "active"
+          ],
+          "团队名称": [
+            "active"
+          ],
+          "工位楼层": [
+            "active"
+          ],
+          "常住城市": [
+            "active"
+          ],
+          "常用编辑器": [
+            "active"
+          ],
+          "手机尾号": [
+            "active"
+          ],
+          "档案标识": [
+            "active"
+          ],
+          "紧急联系人姓氏": [
+            "active"
+          ],
+          "起床时间": [
+            "active"
+          ],
+          "运动习惯": [
+            "active"
+          ],
+          "通勤方式": [
+            "active"
+          ],
+          "邮箱域名": [
+            "active"
+          ],
+          "阅读工具": [
+            "active"
+          ],
+          "项目代号": [
+            "active"
+          ],
+          "默认语言": [
+            "active"
+          ]
+        }
+      },
+      "after": {
+        "records": 21,
+        "status_counts": {
+          "superseded": 1,
+          "active": 20
+        },
+        "active": 20,
+        "superseded": 1,
+        "retracted": 0,
+        "attribute_status": {
+          "主管姓名": [
+            "active"
+          ],
+          "入职年份": [
+            "active"
+          ],
+          "出生城市": [
+            "active"
+          ],
+          "办公城市": [
+            "active"
+          ],
+          "午餐偏好": [
+            "active"
+          ],
+          "咖啡口味": [
+            "active"
+          ],
+          "团队名称": [
+            "active"
+          ],
+          "工位楼层": [
+            "active"
+          ],
+          "常住城市": [
+            "active",
+            "superseded"
+          ],
+          "常用编辑器": [
+            "active"
+          ],
+          "手机尾号": [
+            "active"
+          ],
+          "档案标识": [
+            "active"
+          ],
+          "紧急联系人姓氏": [
+            "active"
+          ],
+          "起床时间": [
+            "active"
+          ],
+          "运动习惯": [
+            "active"
+          ],
+          "通勤方式": [
+            "active"
+          ],
+          "邮箱域名": [
+            "active"
+          ],
+          "阅读工具": [
+            "active"
+          ],
+          "项目代号": [
+            "active"
+          ],
+          "默认语言": [
+            "active"
+          ]
+        }
+      },
+      "常住城市_values": [
+        [
+          "VAL-0000000",
+          "superseded"
+        ],
+        [
+          "VAL-9999999",
+          "active"
+        ]
+      ]
+    },
+    "C_retriever_absent": {
+      "records": 20,
+      "status_counts": {
+        "active": 20
+      },
+      "active": 20,
+      "superseded": 0,
+      "retracted": 0,
+      "attribute_status": {
+        "主管姓名": [
+          "active"
+        ],
+        "入职年份": [
+          "active"
+        ],
+        "出生城市": [
+          "active"
+        ],
+        "办公城市": [
+          "active"
+        ],
+        "午餐偏好": [
+          "active"
+        ],
+        "咖啡口味": [
+          "active"
+        ],
+        "团队名称": [
+          "active"
+        ],
+        "工位楼层": [
+          "active"
+        ],
+        "常住城市": [
+          "active"
+        ],
+        "常用编辑器": [
+          "active"
+        ],
+        "手机尾号": [
+          "active"
+        ],
+        "档案标识": [
+          "active"
+        ],
+        "紧急联系人姓氏": [
+          "active"
+        ],
+        "起床时间": [
+          "active"
+        ],
+        "运动习惯": [
+          "active"
+        ],
+        "通勤方式": [
+          "active"
+        ],
+        "邮箱域名": [
+          "active"
+        ],
+        "阅读工具": [
+          "active"
+        ],
+        "项目代号": [
+          "active"
+        ],
+        "默认语言": [
+          "active"
+        ]
+      }
+    }
+  },
+  "checks": {
+    "A_all_distinct_facts_active": true,
+    "A_no_retractions": true,
+    "B_new_value_is_active": true,
+    "B_old_version_superseded_not_destroyed": true,
+    "B_other_attributes_untouched": true,
+    "B_no_retractions": true,
+    "C_all_distinct_facts_active_without_retriever": true,
+    "C_no_retractions_without_retriever": true
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,24 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2",
+  "shard": "qwen3_5_4b_natural_memory_v2\\model.safetensors-00005-of-00005.safetensors",
+  "deployed_keys": 16,
+  "candidate_keys": 16,
+  "missing_in_candidate": [],
+  "extra_in_candidate": [],
+  "shape_mismatches": {},
+  "drop_in_compatible": true,
+  "runtime_construction": {
+    "hidden_size": 2560,
+    "router_dim": 128,
+    "num_heads": 8,
+    "max_hops": 3
+  },
+  "scores_finite": true,
+  "score_shape": [
+    2,
+    32
+  ],
+  "bank_routed_records": 3,
+  "bank_key_dim": 128,
+  "bank_routing_ok": true
+}

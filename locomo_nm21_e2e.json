@@ -1,0 +1,2262 @@
+{
+  "NM2.1": {
+    "summary": {
+      "router": "NM2.1",
+      "cases": 195,
+      "write_order": "answer-last",
+      "scorer": "whitespace-insensitive containment (eval_scoring.score_case)",
+      "accuracy_pct": 25.128205128205128,
+      "answerable_cases": 155,
+      "answerable_accuracy_pct": 18.06451612903226,
+      "unknown_cases": 40,
+      "unknown_refusal_pct": 52.5,
+      "wrong_abstention_pct": 25.806451612903224,
+      "seconds": 1598.9,
+      "per_category": {
+        "adversarial": {
+          "cases": 40,
+          "accuracy_pct": 52.5,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 40,
+          "unknown_refusal_pct": 52.5
+        },
+        "multi_hop": {
+          "cases": 40,
+          "accuracy_pct": 12.5,
+          "answerable": 40,
+          "answerable_accuracy_pct": 12.5,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "open_domain": {
+          "cases": 36,
+          "accuracy_pct": 8.333333333333334,
+          "answerable": 36,
+          "answerable_accuracy_pct": 8.333333333333334,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "single_hop": {
+          "cases": 40,
+          "accuracy_pct": 45.0,
+          "answerable": 40,
+          "answerable_accuracy_pct": 45.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "temporal": {
+          "cases": 39,
+          "accuracy_pct": 5.128205128205129,
+          "answerable": 39,
+          "answerable_accuracy_pct": 5.128205128205129,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        }
+      }
+    },
+    "rows": [
+      {
+        "category": "adversarial",
+        "query": "What does Jon's tattoo symbolize?",
+        "reply": "Jon's tattoo symbolizes freedom - dancing without worrying what people think. It serves as a reminder to follow his passions and express himself.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What spice did Tim add to the soup for flavor?",
+        "reply": "Tim added sage for a nice flavor.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What does James do to stay informed and constantly learn about game design?",
+        "reply": "James stays informed and constantly learns by watching tutorials and keeping up with developer forums for information and ideas, as staying informed and constantly learning is key!",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What happened to Caroline's son on their road trip?",
+        "reply": "Caroline's son got into an accident during the road trip, which was a scary experience, but thankfully he was okay.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What does Tim want to do after his basketball career?",
+        "reply": "Tim wants to use his platform to make a positive difference and inspire others, potentially starting a foundation and doing charity work. He believes it is important to make the most of the chances he",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Where did Sam and his mate plan to try skydiving?",
+        "reply": "I do not know where Sam and his mate plan to try skydiving. The available evidence only mentions that Sam and his mate are going to try **kayaking on the lake**, not skydiving.",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Which movie does John mention they enjoy watching during Thanksgiving?",
+        "reply": "John does not mention any specific movie they enjoy watching during Thanksgiving in the provided evidence; the available facts for John discuss holiday movies generally and family moments, while the s",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Is Oscar Melanie's pet?",
+        "reply": "Yes, Oscar is Melanie's pet, as evidenced by the phrase \"Can you show me one of Oscar?\" in the conversation where Melanie shares information about her cats.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What game did Deborah suggest as an awesome open-world game for the Nintendo Switch?",
+        "reply": "Deborah did not suggest a game as an awesome open-world game for the Nintendo Switch; the memory indicates that Jolene recommended \"Zelda BOTW for Switch\" as an awesome open-world game.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What cause did the 5K charity run organized by Maria support?",
+        "reply": "I do not have information about a 5K charity run organized by Maria; the available evidence states that John organized a 5K charity run to support veterans and their families.",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What did Sam start doing a few years back as a stress-buster?",
+        "reply": "Sam started doing watercolor painting a few years back as a stress-buster.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What helps Joanna stay distracted and brings her sadness?",
+        "reply": "Based on the provided long-term memory, there is no information indicating what helps Joanna stay **distracted** or what brings her **sadness**. The records state that Tilly helps her stay **focused**",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What did Andrew learn from reading books about economic systems?",
+        "reply": "I do not have information about Andrew learning from reading books about economic systems in the provided long-term memory. The available facts mention Andrew learning about animals, plants, and ecosy",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What type of car did Sam get after his old Prius broke down?",
+        "reply": "I do not know what type of car Sam got after his old Prius broke down. The available evidence states that Evan's old Prius broke down, and he decided to get it repaired and sell it, but it does not me",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What is Tim's position on the team he signed with?",
+        "reply": "Tim's position on the team he signed with is shooting guard.\n【长期记忆证据】\n事实：John: I'm a shooting guard for the team and our season opener is next week - so excited!",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What did Caroline and her family do while camping?",
+        "reply": "Caroline and her family explored nature, roasted marshmallows around the campfire, and went on a hike.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "How many people attended the gaming party hosted by Joanna in June 2022?",
+        "reply": "7 people attended the gaming party hosted by Joanna in June 2022.\n\n**Evidence:** \"There were 7 people that attended, and 6 of them said they'd want to do it again next month!\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What inspired James to create his painting?",
+        "reply": "I do not have information about James creating a painting; the available evidence states that James was inspired by **Witcher 3** to create a game, not a painting. The relevant memory is: \"James: Play",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Which type of pizza did Audrey suggest trying first to someone new to Italian cuisine?",
+        "reply": "I do not have information in the provided long-term memory about Audrey suggesting a specific type of pizza for someone new to Italian cuisine. The available records discuss Audrey's experience with w",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What electronics issue has been frustrating Evan lately?",
+        "reply": "Evan has not reported any electronics issues; the frustration regarding a malfunctioning navigation app belongs to Sam, not Evan.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What new item did Calvin buy recently?",
+        "reply": "Based on the provided long-term memory, there is no record of Calvin buying any new item. The memory indicates that **Dave** bought a **new vintage camera** this month, while Calvin discussed having a",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What gift did Sam receive from a close friend?",
+        "reply": "I do not have information about a gift Sam received from a close friend in the provided memory. The records indicate that Evan received a 1968 Kustom K-200A vintage guitar as a gift from a close frien",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "How did the drought impact the homes in John's old area?",
+        "reply": "Based on the provided long-term memory, there is no information about a drought affecting John's old area; the records state that his area was hit by a **nasty flood** last week, which ruined lots of ",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What charity event did Tim organize recently in 2024?",
+        "reply": "I do not have information about a charity event organized by Tim in 2024. The available memory records mention Tim organizing an event in the past with the phrase \"Great job organizing the event. That",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What type of show did Joanna host where she taught vegan ice cream recipes?",
+        "reply": "Based on the provided long-term memory, there is no record of Joanna hosting a show; the memory indicates that **Nate** is the one who taught vegan ice cream recipes on his own cooking show.\n\nFact: \"L",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What nature concept do watercolor painting classes emphasize according to Sam?",
+        "reply": "According to the provided memory, the watercolor painting classes emphasize observing nature and painting what we see.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Which city in Ireland will John be staying in during his semester abroad?",
+        "reply": "Based on the provided long-term memory, there is no information about which city John will be staying in. The memory only indicates that Tim is going to Ireland for a semester, while John is the one w",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What habit is Evan trying to change in terms of diet?",
+        "reply": "Evan is trying to change the habit of eating less processed food and sugary snacks, even though he loves ginger snaps.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What is Joanna's favorite book series about?",
+        "reply": "Joanna's favorite book series is described as having adventures, magic, and great characters - it's a must-read!",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What is special about the bench at the park near Jolene's house?",
+        "reply": "The bench at the park near Jolene's house is special because it holds a lot of special memories for her and her mom, where they would come to chat about dreams and life, and it is full of good moments",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Who did Joanna plan to invite to her gaming party in June 2022?",
+        "reply": "I do not have information about who Joanna planned to invite to her gaming party in June 2022. The available evidence mentions that Nate is organizing a gaming party two weekends later from the curren",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What type of cars does Calvin work on at his shop?",
+        "reply": "Dave works on all kinds of cars at the shop - from regular maintenance to full restorations of classic cars. It keeps me busy and happy!",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What is Calvin's new business venture as of 1 May, 2023?",
+        "reply": "Based on the provided long-term memory, there is no information about a business venture for Calvin as of May 1, 2023. The records only mention Dave opening his own car maintenance shop. I do not know",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What does Nate use to remember his dog from Michigan?",
+        "reply": "Nate does not have a dog from Michigan; the memory indicates that **Joanna** used to have a dog back in Michigan with that name, but then she got allergic and they had to get rid of her. The name help",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What kind of painting does Tim have in his room as a reminder?",
+        "reply": "I do not have information about a painting in Tim's room. The available evidence states that **John** has a painting in his room to remind him to stay true and be a leader in everything he does.",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Why did Jon combine his clothing business with dance?",
+        "reply": "Based on the provided long-term memory, there is no evidence that Jon combined a clothing business with dance. The dialogue indicates that **Gina** is the one who has a fashion store and combines her ",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "Why did Dave get his guitar customized with a shiny finish?",
+        "reply": "I do not have information about Dave getting his guitar customized with a shiny finish; the available evidence states that Calvin customized his guitar with a shiny finish because it gives it a unique",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What kind of counseling workshop did Melanie attend recently?",
+        "reply": "I do not have information about which counseling workshop Melanie attended recently. The available records indicate that Caroline attended an LGBTQ+ counseling workshop last Friday, but there is no me",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What did Joanna take to the beach in Tampa?",
+        "reply": "Joanna did not take anything to the beach in Tampa; that activity was done by Nate, who took his turtles to the beach in Tampa yesterday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "adversarial",
+        "query": "What temporary job did Jon take to cover expenses?",
+        "reply": "Based on the provided long-term memory, there is no information about what specific temporary job Jon took to cover expenses. The memory states: \"I got a temp job to help cover expenses while I look f",
+        "written": 16,
+        "correct": true,
+        "matched": [],
+        "refused": true,
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What movies have both Joanna and Nate seen?",
+        "reply": "Based on the provided long-term memory, both Joanna and Nate have seen the following movies:\n*   \"The Lord of the Rings\" Trilogy (Joanna)\n*   \"Little Women\" (Joanna and Nate)\n\nJoanna mentioned she wat",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What activities does Nate do with his turtles?",
+        "reply": "Nate gives the turtles a bath before playtime.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What places has Joanna submitted her work to?",
+        "reply": "Joanna has submitted her work to a film contest and film festivals.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What kind of games has James tried to develop?",
+        "reply": "James has developed a football simulator and a game combining his passion for gaming and programming.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "Did Jolene teach herself how to play the console?",
+        "reply": "Yes, Jolene taught herself how to play, as she stated: \"I taught myself, but my dad was always supportive and my mom would play games with me.\"",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "yes"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "Which TV series does Tim mention watching?",
+        "reply": "Tim mentions watching the TV series \"The Wheel of Time\".",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What activities has Dave participated in with his friends?",
+        "reply": "Dave has participated in the following activities with his friends: a road trip where they saw stunning countryside and drove on winding roads; hanging out at parks; arranging regular walks together i",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What health scares did Sam and Evan experience?",
+        "reply": "Based on the provided long-term memory, here are the health scares experienced by Sam and Evan:\n\n*   **Sam**: Experienced a severe stomachache last weekend that ended up in the ER, which was diagnosed",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "Which places or events have John and James planned to meet at?",
+        "reply": "Based on the provided long-term memory, there is no information indicating that John and James have planned to meet at any specific place or event. The records show James planning to go to a baseball ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "What martial arts has John done?",
+        "reply": "Based on the provided long-term memory, John has practiced **kickboxing** and **taekwondo**.\n\n*   **Kickboxing**: \"I'm doing kickboxing and it's giving me so much energy.\"\n*   **Taekwondo**: \"I'm off ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many times has Melanie gone to the beach in 2023?",
+        "reply": "I do not know how many times Melanie went to the beach in 2023. The available memory states that they usually go to the beach once or twice a year, but it does not specify the exact number for 2023.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "2"
+        ],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What kind of interests do Joanna and Nate share?",
+        "reply": "Joanna and Nate share similar interests in movies, specifically action and sci-fi genres. Nate enjoys action and sci-fi movies because the effects are cool, while Joanna also likes the idea and acting",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What did Audrey get wtih having so many dogs?",
+        "reply": "Audrey got some more drawings on her tattoo after getting a tattoo of her four dogs.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "Who supports Caroline when she has a negative experience?",
+        "reply": "When Caroline has a negative experience, she is supported by people who accept and support her, as she noted: \"It's been so helpful to have people around me who accept and support me, so I know I'll b",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What does John like about Lebron James?",
+        "reply": "John likes LeBron James for his determination, heart, skills, and leadership, noting that \"LeBron is the man - love his skills and leadership\" and that \"LeBron's moments of determination and heart are",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What does Jon's dance studio offer?",
+        "reply": "Jon's dance studio offers dance classes, workshops, a dance competition, one-on-one mentoring, and training to help dancers reach their full potential.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many screenplays has Joanna written?",
+        "reply": "Joanna has written three screenplays, as confirmed by the phrase \"Is that your third one?\" in the conversation with Nate.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "three"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What are the skills that Nate has helped others learn?",
+        "reply": "Based on the provided long-term memory, Nate has helped others learn how to make dairy-free desserts.\n\n**Fact:** Nate: Just been helping some friends reset their high scores at the international tourn",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What does help Calvin stay connected to the creative process?",
+        "reply": "Staying connected and up-to-date on world events is important to Calvin. It helps his music stand out by incorporating unique perspectives and connects him better with his fans. Plus, it keeps him mot",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What gaming equipments did John buy or refurbish?",
+        "reply": "John bought some new devices and refurbished his gaming desk.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What items has Audrey bought or made for her dogs?",
+        "reply": "Audrey has bought toys and new beds for her dogs.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "Which ailment does Sam have to face due to his weight?",
+        "reply": "Based on the provided long-term memory, there is no specific ailment mentioned that Sam faces directly due to his weight; the memory only states that his weight is a \"serious health risk\" which could ",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "gastritis"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many times has Jolene been to France?",
+        "reply": "Based on the provided long-term memory, there is no information about how many times Jolene has been to France. The memories only mention specific instances: she received a pendant in Paris in 2010 an",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many tournaments has Nate won?",
+        "reply": "Nate has won a total of 6 tournaments: his first tournament last week, a regional tournament last week, a big Valorant tournament in the final last Saturday, an international tournament yesterday, a f",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What is the recurring dream that Sam keeps having?",
+        "reply": "The recurring dream Sam keeps having is where he is flying over skyscrapers.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What animal do both Nate and Joanna like?",
+        "reply": "Based on the provided long-term memory, there is no evidence that both Nate and Joanna like the same animal. Nate explicitly states he is drawn to **turtles** (\"I'm drawn to turtles. They're unique...",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Turtles."
+        ],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What do Jon and Gina both have in common?",
+        "reply": "Based on the provided long-term memory evidence, there is no information stating what Jon and Gina have in common. The records show they are friends who have discussed dance preferences, Gina's past d",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "What has John cooked?",
+        "reply": "John has cooked sage, honey garlic chicken with roasted veg, and a tasty soup.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many times has Joanna's scripts been rejected?",
+        "reply": "Based on the provided long-term memory, there is no information indicating how many times Joanna's scripts have been rejected. The records mention \"another rejection from a production company\" and \"a ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "What are John's goals for his career that are not related to his basketball skills?",
+        "reply": "John's goals for his career that are not related to his basketball skills include making a difference through charity or inspiring people, as well as looking into more endorsements and building his br",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "How many of Joanna's writing have made it to the big screen?",
+        "reply": "Based on the provided long-term memory, it is not possible to determine the exact number of Joanna's writing projects that have made it to the big screen. The evidence states:\n*   \"Another movie scrip",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What shelters does Maria volunteer at?",
+        "reply": "Maria volunteers at a homeless shelter and a local dog shelter.\n- Homeless shelter: \"I donated my old car to a homeless shelter I volunteer at yesterday.\"\n- Dog shelter: \"I just started volunteering a",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What similar sports collectible do Tim and John own?",
+        "reply": "Tim and John both own a basketball as a sports collectible. Tim's basketball is signed by his favorite player and serves as a reminder of his hard work, while John's basketball reminds him of the bond",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What are Dave's hobbies other than fixing cars?",
+        "reply": "Based on the provided long-term memory, Dave's hobbies include:\n*   \"Thanks, Calvin! I'm loving this job. I get to work with awesome mechanics and share my knowledge about cars.\"\n*   \"It's a cool proj",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What pets does Nate have?",
+        "reply": "Nate has a pet named Max, as evidenced by the phrase: \"I just got a new addition to the family, this is Max!\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What schools did John play basketball in and how many years was he with his team during high school?",
+        "reply": "John played basketball in middle school and high school, and he was teammates for four years in high school.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What games has John played with his friends at charity tournaments?",
+        "reply": "John played Fortnite, CS:GO, Overwatch, and Apex Legends with his friends at charity tournaments.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What outdoor activities has Andrew done other than hiking in nature?",
+        "reply": "Andrew has done rock climbing, kayaking, and bungee jumping. He also went camping and fishing with his girlfriend Toby, and attended a rock climbing class with friends.\n\n*   Rock climbing\n*   Kayaking",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What hobby did Evan start practicing a few years ago that he enjoys?",
+        "reply": "Evan started practicing painting a few years ago, which he enjoys as a great stress-buster. The key phrase from the evidence is: \"Evan: Yep, it's a great stress-buster. I started doing this a few year",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "What type of volunteering have John and Maria both done?",
+        "reply": "Based on the provided long-term memory, there is no information detailing the specific types of volunteering John and Maria have done. The records mention John joining a \"service-focused online group\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Does Dave's shop employ a lot of people?",
+        "reply": "Based on the provided long-term memory, there is no information about the number of employees at Dave's shop. The records mention Dave's hard work, his dream of opening the shop, and his satisfaction ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What is a Star Wars book that Tim might enjoy?",
+        "reply": "Tim enjoys Star Wars, as he stated: \"Definitely Star Wars! It's my favorite and never gets old.\" While Tim's favorite book is Harry Potter, which he described as \"so immersive,\" there is no specific S",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "In what country did Jolene buy snake Seraphim?",
+        "reply": "Jolene bought her pet snake Seraphim in Paris, France. The specific evidence states: \"I bought it a year ago in Paris.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "What state did Nate visit?",
+        "reply": "I do not have information about which state Nate visited.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What other exercises can help John with his basketball performance?",
+        "reply": "I do not have information about other exercises that can help John with his basketball performance. The available memory only states that John figured out a schedule balancing basketball stuff and str",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+        "reply": "Andrew can potentially improve his stress and accommodate his living situation with his dogs by going for a hike, as he has expressed missing the peace and feeling of freedom that comes with it. He al",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Which country do Calvin and Dave want to meet in?",
+        "reply": "Calvin and Dave want to meet in Boston.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Which popular time management technique does Tim use to prepare for exams?",
+        "reply": "Tim uses the Pomodoro technique, specifically breaking up studying into 25 minutes on followed by 5 minutes off for something fun, to prepare for exams.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Pomodoro technique"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "What is the game with different colored cards that was John talking about with James?",
+        "reply": "Based on the provided long-term memory, the specific name of the game John played with James is not confirmed, as John explicitly stated he forgot it. The only details available are that it involved m",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+        "reply": "Based on the provided long-term memory, there is no information about Tim's location in September 2023 or specific plans to visit Universal Studios in that month. The memory only states that Tim menti",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+        "reply": "Evan prefers camping trips in the outdoors with his family, as evidenced by his recent road trip to Jasper where he drove through the Icefields Parkway and saw gorgeous glaciers and lakes.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Is the friend who wrote Deborah the motivational quote no longer alive?",
+        "reply": "Yes, the friend who wrote the quote to Deborah is no longer alive, as the memory states: \"This was written to me by a friend who, unfortunately, will never be able to support me. I miss him here.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "What alternative career might Nate consider after gaming?",
+        "reply": "Based on the provided long-term memory, there is no information about Nate considering an alternative career after gaming. The available facts discuss his work with pets, turtles, and a second project",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
+        "reply": "Based on the provided long-term memory, there is no information about Tim's book collections or any specific shops he would enjoy visiting in New York City. The memory only contains Tim's statements a",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Would Melanie be more interested in going to a national park or a theme park?",
+        "reply": "Based on the provided long-term memory, there is no information indicating whether Melanie prefers national parks or theme parks. The memories mention she enjoys family camping trips where they roast ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Is it likely that Nate has friends besides Joanna?",
+        "reply": "Based on the provided long-term memory, there is no evidence to suggest whether Nate has friends besides Joanna. The records only show interactions between Nate and Joanna regarding video games, movie",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "In what country was Jolene during summer 2022?",
+        "reply": "Jolene was in Bogota during summer 2022.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Does Evan live close to a beach or mountains?",
+        "reply": "Evan lives close to a beach, as he often goes to \"this peaceful place close to my home\" which is \"by the beach\" to relax and unwind.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "beach"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "How many hikes has Joanna been on?",
+        "reply": "I do not know how many hikes Joanna has been on, as the provided evidence only mentions she took a picture on a hike last summer near Fort Wayne and loved a spot on a hike, but does not specify a tota",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Which country was Evan visiting in May 2023?",
+        "reply": "I do not know which country Evan was visiting in May 2023 based on the provided long-term memory evidence. The available facts mention Evan taking a family road trip to Jasper, but they do not specify",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "How old is Jolene?",
+        "reply": "I do not know Jolene's age. The available long-term memories mention her studies, engineering internship, relationships, and activities like lasagna, beach trips, and virtual conferences, but no speci",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Which US state was Sam travelling in during October 2023?",
+        "reply": "Based on the provided long-term memory, there is no information about Sam traveling in October 2023. The only travel-related fact states: \"We're traveling through Lake Tahoe!\" However, the specific st",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What job might Maria pursue in the future?",
+        "reply": "Based on the provided long-term memory, there is no information about a specific job Maria plans to pursue in the future. The evidence only details her current activities as a volunteer at a shelter, ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Would Melanie go on another roadtrip soon?",
+        "reply": "Based on the provided long-term memory, there is no information indicating whether Melanie plans to go on another road trip soon. The records mention a road trip that occurred \"this past weekend\" and ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Why didn't John want to go to Starbucks?",
+        "reply": "John did not want to go to Starbucks because he suggested, \"Maybe we can have a beer somewhere?\" instead.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Is Deborah married?",
+        "reply": "Yes, Deborah is married. Evidence: \"Deborah: That beach is super special to me. It's where I got married and discovered my love for surfing. It's always filled with joy and peace.\" and \"Deborah: My hu",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "yes"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he address them?",
+        "reply": "Sam faces challenges including a severe stomachache diagnosed as gastritis, a phone that gives him a hard time, and the difficulty of reducing soda and candy intake. He addresses these by prioritizing",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Would Calvin enjoy performing at the Hollywood Bowl?",
+        "reply": "Yes, Calvin enjoys performing live, as he stated: \"Performing live always fuels my soul! I love the rush and connection with the crowd, the feeling's indescribable—it's an absolute high!\" and \"I felt ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What underlying condition might Joanna have based on her allergies?",
+        "reply": "Based on the provided memory, it is not possible to determine a specific underlying condition Joanna has, as the text only states her allergies without linking them to a medical condition. The evidenc",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Would John be open to moving to another country?",
+        "reply": "Based on the provided long-term memory, there is no information indicating whether John is open to moving to another country. The records mention his political campaign, visits to a veteran's hospital",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+        "reply": "Based on the provided long-term memory, Andrew enjoys **cooking** as an indoor activity, which he finds relaxing and creative, though the specific connection to making his dog happy is not explicitly ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+        "reply": "Based on the provided long-term memory, there is no information about Melanie's preference for Vivaldi's \"The Four Seasons\" or whether she would likely enjoy it. The only confirmed fact regarding her ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+        "reply": "Based on the provided long-term memory, it is not possible to determine if Caroline would still want to pursue counseling as a career if she hadn't received support growing up. The evidence states tha",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "Does James live in Connecticut?",
+        "reply": "Based on the provided long-term memory, there is no information confirming that James lives in Connecticut. The only location mentioned is that James adopted a pup from a shelter in Stamford, which is",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "open_domain",
+        "query": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+        "reply": "Based on the provided long-term memory, there is no specific information about a gift being discussed or recommended for Evan and Sam to encourage their healthy lifestyles. The memories focus on their",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "open_domain",
+        "query": "What additional country did James visit during his trip to Canada?",
+        "reply": "James visited the city of Nuuk during his trip to Canada.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What games does Jolene recommend for Deborah?",
+        "reply": "I do not have information about specific games Jolene recommends for Deborah in the provided long-term memory evidence. The records mention Deborah's interest in detective games and their preference t",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What does John believe is important for children regarding veterans?",
+        "reply": "John believes it is important to teach kids about veterans and what they did for us. You're doing a great thing - we need more people like you!",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What novel is Evan reading that he finds gripping?",
+        "reply": "Evan is reading \"The Great Gatsby\", which he describes as so gripping that he can't stop thinking about it.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "The Great Gatsby"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "How do Jon and Gina both like to destress?",
+        "reply": "Based on the provided long-term memory, there is no information about how Jon and Gina destress. The records only mention their conversations about dance preferences, a past competition win, and busin",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What kind of experiences are Audrey's dogs the best companions for?",
+        "reply": "Audrey's dogs are the best companions for exploring the great outdoors, as they are just so chill and happy in nature.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Exploring the great outdoors"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "When did Calvin first get interested in cars?",
+        "reply": "Calvin never mentioned getting interested in cars; the available evidence only shows that Dave was hooked on cars after his dad took him to his first car show when he was 10 years old.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What book recommendation did Tim give to John for the trip?",
+        "reply": "Tim recommended the fantasy novel by Patrick Rothfuss to John for the trip.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Why had Evan been going through a tough time lately?",
+        "reply": "Evan had been going through a tough time because he lost his job last month, which has been pretty rough.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "How often does John take his kids to the park?",
+        "reply": "John takes his kids to the park a few times a week. It's great for family bonding and letting the kids run around. We had a great time last weekend - they really enjoyed the carefree joy.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "A few times a week"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Why did James sign up for a cooking class?",
+        "reply": "James signed up for a cooking class because he felt that he wanted to learn something new, as he never liked cooking before. At the first lesson, he prepared several simple dishes and got a great omel",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "He wanted to learn something new"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "How did Calvin feel about performing with someone he admires?",
+        "reply": "Calvin felt it was unreal and a dream come true, stating that the energy and crowd made him realize how much music means to him, describing it as his passion and purpose.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What does the photo on Joanna's cork board remind her of?",
+        "reply": "The photo on Joanna's cork board reminds her of the love and encouragement from her family every day.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "love and encouragement from her family"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What was the focus of John's recent research and writing on his blog?",
+        "reply": "John's recent focus on his blog was on politics and the government, specifically highlighting the need for better education and infrastructure.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What painting did Evan share with Sam in October?",
+        "reply": "Evan shared a sunset painting inspired by a vacation a few years back and a cactus painting from a road trip last month.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Which two fantasy novels does Tim particularly enjoy writing about?",
+        "reply": "Tim particularly enjoys writing about Harry Potter and Game of Thrones.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Harry Potter and Game of Thrones"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What kind of dance piece did Gina's team perform to win first place?",
+        "reply": "Gina's team won first place at a regionals at age fifteen, but the specific type of dance piece is not mentioned in the evidence.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What community service did Maria mention that she was involved in on 31 July, 2023?",
+        "reply": "I do not have information about Maria's activities on July 31, 2023, in the provided long-term memory. The only community service mentioned is that she dropped off baked goods at a homeless shelter la",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What genre is the novel that Tim is writing?",
+        "reply": "Based on the provided long-term memory, there is no information specifying the genre of the novel Tim is writing. The memory states he is \"in the middle of fantasy novel,\" but does not provide further",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Fantasy"
+        ],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What was the new plant Jolene got used as a reminder for on 30 August, 2023?",
+        "reply": "Jolene got this as a reminder to nurture herself and embrace fresh starts.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "To nurture herself and embrace fresh starts"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What is the name of Maria's puppy she got two weeks before August 11, 2023?",
+        "reply": "Maria's puppy is named Coco.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Coco"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+        "reply": "Jolene suggested **Zelda BOTW for Switch** as an awesome open-world game for the Nintendo Switch.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Zelda BOTW"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What projects is Jolene planning for next year?",
+        "reply": "Jolene is planning to work on projects focused on developing renewable energy, like solar, to help communities and reduce dependence on non-renewables, and finding ways to supply clean water to those ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What is the favorite game Jolene plays with her partner?",
+        "reply": "Jolene's favorite game with her partner is \"It takes two,\" which is described as a fun team-strategy game that is competitive and serves as a great way for them to bond.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "It takes two"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What activity does Evan do to keep himself busy while healing his knee?",
+        "reply": "Evan does his favorite watercolor painting to keep himself busy while healing his knee.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Watercolor painting"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "How old are Deborah's cats?",
+        "reply": "Deborah's cats are 8 years old (Max) and 5 years old (Luna).",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What motivated Tim to keep pushing himself to get better in writing and reading?",
+        "reply": "Tim was motivated to keep pushing himself to get better in writing and reading by remembering why he loves what he does, specifically writing and reading, which helps him stay motivated and push himse",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What made Gina choose the furniture and decor for her store?",
+        "reply": "Gina chose furniture that looks great and is comfy too, and she wanted to make the place look like her own style and make her customers feel cozy, with the chandelier adding a nice glam feel while mat",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "How did Maria start volunteering at the homeless shelter?",
+        "reply": "Maria started volunteering at the homeless shelter about a year ago after witnessing a family struggling on the streets, which made her want to help, so she reached out to the shelter and asked if the",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Who does James support in football matches?",
+        "reply": "James supports Liverpool in football matches, as evidenced by his statement: \"As I like to say, there is no sport better than football, no club better than Liverpool! I don't miss a single match of th",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Liverpool"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+        "reply": "John faced self-doubt as one of the biggest challenges in his journey to becoming assistant manager, noting that \"the worst was self-doubt\" and that there were moments when he \"questioned if I was on ",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "self-doubt"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What does Gina's tattoo symbolize?",
+        "reply": "Gina's tattoo symbolizes freedom - dancing without worrying what people think, serving as a reminder to follow her passions and express herself.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Why did Jolene get the new plant on 30 August, 2023?",
+        "reply": "I do not have information about why Jolene got the new plant on 30 August, 2023. The available memory states: \"By the way, I have a new plant.\" but does not provide a reason for the date or the acquis",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What is Nate's favorite movie trilogy?",
+        "reply": "I do not have information about Nate's favorite movie trilogy in the provided long-term memory; the evidence only mentions his favorite trilogy is a book series with adventures, magic, and great chara",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What did John receive a certificate for?",
+        "reply": "I do not have information in the provided long-term memory about what John received a certificate for. The records mention John finishing a degree and his plans regarding education and infrastructure,",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "single_hop",
+        "query": "What encouragement does Nate give to Joanna after her setback?",
+        "reply": "Nate tells Joanna: \"Bummer, Joanna. Is this the one you sent to a film contest? Rejections suck, but don't forget they don't define you. Keep at it and you'll find the perfect opportunity.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What did John do that put a strain on his wallet?",
+        "reply": "John put a strain on his wallet because his car broke down last Friday on his way to work.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "His car broke down"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What event is Nate organizing in June 2022?",
+        "reply": "Nate is organizing a gaming party in June 2022.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "A gaming party"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "Where did Maria get the idea for the castle shadow box in her home?",
+        "reply": "Maria got the idea from that trip to England a few years ago - I was mesmerized by the castles. I wanted to bring that same magic to my home, like a reminder of the world's beauty. I made a painting t",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "England"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What special memories does Audrey have with her childhood dog, Max?",
+        "reply": "Audrey has fond memories of taking long walks in the neighborhood with Max, exploring new paths while he sniffed and marked his territory, and sharing her worries and hopes with him as a great listene",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_hop",
+        "query": "What city did Tim suggest to John for the team trip next month?",
+        "reply": "Tim suggested Edinburgh, Scotland for the team trip next month. The key phrase from the memory is: \"Edinburgh, Scotland would be great for a magical vibe. It's the birthplace of Harry Potter and has a",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "Edinburgh, Scotland"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did John resume playing drums in his adulthood?",
+        "reply": "Based on the provided long-term memory, there is no information about when John resumed playing drums in his adulthood. The only relevant fact states: \"John: Thanks, James! I play drums too! Here's a ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Dave return from San Francisco?",
+        "reply": "Dave returned from San Francisco yesterday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Caroline draw a self-portrait?",
+        "reply": "Caroline drew a self-portrait last week.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Deborah lead a meditation session during the sunset?",
+        "reply": "Deborah led a meditation yoga session to the elderly at a local care home last week during sunset.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "Which month was John in Italy?",
+        "reply": "John was in Italy last month.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Andrew and his girlfriend go on a wine tasting trip?",
+        "reply": "Andrew and his girlfriend went on a wine tasting trip last weekend, as stated in the memory: \"My girlfriend and I went to this awesome wine tasting last weekend.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "In which month's game did John achieve a career-high score in points?",
+        "reply": "John achieved a career-high score of 40 points in the game last month, as stated in the memory: \"Last week I scored 40 points, my highest ever\".",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did someone write Joanna a touching letter?",
+        "reply": "Last week, someone wrote me a letter after reading an online blog post I made about a hard moment in my life. Their words touched me; they said my story had brought them comfort. It was awesome to rea",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "How long did it take for James to complete his Witcher-inspired game?",
+        "reply": "I do not know how long it took for James to complete his Witcher-inspired game, as the provided long-term memory evidence does not contain information about a Witcher-inspired game or its development ",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Jon start expanding his studio's social media presence?",
+        "reply": "The provided long-term memory does not contain information about when Jon started expanding his studio's social media presence. It only states that he is currently expanding it, offering workshops, an",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Gina develop a video presentation to teach how to style her fashion pieces?",
+        "reply": "The provided long-term memory does not contain information about when Gina developed the video presentation. The evidence only states that she has developed it, without a specific date or time referen",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When will Tim leave for Ireland?",
+        "reply": "Tim will leave for Ireland next month, as stated in the memory: \"Next month, I'm off to Ireland for a semester.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Melanie buy the figurines?",
+        "reply": "Melanie bought the figurines yesterday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Calvin and Frank Ocean start collaborating?",
+        "reply": "Calvin and Frank Ocean started collaborating in August last year when they met at a festival.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Caroline join a new activist group?",
+        "reply": "Caroline joined a new LGBTQ activist group last Tuesday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "How long did Evan and his partner date before getting married?",
+        "reply": "I do not know how long Evan and his partner dated before getting married, as the provided long-term memory evidence does not contain information about their relationship duration or marriage. The avai",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Evan finish the painting that's hanging in the exhibit?",
+        "reply": "Evan finished the painting a few days ago, as stated in the fact: \"This is a contemporary figurative painting that I've finished few days ago, emphasizing the emotional state through expressive brushw",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Nate win his first video game tournament?",
+        "reply": "Nate won his first video game tournament last week, as stated in the fact: \"Nate: Hey Joanna! That's cool! I won my first video game tournament last week - so exciting!\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "Which year did Jolene and her partner start dating?",
+        "reply": "Jolene and her partner started dating three years ago, as they have been together for three years. We're not married yet but we've been together for three years. We're taking it slow and loving the ri",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Caroline and Melanie go to a pride fesetival together?",
+        "reply": "Caroline stated: \"We had a blast last year at the Pride fest.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did James ask Samantha to be his girlfriend?",
+        "reply": "James asked Samantha to become his girlfriend yesterday, when they were at the theater.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Gina team up with a local artist for some cool designs?",
+        "reply": "I do not have information about when Gina teamed up with a local artist for some cool designs. The available evidence only states that she \"just teamed up with a local artist for some cool designs\" wi",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Maria join a gym?",
+        "reply": "Maria joined a gym last week.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Andrew go rock climbing?",
+        "reply": "Andrew went rock climbing last Sunday, as he mentioned: \"Last Sunday was awesome - my friends and I took a rock climbing class and I made it to the top!\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When is Evan planning a big family reunion?",
+        "reply": "Evan is planning a big family reunion next summer.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did John take a trip to the Rocky Mountains?",
+        "reply": "John took a trip to the Rocky Mountains last year.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Calvin attend a gala in Boston?",
+        "reply": "Calvin attended a fancy gala in Boston yesterday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Nate win his fourth video game tournament?",
+        "reply": "Nate won his fourth video game tournament on Friday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "Where was Calvin located in the last week of October 2023?",
+        "reply": "Calvin was located in his Japanese house in the last week of October 2023, where he threw a small party for his new album.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Calvin buy his second Ferrari?",
+        "reply": "根据现有记忆，Calvin 提到他上周买了一辆新的法拉利（\"Last week, I got a new Ferrari!\"），但并未说明这是他的第二辆法拉利，也未提供具体的购买日期。因此，关于他购买第二辆法拉利的具体时间，记忆中没有明确证据。\n\n已知事实：\n- Calvin",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Gina get her tattoo?",
+        "reply": "Gina got the tattoo a few years ago.",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "A few years ago"
+        ],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Gina get accepted for the design internship?",
+        "reply": "I do not know when Gina got accepted for the design internship. The available evidence states she \"just got accepted for a fashion internship\" but does not specify a date.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "When did Jolene and her partner try scuba diving lessons?",
+        "reply": "Jolene and her partner tried scuba diving lessons last Friday.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did John get his degree?",
+        "reply": "John graduated last week.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Joanna finish her first screenplay?",
+        "reply": "Joanna finished her first full screenplay and printed it last Friday, as stated in the fact: \"Joanna: Woo! I finally finished my first full screenplay and printed it last Friday.\"",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Deborah go for a bicycle ride with Anna?",
+        "reply": "I do not know when Deborah went for a bicycle ride with Anna. The available evidence states that Deborah went biking with her neighbor last week, but it does not mention Anna.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "temporal",
+        "query": "Did Andrew have a pet dog during March 2023?",
+        "reply": "Based on the provided long-term memory, there is no information confirming whether Andrew had a pet dog during March 2023. The records show Andrew's desire for a dog (\"It'd be so great to have a furry",
+        "written": 16,
+        "correct": true,
+        "matched": [
+          "No"
+        ],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did Nate take time off to chill with his pets?",
+        "reply": "Nate took time off this weekend to chill with his pets.",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": false,
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "temporal",
+        "query": "When did James depart for his trip to Canada?",
+        "reply": "Based on the provided long-term memory, there is no information about James departing for a trip to Canada. The memory only states that James plans to visit Vancouver and will return on July 20, but i",
+        "written": 16,
+        "correct": false,
+        "matched": [],
+        "refused": true,
+        "abstained": false,
+        "wrongly_abstained": true
+      }
+    ]
+  }
+}

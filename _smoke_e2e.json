@@ -1,0 +1,432 @@
+{
+  "deployed": {
+    "summary": {
+      "router": "deployed",
+      "cases": 11,
+      "accuracy_pct": 9.090909090909092,
+      "answerable_cases": 8,
+      "answerable_accuracy_pct": 0.0,
+      "unknown_cases": 3,
+      "unknown_refusal_pct": 33.333333333333336,
+      "wrong_abstention_pct": 37.5,
+      "seconds": 19.5,
+      "per_category": {
+        "(policy)": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 0.0
+        },
+        "conflict_update": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "distractor_128": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "distractor_32": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "forget_correction": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 0.0
+        },
+        "long_context": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "multi_hop": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "paraphrase": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "random_position": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "single_fact": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "unknown_abstention": {
+          "cases": 1,
+          "accuracy_pct": 100.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 100.0
+        }
+      }
+    },
+    "rows": [
+      {
+        "category": "(policy)",
+        "query": "请问对象测试实体0000的驻地代号为？",
+        "reply": "关于对象测试实体 0000 的驻地代号，现有资料中未包含该实体的具体信息",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "conflict_update",
+        "query": "我的提醒时间最新值是什么？",
+        "reply": "作为一个人工智能助手，我**无法访问您的设备、系统或任何外部数据**，因此不知道您具体的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "distractor_128",
+        "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+        "reply": "您的常用语言是**中文**。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "distractor_32",
+        "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+        "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "forget_correction",
+        "query": "我的项目代号是什么？如果已经删除，请回答没有记录。",
+        "reply": "作为一个人工智能助手，我**没有访问权限**来查询或记录您的个人项目信息。我的设计原则",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_context",
+        "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+        "reply": "您好！由于我无法访问您之前的对话历史或上下文（每次对话对我来说都是全新的开始），目前我**不知道您的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "请通过项目负责人关系，找出项目项目-P-KP2F9GHO负责人的工作代号。",
+        "reply": "不知道。当前长期记忆中未包含关于项目-P-KP2F9GHO的负责人信息，因此无法通过",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "paraphrase",
+        "query": "我之前登记的最喜欢的水果内容是什么？",
+        "reply": "您好，作为一个人工智能助手，我**无法访问或查看您个人的历史数据、账户信息或之前登记",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "random_position",
+        "query": "随机位置事实测试：我的常用语言是什么？",
+        "reply": "您的常用语言是**中文**。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_fact",
+        "query": "跨对话后请回答：我的默认输出风格是什么？",
+        "reply": "作为 Qwen3.5，我的默认输出风格是**专业、简洁、准确且富有同理心**的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_abstention",
+        "query": "我的不存在的个人属性-0008000是什么？如果没有记录，请明确说不知道。",
+        "reply": "不知道。\n\n“不存在的个人属性 -0008000\"并非任何已知的系统、数据库",
+        "written": 4,
+        "correct": true,
+        "matched": [],
+        "abstained": true,
+        "wrongly_abstained": false
+      }
+    ]
+  },
+  "V2-128-v6": {
+    "summary": {
+      "router": "V2-128-v6",
+      "cases": 11,
+      "accuracy_pct": 9.090909090909092,
+      "answerable_cases": 8,
+      "answerable_accuracy_pct": 0.0,
+      "unknown_cases": 3,
+      "unknown_refusal_pct": 33.333333333333336,
+      "wrong_abstention_pct": 37.5,
+      "seconds": 17.9,
+      "per_category": {
+        "(policy)": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 0.0
+        },
+        "conflict_update": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "distractor_128": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "distractor_32": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "forget_correction": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 0.0
+        },
+        "long_context": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "multi_hop": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "paraphrase": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "random_position": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "single_fact": {
+          "cases": 1,
+          "accuracy_pct": 0.0,
+          "answerable": 1,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "unknown_abstention": {
+          "cases": 1,
+          "accuracy_pct": 100.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 1,
+          "unknown_refusal_pct": 100.0
+        }
+      }
+    },
+    "rows": [
+      {
+        "category": "(policy)",
+        "query": "请问对象测试实体0000的驻地代号为？",
+        "reply": "关于对象测试实体 0000 的驻地代号，现有资料中未包含该实体的具体信息",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "conflict_update",
+        "query": "我的提醒时间最新值是什么？",
+        "reply": "作为一个人工智能助手，我**无法访问您的设备、系统或任何外部数据**，因此不知道您具体的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "distractor_128",
+        "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+        "reply": "您的常用语言是**中文**。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "distractor_32",
+        "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+        "reply": "您提供的消息中**没有包含任何关于工作地点的信息**。\n\n如果您有具体的文本或上下文想要我从中提取工作地点",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "forget_correction",
+        "query": "我的项目代号是什么？如果已经删除，请回答没有记录。",
+        "reply": "作为一个人工智能助手，我**没有访问权限**来查询或记录您的个人项目信息。我的设计原则",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_context",
+        "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+        "reply": "您好！由于我无法访问您之前的对话历史或上下文（每次对话对我来说都是全新的开始），目前我**不知道您的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "multi_hop",
+        "query": "请通过项目负责人关系，找出项目项目-P-KP2F9GHO负责人的工作代号。",
+        "reply": "不知道。当前长期记忆中未包含关于项目-P-KP2F9GHO的负责人信息，因此无法通过",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "paraphrase",
+        "query": "我之前登记的最喜欢的水果内容是什么？",
+        "reply": "您好，作为一个人工智能助手，我**无法访问或查看您个人的历史数据、账户信息或之前登记",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "random_position",
+        "query": "随机位置事实测试：我的常用语言是什么？",
+        "reply": "您的常用语言是**中文**。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "single_fact",
+        "query": "跨对话后请回答：我的默认输出风格是什么？",
+        "reply": "作为 Qwen3.5，我的默认输出风格是**专业、简洁、准确且富有同理心**的",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_abstention",
+        "query": "我的不存在的个人属性-0008000是什么？如果没有记录，请明确说不知道。",
+        "reply": "不知道。\n\n“不存在的个人属性 -0008000\"并非任何已知的系统、数据库",
+        "written": 4,
+        "correct": true,
+        "matched": [],
+        "abstained": true,
+        "wrongly_abstained": false
+      }
+    ]
+  }
+}

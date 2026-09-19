@@ -1,0 +1,48 @@
+{
+  "built_at": "2026-09-12T13:15:04Z",
+  "attributes": [
+    "主管姓名",
+    "入职年份",
+    "出生城市",
+    "办公城市",
+    "午餐偏好",
+    "咖啡口味",
+    "团队名称",
+    "客户名称",
+    "宿舍楼号",
+    "工位楼层",
+    "常住城市",
+    "常用编辑器",
+    "手机尾号",
+    "档案标识",
+    "紧急联系人姓氏",
+    "设备型号",
+    "课程名称",
+    "起床时间",
+    "运动习惯",
+    "通勤方式",
+    "邮箱域名",
+    "阅读工具",
+    "项目代号",
+    "默认语言"
+  ],
+  "classes": 24,
+  "chance_pct": 4.17,
+  "train_queries": 1200,
+  "eval_queries": 300,
+  "attribute_accuracy_train_pct": 100.0,
+  "attribute_accuracy_eval_pct": 100.0,
+  "attribute_accuracy_eval_answerable_pct": 100.0,
+  "coverage_rule": {
+    "answerable_covered_pct": 100.0,
+    "abstention_covered_pct": 0.0,
+    "unknown_refusal_pct": 100.0,
+    "known_false_refusal_pct": 0.0,
+    "counts": {
+      "tp": 50,
+      "fn": 0,
+      "fp": 0,
+      "tn": 250
+    }
+  }
+}

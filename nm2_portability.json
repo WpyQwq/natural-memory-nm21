@@ -1,0 +1,571 @@
+[
+  {
+    "model": "hf-internal-testing/tiny-random-LlamaForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "LlamaForCausalLM",
+    "model_type": "llama",
+    "hidden_size": 16,
+    "num_layers": 2,
+    "vocab_size": 32000,
+    "text_config_present": false,
+    "backbone_class": "LlamaForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-MistralForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "MistralForCausalLM",
+    "model_type": "mistral",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "vocab_size": 32000,
+    "text_config_present": false,
+    "backbone_class": "MistralForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "Qwen2ForCausalLM",
+    "model_type": "qwen2",
+    "hidden_size": 8,
+    "num_layers": 2,
+    "vocab_size": 152064,
+    "text_config_present": false,
+    "backbone_class": "Qwen2ForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "trl-internal-testing/tiny-Qwen3ForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "Qwen3ForCausalLM",
+    "model_type": "qwen3",
+    "hidden_size": 8,
+    "num_layers": 2,
+    "vocab_size": 151936,
+    "text_config_present": false,
+    "backbone_class": "Qwen3ForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-Gemma2ForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "ok (position_embeddings second)",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "Gemma2ForCausalLM",
+    "model_type": "gemma2",
+    "hidden_size": 32,
+    "num_layers": 1,
+    "vocab_size": 256000,
+    "text_config_present": false,
+    "backbone_class": "Gemma2ForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "position_embeddings",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": true,
+    "resolved_layer_indices": [
+      0
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-Gemma3ForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "ok (position_embeddings second)",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "Gemma3ForCausalLM",
+    "model_type": "gemma3_text",
+    "hidden_size": 16,
+    "num_layers": 2,
+    "vocab_size": 262144,
+    "text_config_present": false,
+    "backbone_class": "Gemma3ForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "position_embeddings",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": true,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-Starcoder2ForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "Starcoder2ForCausalLM",
+    "model_type": "starcoder2",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "vocab_size": 1024,
+    "text_config_present": false,
+    "backbone_class": "Starcoder2ForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-OlmoeForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "OlmoeForCausalLM",
+    "model_type": "olmoe",
+    "hidden_size": 64,
+    "num_layers": 2,
+    "vocab_size": 50304,
+    "text_config_present": false,
+    "backbone_class": "OlmoeForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-GraniteMoeForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "GraniteMoeForCausalLM",
+    "model_type": "granitemoe",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "vocab_size": 49155,
+    "text_config_present": false,
+    "backbone_class": "GraniteMoeForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "past_key_values",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-MixtralForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "ok (position_embeddings second)",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "MixtralForCausalLM",
+    "model_type": "mixtral",
+    "hidden_size": 64,
+    "num_layers": 2,
+    "vocab_size": 32000,
+    "text_config_present": false,
+    "backbone_class": "MixtralForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "position_embeddings",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": true,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-CohereForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "CohereForCausalLM",
+    "model_type": "cohere",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "vocab_size": 1024,
+    "text_config_present": false,
+    "backbone_class": "CohereForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-PhiForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "PhiForCausalLM",
+    "model_type": "phi",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "vocab_size": 1024,
+    "text_config_present": false,
+    "backbone_class": "PhiForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-tiny-model-private/tiny-random-OPTForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.decoder.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "OPTForCausalLM",
+    "model_type": "opt",
+    "hidden_size": 16,
+    "num_layers": 5,
+    "vocab_size": 1024,
+    "text_config_present": false,
+    "backbone_class": "OPTForCausalLM",
+    "container_path": "model.decoder.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "past_key_values",
+      "use_cache",
+      "position_ids",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  },
+  {
+    "model": "hf-tiny-model-private/tiny-random-BartForCausalLM",
+    "full_stack": false,
+    "dtype": "float32",
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.decoder.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "ok (no shims)",
+      "6_identity": "identical",
+      "7_write_read": "ok"
+    },
+    "patches": [],
+    "architecture": "BartForCausalLM",
+    "model_type": "bart",
+    "hidden_size": 16,
+    "num_layers": 2,
+    "vocab_size": 1024,
+    "text_config_present": false,
+    "backbone_class": "BartForCausalLM",
+    "container_path": "model.decoder.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "encoder_hidden_states",
+      "encoder_attention_mask",
+      "past_key_values",
+      "use_cache",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "resolved_layer_indices": [
+      0,
+      1
+    ],
+    "shims_needed": [],
+    "identity_max_abs_logit_delta": 0.0,
+    "memory_state_changed_by": null
+  }
+]

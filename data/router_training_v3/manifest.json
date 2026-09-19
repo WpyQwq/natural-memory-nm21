@@ -1,0 +1,183 @@
+{
+  "format_version": 3,
+  "generator": "prepare_memory_router_dataset.py",
+  "seed": 20260908,
+  "candidate_count": 32,
+  "schema": {
+    "query": "natural-language routing query",
+    "candidates": "bounded memory records with text and provenance",
+    "positive_indices": "one or more supporting memory records; empty means abstain",
+    "need_memory": "1 if evidence is required and present, 0 for unknown/unsupported queries",
+    "hop": "0 for abstention, otherwise number of supporting records clipped to router max_hops",
+    "group_id": "conversation or QA episode identity; no group may cross train/eval"
+  },
+  "files": {
+    "train": {
+      "path": "dynamic_memory_lab\\data\\router_training_v3\\train.jsonl",
+      "episodes": 7155,
+      "sha256": "bfc1502ca61682307f464acdc72abb997b1696ce1cd8634ea020dc16daa38ac7"
+    },
+    "eval": {
+      "path": "dynamic_memory_lab\\data\\router_training_v3\\eval.jsonl",
+      "episodes": 1940,
+      "sha256": "22d02c3808cd5c0ca83d676a69dbdb66e4671fb850dbd719a30899dd6fbbd045"
+    }
+  },
+  "counts": {
+    "train_groups": 4155,
+    "eval_groups": 1140,
+    "train_episodes": 7155,
+    "eval_episodes": 1940,
+    "train_unknown": 319,
+    "eval_unknown": 106,
+    "train_candidates": 228960,
+    "eval_candidates": 62080
+  },
+  "local_sources": [
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/benchmark_train.jsonl",
+      "rows": 128,
+      "kind": "benchmark",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/native_memory/train.jsonl",
+      "rows": 512,
+      "kind": "native_memory",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/production_memory/train.jsonl",
+      "rows": 1485,
+      "kind": "normalized_policy",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/production_memory_hard_v2/train.jsonl",
+      "rows": 27000,
+      "kind": "normalized_policy",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/benchmark_eval.jsonl",
+      "rows": 64,
+      "kind": "benchmark",
+      "split": "eval"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/native_memory/eval.jsonl",
+      "rows": 128,
+      "kind": "native_memory",
+      "split": "eval"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/production_memory/eval.jsonl",
+      "rows": 363,
+      "kind": "normalized_policy",
+      "split": "eval"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/production_memory_hard_v2/eval.jsonl",
+      "rows": 7200,
+      "kind": "normalized_policy",
+      "split": "eval"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/mega_validation/smoke.jsonl",
+      "rows": 20,
+      "kind": "mega_validation",
+      "split": "eval"
+    }
+  ],
+  "public_sources": [],
+  "public_catalog": [
+    {
+      "name": "hotpotqa_train",
+      "dataset_id": "hotpot_qa",
+      "config": "distractor",
+      "split": "train",
+      "split_kind": "train",
+      "task": "qa",
+      "url": "https://huggingface.co/datasets/hotpot_qa"
+    },
+    {
+      "name": "hotpotqa_validation",
+      "dataset_id": "hotpot_qa",
+      "config": "distractor",
+      "split": "validation",
+      "split_kind": "eval",
+      "task": "qa",
+      "url": "https://huggingface.co/datasets/hotpot_qa"
+    },
+    {
+      "name": "codesearchnet_python_train",
+      "dataset_id": "code_search_net",
+      "config": "python",
+      "split": "train",
+      "split_kind": "train",
+      "task": "code",
+      "url": "https://huggingface.co/datasets/code_search_net"
+    },
+    {
+      "name": "codesearchnet_python_validation",
+      "dataset_id": "code_search_net",
+      "config": "python",
+      "split": "validation",
+      "split_kind": "eval",
+      "task": "code",
+      "url": "https://huggingface.co/datasets/code_search_net"
+    },
+    {
+      "name": "fever_train",
+      "dataset_id": "fever",
+      "config": "v1.0",
+      "split": "train",
+      "split_kind": "train",
+      "task": "evidence",
+      "url": "https://huggingface.co/datasets/fever"
+    },
+    {
+      "name": "fever_validation",
+      "dataset_id": "fever",
+      "config": "v1.0",
+      "split": "labelled_dev",
+      "split_kind": "eval",
+      "task": "evidence",
+      "url": "https://huggingface.co/datasets/fever"
+    }
+  ],
+  "split_stats": {
+    "train": {
+      "kept": 7155,
+      "unknown": 319,
+      "family:benchmark_qa": 128,
+      "family:native_memory": 512,
+      "family:memory_policy": 6515,
+      "written": 7155
+    },
+    "eval": {
+      "kept": 1940,
+      "unknown": 106,
+      "family:benchmark_qa": 64,
+      "family:native_memory": 128,
+      "family:memory_policy": 1728,
+      "family:mega_validation": 20,
+      "written": 1940
+    }
+  },
+  "leakage_check": {
+    "group_overlap": 0,
+    "passed": true
+  },
+  "conflict_policy": {
+    "enabled": true,
+    "answerable_positive_conflicts_excluded": true,
+    "unknown_hard_conflicts_retained": true
+  },
+  "evaluation_policy": "eval.jsonl is generated and hashed before router training; the trainer refuses an optional hash mismatch.",
+  "warnings": [
+    "Local generated memory-policy files are useful hard negatives but are not public-human chat data.",
+    "Add redacted real user traces only after consent and PII removal.",
+    "Public download failures are recorded; failed sources contribute zero rows."
+  ]
+}

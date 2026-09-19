@@ -1,0 +1,314 @@
+{
+  "scorers": {
+    "cosine": {
+      "single_feature_auc_on_eval": {
+        "top1": 0.5898,
+        "top2": 0.5572,
+        "margin": 0.6257,
+        "top3_mean": 0.5771,
+        "top1_minus_median": 0.6166,
+        "std": 0.5894,
+        "z_top1": 0.6125,
+        "n_within_10pct": 0.4273,
+        "entropy": 0.6168
+      },
+      "head_auc_on_eval": 0.6086,
+      "head_weights": {
+        "top1": 0.2654,
+        "top2": 0.3455,
+        "margin": -0.2102,
+        "top3_mean": -0.4675,
+        "top1_minus_median": -0.0127,
+        "std": -0.1578,
+        "z_top1": -0.2808,
+        "n_within_10pct": 0.1283,
+        "entropy": 0.9424
+      },
+      "operating_curve": [
+        {
+          "threshold": 0.05,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.4,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.8,
+          "unknown_flagged_pct": 46.0,
+          "answerable_rejected_pct": 30.0
+        },
+        {
+          "threshold": 0.9,
+          "unknown_flagged_pct": 96.0,
+          "answerable_rejected_pct": 84.0
+        }
+      ]
+    },
+    "router": {
+      "single_feature_auc_on_eval": {
+        "top1": 0.5379,
+        "top2": 0.5263,
+        "margin": 0.5516,
+        "top3_mean": 0.5386,
+        "top1_minus_median": 0.5108,
+        "std": 0.5447,
+        "z_top1": 0.5711,
+        "n_within_10pct": 0.426,
+        "entropy": 0.497
+      },
+      "head_auc_on_eval": 0.513,
+      "head_weights": {
+        "top1": 0.259,
+        "top2": 0.0524,
+        "margin": 0.3174,
+        "top3_mean": 0.0438,
+        "top1_minus_median": 0.0431,
+        "std": 0.0405,
+        "z_top1": 0.4694,
+        "n_within_10pct": 0.4964,
+        "entropy": 0.0123
+      },
+      "operating_curve": [
+        {
+          "threshold": 0.05,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.4,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "unknown_flagged_pct": 4.0,
+          "answerable_rejected_pct": 5.2
+        },
+        {
+          "threshold": 0.7,
+          "unknown_flagged_pct": 4.0,
+          "answerable_rejected_pct": 7.2
+        },
+        {
+          "threshold": 0.8,
+          "unknown_flagged_pct": 38.0,
+          "answerable_rejected_pct": 34.8
+        },
+        {
+          "threshold": 0.9,
+          "unknown_flagged_pct": 90.0,
+          "answerable_rejected_pct": 94.0
+        }
+      ]
+    },
+    "text_retriever": {
+      "single_feature_auc_on_eval": {
+        "top1": 0.4992,
+        "top2": 0.4966,
+        "margin": 0.6076,
+        "top3_mean": 0.4954,
+        "top1_minus_median": 0.5712,
+        "std": 0.5043,
+        "z_top1": 0.5512,
+        "n_within_10pct": 0.4462,
+        "entropy": 0.5655
+      },
+      "head_auc_on_eval": 0.4752,
+      "head_weights": {
+        "top1": -0.3237,
+        "top2": -0.3446,
+        "margin": 0.0748,
+        "top3_mean": 0.8565,
+        "top1_minus_median": 0.0869,
+        "std": 0.4047,
+        "z_top1": 0.1123,
+        "n_within_10pct": -0.2813,
+        "entropy": -0.4289
+      },
+      "operating_curve": [
+        {
+          "threshold": 0.05,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.4,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 1.2
+        },
+        {
+          "threshold": 0.8,
+          "unknown_flagged_pct": 14.0,
+          "answerable_rejected_pct": 15.2
+        },
+        {
+          "threshold": 0.9,
+          "unknown_flagged_pct": 100.0,
+          "answerable_rejected_pct": 100.0
+        }
+      ]
+    },
+    "blend_50_50": {
+      "single_feature_auc_on_eval": {
+        "top1": 0.4788,
+        "top2": 0.493,
+        "margin": 0.5446,
+        "top3_mean": 0.4929,
+        "top1_minus_median": 0.4943,
+        "std": 0.5042,
+        "z_top1": 0.5132,
+        "n_within_10pct": 0.5104,
+        "entropy": 0.4914
+      },
+      "head_auc_on_eval": 0.5062,
+      "head_weights": {
+        "top1": 0.2989,
+        "top2": 0.3659,
+        "margin": -0.0757,
+        "top3_mean": -0.2102,
+        "top1_minus_median": -0.1659,
+        "std": 0.3382,
+        "z_top1": 0.4046,
+        "n_within_10pct": -0.0748,
+        "entropy": -0.0503
+      },
+      "operating_curve": [
+        {
+          "threshold": 0.05,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.1,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.2,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.3,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.4,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.5,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.6,
+          "unknown_flagged_pct": 0.0,
+          "answerable_rejected_pct": 0.0
+        },
+        {
+          "threshold": 0.7,
+          "unknown_flagged_pct": 2.0,
+          "answerable_rejected_pct": 0.4
+        },
+        {
+          "threshold": 0.8,
+          "unknown_flagged_pct": 22.0,
+          "answerable_rejected_pct": 28.4
+        },
+        {
+          "threshold": 0.9,
+          "unknown_flagged_pct": 72.0,
+          "answerable_rejected_pct": 74.0
+        }
+      ]
+    }
+  },
+  "train_episodes": 1200,
+  "eval_episodes": 300
+}

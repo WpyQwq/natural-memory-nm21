@@ -1,0 +1,2329 @@
+{
+  "NM2.1": {
+    "summary": {
+      "router": "NM2.1",
+      "cases": 200,
+      "accuracy_pct": 62.5,
+      "answerable_cases": 175,
+      "answerable_accuracy_pct": 70.28571428571429,
+      "unknown_cases": 25,
+      "unknown_refusal_pct": 8.0,
+      "wrong_abstention_pct": 2.2857142857142856,
+      "seconds": 701.8,
+      "per_category": {
+        "alias_paraphrase": {
+          "cases": 25,
+          "accuracy_pct": 80.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 80.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "long_fact": {
+          "cases": 25,
+          "accuracy_pct": 84.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 84.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "multi_entity": {
+          "cases": 25,
+          "accuracy_pct": 92.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 92.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "multi_hop": {
+          "cases": 25,
+          "accuracy_pct": 32.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 32.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "near_miss": {
+          "cases": 25,
+          "accuracy_pct": 48.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 48.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "noise_context": {
+          "cases": 25,
+          "accuracy_pct": 84.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 84.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        },
+        "unknown_attribute": {
+          "cases": 25,
+          "accuracy_pct": 8.0,
+          "answerable": 0,
+          "answerable_accuracy_pct": 0.0,
+          "unknown": 25,
+          "unknown_refusal_pct": 8.0
+        },
+        "update_conflict": {
+          "cases": 25,
+          "accuracy_pct": 72.0,
+          "answerable": 25,
+          "answerable_accuracy_pct": 72.0,
+          "unknown": 0,
+          "unknown_refusal_pct": 0.0
+        }
+      }
+    },
+    "rows": [
+      {
+        "category": "alias_paraphrase",
+        "query": "我早上那杯是什么口味？",
+        "reply": "我每天早上灌下去的那杯偏爱 B-3310 的口味信息在现有记录中未明确说明，无法确认具体口味。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 B-3310。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 夜间 02:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 B3-204。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在 李工 139****3344。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 夜间 02:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在 A-7719。可直接复述的关键短语：A-7719。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 B3-204。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 B-3310。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我早上那杯是什么口味？",
+        "reply": "我每天早上灌下去的那杯偏爱 91.5% 的口味是未明确说明的，证据不足就明确说不知道。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我早上那杯是什么口味？",
+        "reply": "我每天早上灌下去的那杯偏爱 B-3310 的口味信息在现有记录中未明确说明，无法确认具体口味。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在机房，常驻机房在 王工 138****6621。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 91.5%。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 每周三 22:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 B-3310。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在机房，常驻机房在 91.5%。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 v3.14.2。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是分机 8821。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 128GB。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 64GB。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "64GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 v3.14.2。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我那个数字是多少？",
+        "reply": "我那个数字是 夜间 02:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在 B-3310。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我常年落脚在哪儿？",
+        "reply": "我常年落脚在 B-3310。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "alias_paraphrase",
+        "query": "我用的那台是什么款？",
+        "reply": "我手上那台机器是 91.5%。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我缓冲配了多少？",
+        "reply": "关于缓存容量，之前散会时临时定下来的是 A-7719，后续如有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "关于应急联系人这件事，之前散会时我们临时定了下来，当时讨论得比较久，最后确认91.5%，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我联调用的那个版本是什么？",
+        "reply": "关于接口版本号，之前散会时我们临时定了下来，当时讨论得比较久，最后确认v3.14.2，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我到多少会触发报警？",
+        "reply": "关于告警阈值，之前散会时我们临时定了下来，当时讨论得比较久，最后确认李工 139****3344，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我哪条线一破就叫？",
+        "reply": "关于告警阈值这件事，会上也提过一嘴，但那次的说法是v2.8.0，后来没有正式确认过。目前无法确定具体哪条线触发告警，因为该信息未经过正式确认",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我数据落在哪一个地址？",
+        "reply": "关于主库地址，目前存在多个未经正式确认的说法，包括 10.20.9.1:6379、B3-204、A-7719 和 v3.",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "10.20.9.1:6379"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我一般什么时候做上线？",
+        "reply": "关于发布窗口，之前散会时我们临时定了下来，当时讨论得比较久，最后确认v3.14.2，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我写库连的是哪里？",
+        "reply": "关于主库地址，会上也提过一嘴，但那次的说法是10.20.9.1:6379，后来没有正式确认过。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我轮班时该拨什么号码？",
+        "reply": "关于值班电话，之前散会时临时定下来的是分机 8821，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我缓冲配了多少？",
+        "reply": "关于缓存容量，目前只有会议中非正式提及的临时说法，没有正式确认值。之前散会时临时定下的是 v2.8.0，后续若有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我哪条线一破就叫？",
+        "reply": "关于告警阈值这件事，之前散会时我们临时定了下来，当时讨论得比较久，最后确认每周三 22:00，后续如果还有调整会在群里同步，暂时先按这个执行。目前暂无",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我出问题该喊谁？",
+        "reply": "关于应急联系人这件事，之前散会时我们临时定了下来，当时讨论得比较久，最后确认v2.8.0，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我写库连的是哪里？",
+        "reply": "关于主库地址，之前散会时临时定下来是91.5%，后续若调整会在群里同步，暂时先按这个执行；而会上也曾提过说法是78%、B-3310",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我固定在哪个位置办公？",
+        "reply": "您固定在 10.20.3.7:5432 这个位置办公。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我写库连的是哪里？",
+        "reply": "关于主库地址，之前散会时临时定下来的是10.20.3.7:5432，后续如有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我挑哪个时段变更？",
+        "reply": "关于发布窗口这件事，之前散会时我们临时定了下来，当时讨论得比较久，最后确认v2.8.0，后续如果还有调整会在群里同步，暂时先按这个执行。目前没有正式确认过",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我缓冲配了多少？",
+        "reply": "关于缓存容量，之前散会时临时定下来的是 v3.14.2，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我哪条线一破就叫？",
+        "reply": "关于告警阈值这件事，会上也提过一嘴，但那次的说法是64GB，后来没有正式确认过。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我数据落在哪一个地址？",
+        "reply": "关于主库地址，目前确认执行的是分机 8821。其他会议提及的 v2.8.0、10.20.9.1:6379 或王工 1",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "在紧急情况下，应急联系人分机为 8821。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我出问题该喊谁？",
+        "reply": "关于应急联系人，之前散会时我们临时定了下来，当时讨论得比较久，最后确认李工 139****3344，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我出问题该喊谁？",
+        "reply": "关于应急联系人这件事，之前散会时我们临时定了下来，当时讨论得比较久，最后确认v3.14.2，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我写库连的是哪里？",
+        "reply": "关于主库地址，之前散会时临时定下来的是91.5%，后续若调整会在群里同步，暂时先按这个执行；会上也曾提及128GB的说法但未正式确认；会上也曾提及10",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我内存开到多大？",
+        "reply": "关于缓存容量，之前散会时我们临时定了下来，当时讨论得比较久，最后确认A-7719，后续如果还有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "long_fact",
+        "query": "我写库连的是哪里？",
+        "reply": "关于主库地址，之前散会时临时定下来的是 v3.14.2，后续若有调整会在群里同步，暂时先按这个执行。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我们组那位张三固定在哪个位置办公？",
+        "reply": "张三固定在 v2.8.0 机房办公。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户固定在哪个位置办公？",
+        "reply": "Beta 客户固定在机房在 夜间 02:00 办公。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户挑哪个时段变更？",
+        "reply": "Beta 客户挑每周三 22:00 变更。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我们组那位张三出问题该喊谁？",
+        "reply": "张三出问题找 91.5%。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我自己出问题该喊谁？",
+        "reply": "您的应急联系人是 A-7719。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Alpha出问题该喊谁？",
+        "reply": "项目 Alpha 的应急联系人是 v2.8.0。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Alpha缓冲配了多少？",
+        "reply": "项目 Alpha 的缓存容量是 B-3310。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我们组那位张三现在对接的是哪一版？",
+        "reply": "张三对接的接口版本号是 78%。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "78%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我自己一般什么时候做上线？",
+        "reply": "根据长期记忆，您没有固定的上线时间记录。已知事实仅包含：项目 Alpha 固定 夜间 02:00 做上线；客户 Beta 固定 128GB 做上线。关于您个人的",
+        "written": 3,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta有急事按哪个号找人？",
+        "reply": "Beta 的值班电话是分机 8821。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta缓冲配了多少？",
+        "reply": "Beta 缓冲配置了 128GB 的缓存容量。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "运维那位李工平时在哪间屋子干活？",
+        "reply": "李工常驻机房在 分机 8821。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Alpha哪条线一破就叫？",
+        "reply": "项目 Alpha 的告警阈值是 10.20.9.1:6379。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "10.20.9.1:6379"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户内存开到多大？",
+        "reply": "Beta 客户内存开到 B3-204。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户写库连的是哪里？",
+        "reply": "Beta 客户写库连接的是 64GB 的主库地址。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "64GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta联调用的那个版本是什么？",
+        "reply": "Beta 联调用的版本是 A-7719。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "我自己到多少会触发报警？",
+        "reply": "您触发报警的阈值取决于具体项目：如果是张三相关的项目，超过 128GB 就报警；如果是项目 Alpha，超过 v3.14.2 就报警。",
+        "written": 3,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Alpha紧急情况下找谁接手？",
+        "reply": "项目 Alpha 的应急联系人是 128GB。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "李工内存开到多大？",
+        "reply": "李工的缓存容量是 夜间 02:00。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "李工到多少会触发报警？",
+        "reply": "李工的告警阈值是 B-3310。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "李工出问题该喊谁？",
+        "reply": "李工出问题该找 10.20.3.7:5432。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户一般什么时候做上线？",
+        "reply": "Beta 客户的发布窗口是 64GB。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "64GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "李工一般什么时候做上线？",
+        "reply": "李工一般做上线的时间窗口是 B3-204。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "Beta 客户哪条线一破就叫？",
+        "reply": "客户 Beta 的告警阈值是 分机 8821。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_entity",
+        "query": "运维那位李工固定在哪个位置办公？",
+        "reply": "李工常驻机房在分机 8821。",
+        "written": 3,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-9KXDQY 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-2YRA4K 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-N3RPAR 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-3A962Z 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-4Z8UBN 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-H2DKPX 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-2RGQNH 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-WLFBUN 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-8JYSKT 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-2XL68B 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-M4XWLY 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-YCJAD4 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-QQYXK3 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-D6YASQ 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-U4ET7W 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人-7741。编号 REF-6UE4ZY 对应的值班人是 值班人-7741。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "值班人-7741"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-NF238X 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-UATAGF 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "multi_hop",
+        "query": "负责那个项目的同事对应的值班人是谁？",
+        "reply": "负责该项目的同事对应的值班人是 值班人 -7741。编号 REF-QHN8Z7 对应的值班人是 值班人 -7741。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "根据已保存的长期记忆，您的座机最后几位数字是 8821。\n实体：user；属性：常住城市；值：分机 8821",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "关于您家座机最后几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "您的座机最后几位数字是 138****6621。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "您的随身设备尾号是 v3.14.2。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "关于您家座机最后几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "您的座机最后几位数字是 A-7719。user；值班电话；A-7719",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "关于您随身设备的末几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是李工 139****3344。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "根据现有记忆，您的座机号码信息未保存，无法回答。已知信息包括：user；客户代号；分机 8821；user；发布窗口；李工 139****3344",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "您的随身设备的末几位数字是 128GB。\nuser；工位楼层；128GB",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "您的设备末几位数字如下：座机尾号是 王工 138****6621，手机尾号是 10.20.3.7:5432，发布窗口是",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是 A-7719。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "关于您家座机最后几位数字，当前长期记忆中未包含此信息，无法回答。已知信息如下：user；办公城市；B3-204；接口版本号；91.5%；缓存容量；",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "您的值班电话是 A-7719。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是 91.5%。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "您的设备末几位数字是 10.20.3.7:5432。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是王工 138****6621。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "王工 138****6621"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "关于您随身设备的末几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "关于您家座机最后几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是 78%。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "78%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "您的设备末几位数字是 10.20.9.1:6379。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "根据长期记忆证据，您的设备末几位数字是 7719。\n实体：user；属性：应急联系人；已确认值：A-7719\n可直接复述的关键短语：user；应急联系人",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我随身那台设备的末几位数字是啥？",
+        "reply": "关于您随身设备的末几位数字，当前长期记忆中未包含此信息，无法回答。",
+        "written": 4,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "根据现有记忆，您的座机号码信息未保存，无法回答最后几位数字。已知信息如下：user；常驻机房；91.5%；常住城市；李工 139****3344；",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "near_miss",
+        "query": "我家座机最后几位数字是啥？",
+        "reply": "我家座机尾号是 v3.14.2。",
+        "written": 4,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我现在对接的是哪一版？",
+        "reply": "我对接的接口版本号是 王工 138****6621。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "王工 138****6621"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我常驻机房在 v3.14.2。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我数据落在哪一个地址？",
+        "reply": "您的数据落在 10.20.9.1:6379。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "10.20.9.1:6379"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我出问题该喊谁？",
+        "reply": "您的应急联系人是分机 8821。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我出问题该喊谁？",
+        "reply": "您的应急联系人是 v2.8.0。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我到多少会触发报警？",
+        "reply": "您的告警阈值是 A-7719。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我常驻机房在 10.20.3.7:5432。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我一般什么时候做上线？",
+        "reply": "您的发布窗口是 91.5%。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我一般什么时候做上线？",
+        "reply": "关于您一般什么时候做上线，当前长期记忆中无相关记录，无法回答。",
+        "written": 9,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我固定在哪个位置办公？",
+        "reply": "我常驻机房在 分机 8821。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我出问题该喊谁？",
+        "reply": "您的应急联系人是分机 8821。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我轮班时该拨什么号码？",
+        "reply": "您的值班电话是 128GB。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我联调用的那个版本是什么？",
+        "reply": "我联调用的接口版本号是 10.20.3.7:5432。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我一般什么时候做上线？",
+        "reply": "您的发布窗口是 v2.8.0。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我现在对接的是哪一版？",
+        "reply": "我对接的接口版本号是 A-7719。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我有急事按哪个号找人？",
+        "reply": "您提到的“急事”和“按哪个号找人”缺乏具体上下文，无法直接回答。请提供具体的电话号码、联系人姓名或事件详情，以便我协助您。",
+        "written": 9,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我常驻机房在 夜间 02:00。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我出问题该喊谁？",
+        "reply": "您的应急联系人是 每周三 22:00。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我缓冲配了多少？",
+        "reply": "您的缓存容量是 64GB。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "64GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我出问题该喊谁？",
+        "reply": "您的应急联系人是 李工 139****3344。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我有急事按哪个号找人？",
+        "reply": "您提到的“急事”和“按哪个号找人”缺乏具体上下文，无法确定您指的是哪个平台或场景（如紧急报警、客服、特定服务号等），因此无法提供准确号码。请补充说明具体需求",
+        "written": 9,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我轮班时该拨什么号码？",
+        "reply": "您的值班电话是 A-7719。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我常驻机房在 128GB。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "128GB"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "您的应急联系人是 李工 139****3344。",
+        "written": 9,
+        "correct": true,
+        "matched": [
+          "李工 139****3344"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "noise_context",
+        "query": "我挑哪个时段变更？",
+        "reply": "关于变更时段的选择，当前记忆中没有提供相关依据，因此不知道具体建议。",
+        "written": 9,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": true
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我有急事按哪个号找人？",
+        "reply": "您的应急联系人号码是 10.20.3.7:5432。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "您的值班电话是李工 139****3344。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我写库连的是哪里？",
+        "reply": "我写库连的是 10.20.9.1:6379。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我数据落在哪一个地址？",
+        "reply": "关于您数据所在的地址，当前长期记忆中未包含相关信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我一般什么时候做上线？",
+        "reply": "关于上线时间，当前记忆中没有相关记录。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我有急事按哪个号找人？",
+        "reply": "根据长期记忆证据，您的主库地址是 B-3310。可直接复述的关键短语：user；主库地址；B-3310。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我现在对接的是哪一版？",
+        "reply": "我现在对接的是 v2.8.0 版本。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我挑哪个时段变更？",
+        "reply": "我变更时段是 夜间 02:00。user；应急联系人；夜间 02:00",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我缓冲配了多少？",
+        "reply": "关于您缓冲的配置数量，当前长期记忆中未包含相关信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "关于您平时在哪间屋子干活，当前长期记忆中未包含此信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "关于您平时在哪间屋子干活，当前长期记忆中未包含此信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我缓冲配了多少？",
+        "reply": "我缓冲配了 10.20.3.7:5432。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "紧急情况下找王工 138****6621 接手。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我内存开到多大？",
+        "reply": "关于您内存开到的大小，当前长期记忆中未包含相关信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我现在对接的是哪一版？",
+        "reply": "我常驻机房在 64GB。关于您对接的具体版本，当前提供的长期记忆中没有包含该信息，因此不知道。",
+        "written": 5,
+        "correct": true,
+        "matched": [],
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "关于您平时在哪间屋子干活，当前长期记忆中未包含此信息，证据不足，明确说不知道。",
+        "written": 5,
+        "correct": true,
+        "matched": [],
+        "abstained": true,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我紧急情况下找谁接手？",
+        "reply": "您的值班电话是 64GB。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我数据落在哪一个地址？",
+        "reply": "我常驻机房在 10.20.9.1:6379。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我哪条线一破就叫？",
+        "reply": "您的发布窗口是 64GB，缓存容量是 64GB，主库地址是 10.20.3.7:5432，应急联系人是 夜间 02:00",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我出问题该喊谁？",
+        "reply": "我出问题该喊值班电话 128GB。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我数据落在哪一个地址？",
+        "reply": "我数据落在的地址是 v3.14.2。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我出问题该喊谁？",
+        "reply": "我出问题该喊 user。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我数据落在哪一个地址？",
+        "reply": "关于您数据所在的地址，当前长期记忆中未包含相关信息，无法回答。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我一般什么时候做上线？",
+        "reply": "您的上线时间是 夜间 02:00。user；告警阈值；夜间 02:00",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "unknown_attribute",
+        "query": "我哪条线一破就叫？",
+        "reply": "您的应急联系人是 夜间 02:00。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我哪条线一破就叫？",
+        "reply": "您的告警阈值是 78%。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我缓冲配了多少？",
+        "reply": "您的缓存容量是 B-3310。user；缓存容量；B-3310",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我数据落在哪一个地址？",
+        "reply": "我主库落在 B3-204。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我出问题该喊谁？",
+        "reply": "我出事找 78%。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "78%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我缓冲配了多少？",
+        "reply": "我缓存开到 v2.8.0。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "v2.8.0"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我到多少会触发报警？",
+        "reply": "我超过 v3.14.2 就报警。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "v3.14.2"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我一般什么时候做上线？",
+        "reply": "我一般固定 B3-204 做上线。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我挑哪个时段变更？",
+        "reply": "我固定 夜间 02:00 做上线。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "夜间 02:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我轮班时该拨什么号码？",
+        "reply": "我留的值班号码为每周三 22:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我有急事按哪个号找人？",
+        "reply": "您留的值班号码为 分机 8821。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "分机 8821"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我平时常驻机房在 v3.14.2。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我常驻机房在 64GB。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我一般什么时候做上线？",
+        "reply": "我一般固定 10.20.3.7:5432 做上线。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "10.20.3.7:5432"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我联调用的那个版本是什么？",
+        "reply": "我联调用的版本是 10.20.9.1:6379。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我一般什么时候做上线？",
+        "reply": "我一般固定 A-7719 做上线。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我平时待的机房是每周三 22:00。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我联调用的那个版本是什么？",
+        "reply": "我联调用的接口版本号是 10.20.3.7:5432。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我现在对接的是哪一版？",
+        "reply": "我目前对接的是 B-3310 版本接口。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B-3310"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我数据落在哪一个地址？",
+        "reply": "我主库落在 B3-204。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "B3-204"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我写库连的是哪里？",
+        "reply": "我写库连接的主库地址是 10.20.3.7:5432。",
+        "written": 5,
+        "correct": false,
+        "matched": [],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我数据落在哪一个地址？",
+        "reply": "我主库落在 A-7719。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "A-7719"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我联调用的那个版本是什么？",
+        "reply": "我联调用的版本是每周三 22:00 版本接口。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "每周三 22:00"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我平时在哪间屋子干活？",
+        "reply": "我平时待的机房是 10.20.9.1:6379。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "10.20.9.1:6379"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我缓冲配了多少？",
+        "reply": "我缓存开到 91.5%。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      },
+      {
+        "category": "update_conflict",
+        "query": "我有急事按哪个号找人？",
+        "reply": "您应该按 91.5% 这个号找人。",
+        "written": 5,
+        "correct": true,
+        "matched": [
+          "91.5%"
+        ],
+        "abstained": false,
+        "wrongly_abstained": false
+      }
+    ]
+  }
+}

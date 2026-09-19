@@ -1,0 +1,22 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2",
+  "router": "checkpoints\\router_replay_v7_v2_128\\memory_router_v2.pt",
+  "cases": 16,
+  "note": "blend 0.00 is the historical behaviour (packaged retriever only); 1.00 is the trained router only",
+  "results": {
+    "0.50": {
+      "router": "blend=0.50",
+      "cases": 16,
+      "accuracy_pct": 68.75,
+      "wrong_attribute_pct": 18.75,
+      "read_pct": 93.75,
+      "cases_with_rule_hits": 6,
+      "stop_reasons": {
+        "evidence_found": 15,
+        "router_abstained": 1
+      },
+      "mean_records_selected": 6.0625,
+      "seconds": 80.0
+    }
+  }
+}

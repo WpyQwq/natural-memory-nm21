@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# 训练中间产物（仓库只保留最终交付件与证据 JSON）
+checkpoints/
+runs/
+*.log
+*.tmp
+
+# 大体积权重：模型本体不进仓库，只保留 memory_config / memory_merge 等手术配方
+*.safetensors
+*.bin
+*.7z
+*.zip
+
+# 本地用户记忆快照（含真实对话内容，绝不入库）
+*_runtime.pt
+data/users/
+user_memories/
+persistent_memory.pt
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

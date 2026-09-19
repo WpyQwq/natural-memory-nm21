@@ -1,0 +1,46 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2_1",
+  "gate_enabled": true,
+  "blend": 0.5,
+  "facts_written": 10,
+  "bank_records": 10,
+  "active_records": 10,
+  "active_conflict_keys": 10,
+  "bank_attributes": [
+    "主管姓名",
+    "出生城市",
+    "办公城市",
+    "团队名称",
+    "工位楼层",
+    "常住城市",
+    "常用编辑器",
+    "档案标识",
+    "通勤方式",
+    "默认语言"
+  ],
+  "head_vocabulary_size": 24,
+  "attributes_outside_head_vocabulary": [],
+  "attributes_missing_from_bank": [
+    "入职年份",
+    "午餐偏好",
+    "咖啡口味",
+    "客户名称",
+    "宿舍楼号",
+    "手机尾号",
+    "紧急联系人姓氏",
+    "设备型号",
+    "课程名称",
+    "起床时间",
+    "运动习惯",
+    "邮箱域名",
+    "阅读工具",
+    "项目代号"
+  ],
+  "gate_counters": {
+    "applicable": 1,
+    "bypassed": 0
+  },
+  "query": "我平时待得最久的地方是哪里？",
+  "stop_reason": "evidence_found",
+  "reply": "您的常住城市是 CITY-A1B2C3，办公城市是 CITY-G7H8J9，通勤"
+}

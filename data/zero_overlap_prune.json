@@ -1,0 +1,350 @@
+C:\Users\Administrator\miniconda3\envs\LLM\Lib\site-packages\torch\cuda\__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{
+  "attributes_without_usable_paraphrase": [
+    "入职年份",
+    "常用编辑器",
+    "手机尾号",
+    "紧急联系人姓氏",
+    "设备型号",
+    "项目代号",
+    "默认语言"
+  ],
+  "dropped_variants": [
+    {
+      "attribute": "常住城市",
+      "paraphrase": "我平时待得最久的地儿是哪里？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "出生城市",
+      "paraphrase": "我小时候成长的地儿是哪里？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "档案标识",
+      "paraphrase": "系统派给我的那串字符是什么？",
+      "blocked_by": [
+        "紧急联系人姓氏"
+      ],
+      "shared": {
+        "紧急联系人姓氏": [
+          "系"
+        ]
+      }
+    },
+    {
+      "attribute": "常用编辑器",
+      "paraphrase": "我写代码靠什么？",
+      "blocked_by": [
+        "项目代号"
+      ],
+      "shared": {
+        "项目代号": [
+          "代"
+        ]
+      }
+    },
+    {
+      "attribute": "常用编辑器",
+      "paraphrase": "我做开发时靠什么？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "默认语言",
+      "paraphrase": "我平时讲哪种话？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "默认语言",
+      "paraphrase": "我跟人交流用哪门话？",
+      "blocked_by": [
+        "常用编辑器",
+        "紧急联系人姓氏"
+      ],
+      "shared": {
+        "常用编辑器": [
+          "用"
+        ],
+        "紧急联系人姓氏": [
+          "人"
+        ]
+      }
+    },
+    {
+      "attribute": "通勤方式",
+      "paraphrase": "我早上怎么去公司？",
+      "blocked_by": [
+        "办公城市"
+      ],
+      "shared": {
+        "办公城市": [
+          "公"
+        ]
+      }
+    },
+    {
+      "attribute": "工位楼层",
+      "paraphrase": "我坐在哪儿，第几间？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "间"
+        ]
+      }
+    },
+    {
+      "attribute": "邮箱域名",
+      "paraphrase": "别人给我发信要写哪个后缀？",
+      "blocked_by": [
+        "紧急联系人姓氏"
+      ],
+      "shared": {
+        "紧急联系人姓氏": [
+          "人"
+        ]
+      }
+    },
+    {
+      "attribute": "手机尾号",
+      "paraphrase": "我随身那台设备的末几位数字是啥？",
+      "blocked_by": [
+        "工位楼层",
+        "设备型号"
+      ],
+      "shared": {
+        "工位楼层": [
+          "位"
+        ],
+        "设备型号": [
+          "备",
+          "设"
+        ]
+      }
+    },
+    {
+      "attribute": "手机尾号",
+      "paraphrase": "那串数字的末尾几位是啥？",
+      "blocked_by": [
+        "工位楼层",
+        "手机尾号"
+      ],
+      "shared": {
+        "工位楼层": [
+          "位"
+        ],
+        "手机尾号": [
+          "尾"
+        ]
+      }
+    },
+    {
+      "attribute": "项目代号",
+      "paraphrase": "我正在做的那个工程叫什么？",
+      "blocked_by": [
+        "工位楼层",
+        "课程名称",
+        "阅读工具"
+      ],
+      "shared": {
+        "工位楼层": [
+          "工"
+        ],
+        "课程名称": [
+          "程"
+        ],
+        "阅读工具": [
+          "工"
+        ]
+      }
+    },
+    {
+      "attribute": "项目代号",
+      "paraphrase": "我手上那摊活儿叫什么？",
+      "blocked_by": [
+        "手机尾号"
+      ],
+      "shared": {
+        "手机尾号": [
+          "手"
+        ]
+      }
+    },
+    {
+      "attribute": "入职年份",
+      "paraphrase": "我什么时候开始在这儿干活的？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "入职年份",
+      "paraphrase": "我从何时起在这家公司上班？",
+      "blocked_by": [
+        "办公城市",
+        "起床时间"
+      ],
+      "shared": {
+        "办公城市": [
+          "公"
+        ],
+        "起床时间": [
+          "时",
+          "起"
+        ]
+      }
+    },
+    {
+      "attribute": "紧急联系人姓氏",
+      "paraphrase": "出事时该喊谁来？",
+      "blocked_by": [
+        "出生城市",
+        "起床时间"
+      ],
+      "shared": {
+        "出生城市": [
+          "出"
+        ],
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "紧急联系人姓氏",
+      "paraphrase": "万一出岔子该找哪一户？",
+      "blocked_by": [
+        "出生城市",
+        "客户名称"
+      ],
+      "shared": {
+        "出生城市": [
+          "出"
+        ],
+        "客户名称": [
+          "户"
+        ]
+      }
+    },
+    {
+      "attribute": "午餐偏好",
+      "paraphrase": "我白天那顿想尝什么味道？",
+      "blocked_by": [
+        "咖啡口味"
+      ],
+      "shared": {
+        "咖啡口味": [
+          "味"
+        ]
+      }
+    },
+    {
+      "attribute": "运动习惯",
+      "paraphrase": "我平时怎么锻炼？",
+      "blocked_by": [
+        "起床时间"
+      ],
+      "shared": {
+        "起床时间": [
+          "时"
+        ]
+      }
+    },
+    {
+      "attribute": "阅读工具",
+      "paraphrase": "我看书靠什么设备？",
+      "blocked_by": [
+        "设备型号"
+      ],
+      "shared": {
+        "设备型号": [
+          "备",
+          "设"
+        ]
+      }
+    },
+    {
+      "attribute": "宿舍楼号",
+      "paraphrase": "我住在哪一栋？",
+      "blocked_by": [
+        "常住城市"
+      ],
+      "shared": {
+        "常住城市": [
+          "住"
+        ]
+      }
+    },
+    {
+      "attribute": "客户名称",
+      "paraphrase": "我在跟哪家公司打交道？",
+      "blocked_by": [
+        "办公城市"
+      ],
+      "shared": {
+        "办公城市": [
+          "公"
+        ]
+      }
+    },
+    {
+      "attribute": "设备型号",
+      "paraphrase": "我用的那台是哪种款？",
+      "blocked_by": [
+        "常用编辑器"
+      ],
+      "shared": {
+        "常用编辑器": [
+          "用"
+        ]
+      }
+    },
+    {
+      "attribute": "设备型号",
+      "paraphrase": "我拿的那台是哪种档？",
+      "blocked_by": [
+        "档案标识"
+      ],
+      "shared": {
+        "档案标识": [
+          "档"
+        ]
+      }
+    }
+  ]
+}

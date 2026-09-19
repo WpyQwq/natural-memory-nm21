@@ -1,0 +1,95 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2_1",
+  "eval_file": "data/realistic_v2/eval.jsonl",
+  "episodes": 24,
+  "per_category": {
+    "alias_paraphrase": {
+      "episodes": 3,
+      "candidates_written": 15,
+      "active_after_write": 15,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 33.33,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "long_fact": {
+      "episodes": 3,
+      "candidates_written": 12,
+      "active_after_write": 11,
+      "write_survival_pct": 91.67,
+      "candidates_parsed_as_attribute_pct": 0.0,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "multi_entity": {
+      "episodes": 3,
+      "candidates_written": 9,
+      "active_after_write": 9,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 0.0,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "multi_hop": {
+      "episodes": 3,
+      "candidates_written": 15,
+      "active_after_write": 15,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 0.0,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "near_miss": {
+      "episodes": 3,
+      "candidates_written": 12,
+      "active_after_write": 12,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 75.0,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "noise_context": {
+      "episodes": 3,
+      "candidates_written": 27,
+      "active_after_write": 27,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 11.11,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    },
+    "unknown_attribute": {
+      "episodes": 3,
+      "candidates_written": 15,
+      "active_after_write": 15,
+      "write_survival_pct": 100.0,
+      "candidates_parsed_as_attribute_pct": 100.0,
+      "answerable_episodes": 0,
+      "target_survived": 0,
+      "target_survival_pct": 0.0
+    },
+    "update_conflict": {
+      "episodes": 3,
+      "candidates_written": 15,
+      "active_after_write": 6,
+      "write_survival_pct": 40.0,
+      "candidates_parsed_as_attribute_pct": 80.0,
+      "answerable_episodes": 3,
+      "target_survived": 3,
+      "target_survival_pct": 100.0
+    }
+  },
+  "target_missing_examples": [],
+  "overall": {
+    "candidates_written": 120,
+    "active_after_write": 110,
+    "write_survival_pct": 91.67,
+    "answerable_episodes": 21,
+    "target_survival_pct": 100.0
+  }
+}

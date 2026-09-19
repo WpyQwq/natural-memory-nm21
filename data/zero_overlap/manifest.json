@@ -1,0 +1,195 @@
+{
+  "generator": "make_zero_overlap_paraphrase_data.py",
+  "purpose": "train the router on paraphrase queries with no distinctive-character overlap",
+  "attributes": 24,
+  "usable_paraphrases": 72,
+  "candidate_count": 24,
+  "unknown_ratio": 0.15,
+  "query_string_split": {
+    "train": [
+      "万一出岔子该找哪一户？",
+      "他们给我的那串字段是多少？",
+      "出事时该喊谁来？",
+      "别人给我发信要写哪个后缀？",
+      "我上班待的格子是哪个？",
+      "我什么时候开始在这儿干活的？",
+      "我从何时起在这家公司上班？",
+      "我住在哪一栋？",
+      "我做开发时靠什么？",
+      "我写代码靠什么？",
+      "我在哪个组干活？",
+      "我在跟哪家公司打交道？",
+      "我坐在哪儿，第几间？",
+      "我小时候成长的地儿是哪里？",
+      "我属于哪个小组？",
+      "我干活儿的地儿是哪儿？",
+      "我平时待得最久的地儿是哪里？",
+      "我平时怎么锻炼？",
+      "我平时讲哪种话？",
+      "我归谁带？",
+      "我手上那摊活儿叫什么？",
+      "我报的那门学的是什么？",
+      "我拿的那台是哪种档？",
+      "我收信地址的后半段是什么？",
+      "我早上几点睁眼？",
+      "我早上怎么去公司？",
+      "我早上那杯想喝哪种？",
+      "我早上那杯要什么风格？",
+      "我最近在学什么？",
+      "我服务的那家叫什么？",
+      "我正在做的那个工程叫什么？",
+      "我每天上班要去哪儿？",
+      "我每天几点醒？",
+      "我每天路上靠什么？",
+      "我用的那台是哪种款？",
+      "我白天那顿想吃什么？",
+      "我白天那顿想尝什么味道？",
+      "我看书靠什么设备？",
+      "我看电子书靠什么？",
+      "我睡觉的地儿是第几栋？",
+      "我老家在哪儿？",
+      "我跟人交流用哪门话？",
+      "我长期落脚的地儿在哪儿？",
+      "我随身那台设备的末几位数字是啥？",
+      "我靠什么门路保持体力？",
+      "系统派给我的那串字符是什么？",
+      "谁带我？",
+      "那串数字的最后几位是啥？"
+    ],
+    "eval": [
+      "万一出岔子该找哪一个？",
+      "我何时开始在这家公司上班？",
+      "我使用的机器是哪一档？",
+      "我写代码靠哪个软件？",
+      "我坐在哪一间房？",
+      "我小时候待的地儿是哪里？",
+      "我归在哪个小组里？",
+      "我待得最久的那块地儿是哪里？",
+      "我手上那摊活儿叫啥？",
+      "我早上那杯偏好哪种豆子？",
+      "我最近报的那门教的是什么？",
+      "我服务的对象是哪家？",
+      "我每天如何到公司？",
+      "我每天都在练些什么？",
+      "我白天上班的地儿在哪儿？",
+      "我白天那顿打算吃啥？",
+      "我睡觉的地儿是第几排？",
+      "我翻书时依赖什么？",
+      "我跟人交流讲哪种话？",
+      "我闹钟设在哪一刻？",
+      "我随身那台设备的末端数字是啥？",
+      "收信时我地址的后半段是啥？",
+      "系统分给我的那串字符是啥？",
+      "谁是我上级？"
+    ],
+    "shared_query_strings": [],
+    "disjoint": true,
+    "note": "eval queries are paraphrases the router never saw, so the eval measures generalisation to an unseen phrasing, not memorisation"
+  },
+  "train": {
+    "episodes": 1200,
+    "sha256": "763729d3ed74919fffb9768ef527d8143d1501d57a5bdcaf1b9d1a261f666b31",
+    "unknown": 199
+  },
+  "eval": {
+    "episodes": 300,
+    "sha256": "495f8d2fc7eec5cec1ffd8be1c61ba1a01768e7a3e778e018091fe53a6a8569f",
+    "unknown": 50
+  },
+  "target_overlap_check": {
+    "max_query_target_overlap_ratio": 0.0,
+    "passed": true
+  },
+  "hardness": {
+    "paraphrases_lexically_matching_an_unrelated_attribute": 40,
+    "episodes_with_at_least_one_lexical_distractor": 54.53,
+    "max_query_distractor_overlap_ratio": 0.5
+  },
+  "trap_examples": [
+    {
+      "attribute": "常住城市",
+      "paraphrase": "我平时待得最久的地儿是哪里？",
+      "lexically_matches": [
+        "起床时间"
+      ]
+    },
+    {
+      "attribute": "出生城市",
+      "paraphrase": "我小时候成长的地儿是哪里？",
+      "lexically_matches": [
+        "起床时间"
+      ]
+    },
+    {
+      "attribute": "出生城市",
+      "paraphrase": "我小时候待的地儿是哪里？",
+      "lexically_matches": [
+        "起床时间"
+      ]
+    },
+    {
+      "attribute": "档案标识",
+      "paraphrase": "系统派给我的那串字符是什么？",
+      "lexically_matches": [
+        "紧急联系人姓氏"
+      ]
+    },
+    {
+      "attribute": "档案标识",
+      "paraphrase": "系统分给我的那串字符是啥？",
+      "lexically_matches": [
+        "紧急联系人姓氏"
+      ]
+    },
+    {
+      "attribute": "常用编辑器",
+      "paraphrase": "我写代码靠什么？",
+      "lexically_matches": [
+        "项目代号"
+      ]
+    },
+    {
+      "attribute": "常用编辑器",
+      "paraphrase": "我做开发时靠什么？",
+      "lexically_matches": [
+        "起床时间"
+      ]
+    },
+    {
+      "attribute": "常用编辑器",
+      "paraphrase": "我写代码靠哪个软件？",
+      "lexically_matches": [
+        "项目代号"
+      ]
+    },
+    {
+      "attribute": "默认语言",
+      "paraphrase": "我平时讲哪种话？",
+      "lexically_matches": [
+        "起床时间"
+      ]
+    },
+    {
+      "attribute": "默认语言",
+      "paraphrase": "我跟人交流用哪门话？",
+      "lexically_matches": [
+        "常用编辑器",
+        "紧急联系人姓氏"
+      ]
+    },
+    {
+      "attribute": "默认语言",
+      "paraphrase": "我跟人交流讲哪种话？",
+      "lexically_matches": [
+        "紧急联系人姓氏"
+      ]
+    },
+    {
+      "attribute": "通勤方式",
+      "paraphrase": "我早上怎么去公司？",
+      "lexically_matches": [
+        "办公城市"
+      ]
+    }
+  ]
+}

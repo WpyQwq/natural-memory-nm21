@@ -1,0 +1,436 @@
+{
+  "candidates": [
+    "XL-512 best",
+    "XL-512 final(step100k)"
+  ],
+  "baselines": [
+    "V2-512 best(step1000)",
+    "V2-512 final(step100k)"
+  ],
+  "passed_axes": 20,
+  "failed_axes": 22,
+  "skipped_axes": 0,
+  "dominates": false,
+  "rows": [
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.6712104689203926,
+      "candidate_value": 0.608505997818975,
+      "delta": -0.06270447110141764,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "Top-1 正确率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.6712104689203926,
+      "candidate_value": 0.5436205016357688,
+      "delta": -0.1275899672846238,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.6712104689203926,
+      "candidate_value": 0.608505997818975,
+      "delta": -0.06270447110141764,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "Recall@1",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.6712104689203926,
+      "candidate_value": 0.5436205016357688,
+      "delta": -0.1275899672846238,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8876772082878953,
+      "candidate_value": 0.9296619411123228,
+      "delta": 0.041984732824427495,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@3",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8876772082878953,
+      "candidate_value": 0.8533260632497274,
+      "delta": -0.03435114503816794,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.9492911668484187,
+      "candidate_value": 0.9732824427480916,
+      "delta": 0.02399127589967287,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "Recall@5",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.9492911668484187,
+      "candidate_value": 0.9193020719738277,
+      "delta": -0.029989094874591005,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "MRR",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.7908385671852008,
+      "candidate_value": 0.759814160403073,
+      "delta": -0.03102440678212781,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "MRR",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.7908385671852008,
+      "candidate_value": 0.6950444145765433,
+      "delta": -0.09579415260865753,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.7999554748364778,
+      "candidate_value": 0.792764395065411,
+      "delta": -0.007191079771066811,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "nDCG@3",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.7999554748364778,
+      "candidate_value": 0.7170573814087626,
+      "delta": -0.08289809342771515,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8865866957470011,
+      "candidate_value": 0.9285714285714286,
+      "delta": 0.041984732824427495,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(Top-3)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8865866957470011,
+      "candidate_value": 0.8522355507088332,
+      "delta": -0.03435114503816794,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.5,
+      "candidate_value": 0.5,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "多跳证据全中(仅多正例)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.5,
+      "candidate_value": 0.5,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9969072164948454,
+      "candidate_value": 0.9938144329896907,
+      "delta": -0.003092783505154628,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "hop 正确率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9969072164948454,
+      "candidate_value": 0.9969072164948454,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.003271537622682661,
+      "candidate_value": 0.003271537622682661,
+      "delta": 0.0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "hop 欠预测率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.003271537622682661,
+      "candidate_value": 0.003271537622682661,
+      "delta": 0.0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9989082969432315,
+      "candidate_value": 0.9961894393032119,
+      "delta": -0.0027188576400195563,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "need F1 (门槛 0.50)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9989082969432315,
+      "candidate_value": 0.9989082969432315,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.9978189749182116,
+      "candidate_value": 0.9978189749182116,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "need 召回 (门槛 0.50)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.9978189749182116,
+      "candidate_value": 0.9978189749182116,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 1.0,
+      "candidate_value": 0.9056603773584906,
+      "delta": -0.09433962264150941,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "未知拒答率 (门槛 0.50)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 1.0,
+      "candidate_value": 1.0,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.0021810250817884407,
+      "candidate_value": 0.0021810250817884407,
+      "delta": 0.0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "已知问题被误拒率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.0021810250817884407,
+      "candidate_value": 0.0021810250817884407,
+      "delta": 0.0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.0,
+      "candidate_value": 0.09433962264150944,
+      "delta": 0.09433962264150944,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "未知问题被误读率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.0,
+      "candidate_value": 0.0,
+      "delta": 0.0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9979381443298969,
+      "candidate_value": 0.9927835051546392,
+      "delta": -0.005154639175257714,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "仲裁准确率",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 0.9979381443298969,
+      "candidate_value": 0.9979381443298969,
+      "delta": 0.0,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 3.8836881184794065,
+      "candidate_value": 6.709678303645345,
+      "delta": 2.825990185165938,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "平均分数余量",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 final(step100k)",
+      "baseline_value": 3.8836881184794065,
+      "candidate_value": 25.375655539715694,
+      "delta": 21.49196742123629,
+      "direction": "max",
+      "pass": true
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8951400030249109,
+      "candidate_value": 1.3101640006061643,
+      "delta": 0.4150239975812534,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "单查询延迟 ms (GPU)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 0.8951400030249109,
+      "candidate_value": 1.2458240000220637,
+      "delta": 0.3506839969971528,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU)",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 1117.1436832459055,
+      "candidate_value": 763.263224708767,
+      "delta": -353.88045853713857,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "路由 QPS (GPU)",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 1117.1436832459055,
+      "candidate_value": 802.6815986706708,
+      "delta": -314.4620845752347,
+      "direction": "max",
+      "pass": false
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 2048,
+      "candidate_value": 2048,
+      "delta": 0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "地址字节/记录",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 2048,
+      "candidate_value": 2048,
+      "delta": 0,
+      "direction": "min",
+      "pass": true
+    },
+    {
+      "axis": "参数量",
+      "candidate": "XL-512 best",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 4741902,
+      "candidate_value": 7898127,
+      "delta": 3156225,
+      "direction": "min",
+      "pass": false
+    },
+    {
+      "axis": "参数量",
+      "candidate": "XL-512 final(step100k)",
+      "baseline": "V2-512 best(step1000)",
+      "baseline_value": 4741902,
+      "candidate_value": 7898127,
+      "delta": 3156225,
+      "direction": "min",
+      "pass": false
+    }
+  ]
+}

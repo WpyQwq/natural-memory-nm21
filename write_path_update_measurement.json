@@ -1,0 +1,124 @@
+{
+  "package": "V2_dpskw\\qwen3_5_4b_natural_memory_v2",
+  "facts": 20,
+  "distinct_attribute_pairs": 190,
+  "retriever": {
+    "text_retriever_ready": true,
+    "router_ready": true,
+    "text_retriever_params": 1573377
+  },
+  "retriever_score_distribution": {
+    "min_pct": 0.0,
+    "p50_pct": 0.23,
+    "p90_pct": 24.67,
+    "p99_pct": 89.14,
+    "max_pct": 90.09
+  },
+  "pairs_scoring_at_or_above_update_threshold_0.95": 0,
+  "pairs_at_or_above_0.95_pct": 0.0,
+  "pairs_where_the_shared_ge_2_guard_does_not_block": 0,
+  "shared_token_counts": [
+    5,
+    6,
+    7
+  ],
+  "template_token_share_note": "every fact shares the 我的/是 template tokens, so 'shared >= 2' is satisfied by unrelated attributes and cannot act as an update guard",
+  "worst_pairs": [
+    {
+      "left": "默认语言",
+      "right": "邮箱域名",
+      "retriever_score": 0.900855302810669,
+      "shared_tokens": 6,
+      "template_shared": [
+        "0。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "默认语言",
+      "right": "阅读工具",
+      "retriever_score": 0.8913677930831909,
+      "shared_tokens": 6,
+      "template_shared": [
+        "0。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "工位楼层",
+      "right": "邮箱域名",
+      "retriever_score": 0.7586287260055542,
+      "shared_tokens": 6,
+      "template_shared": [
+        "0。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "常用编辑器",
+      "right": "阅读工具",
+      "retriever_score": 0.7083732485771179,
+      "shared_tokens": 6,
+      "template_shared": [
+        "0。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "邮箱域名",
+      "right": "入职年份",
+      "retriever_score": 0.6711557507514954,
+      "shared_tokens": 7,
+      "template_shared": [
+        "01。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "默认语言",
+      "right": "入职年份",
+      "retriever_score": 0.6639186143875122,
+      "shared_tokens": 6,
+      "template_shared": [
+        "0。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "手机尾号",
+      "right": "入职年份",
+      "retriever_score": 0.6599420309066772,
+      "shared_tokens": 7,
+      "template_shared": [
+        "01。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    },
+    {
+      "left": "午餐偏好",
+      "right": "咖啡口味",
+      "retriever_score": 0.625023603439331,
+      "shared_tokens": 7,
+      "template_shared": [
+        "01。-A",
+        "VAL是我的"
+      ],
+      "would_be_confirmed_update": false,
+      "would_be_retracted_by_second_condition": false
+    }
+  ]
+}

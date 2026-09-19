@@ -1,0 +1,150 @@
+{
+  "format_version": 3,
+  "generator": "prepare_memory_router_dataset.py",
+  "seed": 20260909,
+  "candidate_count": 32,
+  "schema": {
+    "query": "natural-language routing query",
+    "candidates": "bounded memory records with text and provenance",
+    "positive_indices": "one or more supporting memory records; empty means abstain",
+    "need_memory": "1 if evidence is required and present, 0 for unknown/unsupported queries",
+    "hop": "0 for abstention, otherwise number of supporting records clipped to router max_hops",
+    "group_id": "conversation or QA episode identity; no group may cross train/eval"
+  },
+  "files": {
+    "train": {
+      "path": "H:\\Memory\\V2_dpskw\\data\\_ab_mega20_dynamic_memory_lab\\train.jsonl",
+      "episodes": 148,
+      "sha256": "d9c2774955df7066fe6751faa86ae6137675f72b607bda892d0e20aeadab2f74"
+    },
+    "eval": {
+      "path": "H:\\Memory\\V2_dpskw\\data\\_ab_mega20_dynamic_memory_lab\\eval.jsonl",
+      "episodes": 84,
+      "sha256": "169b026df2a85c3530f85c0ab0ef1c0769c51b4cc3c8e66d0784833a6bb53177"
+    }
+  },
+  "counts": {
+    "train_groups": 80128,
+    "eval_groups": 20064,
+    "train_episodes": 148,
+    "eval_episodes": 84,
+    "train_unknown": 128,
+    "eval_unknown": 64,
+    "train_candidates": 4736,
+    "eval_candidates": 2688
+  },
+  "local_sources": [
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/benchmark_train.jsonl",
+      "rows": 128,
+      "kind": "benchmark",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/mega_validation/memory_validation_80k_train.jsonl",
+      "rows": 80000,
+      "kind": "mega_validation",
+      "split": "train"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/benchmark_eval.jsonl",
+      "rows": 64,
+      "kind": "benchmark",
+      "split": "eval"
+    },
+    {
+      "source": "H:/Memory/dynamic_memory_lab/data/mega_validation/memory_validation_20k_eval.jsonl",
+      "rows": 20000,
+      "kind": "mega_validation",
+      "split": "eval"
+    }
+  ],
+  "public_sources": [],
+  "public_catalog": [
+    {
+      "name": "hotpotqa_train",
+      "dataset_id": "hotpot_qa",
+      "config": "distractor",
+      "split": "train",
+      "split_kind": "train",
+      "task": "qa",
+      "url": "https://huggingface.co/datasets/hotpot_qa"
+    },
+    {
+      "name": "hotpotqa_validation",
+      "dataset_id": "hotpot_qa",
+      "config": "distractor",
+      "split": "validation",
+      "split_kind": "eval",
+      "task": "qa",
+      "url": "https://huggingface.co/datasets/hotpot_qa"
+    },
+    {
+      "name": "codesearchnet_python_train",
+      "dataset_id": "code_search_net",
+      "config": "python",
+      "split": "train",
+      "split_kind": "train",
+      "task": "code",
+      "url": "https://huggingface.co/datasets/code_search_net"
+    },
+    {
+      "name": "codesearchnet_python_validation",
+      "dataset_id": "code_search_net",
+      "config": "python",
+      "split": "validation",
+      "split_kind": "eval",
+      "task": "code",
+      "url": "https://huggingface.co/datasets/code_search_net"
+    },
+    {
+      "name": "fever_train",
+      "dataset_id": "fever",
+      "config": "v1.0",
+      "split": "train",
+      "split_kind": "train",
+      "task": "evidence",
+      "url": "https://huggingface.co/datasets/fever"
+    },
+    {
+      "name": "fever_validation",
+      "dataset_id": "fever",
+      "config": "v1.0",
+      "split": "labelled_dev",
+      "split_kind": "eval",
+      "task": "evidence",
+      "url": "https://huggingface.co/datasets/fever"
+    }
+  ],
+  "split_stats": {
+    "train": {
+      "kept": 148,
+      "unknown": 128,
+      "family:benchmark_qa": 128,
+      "family:mega_validation": 20,
+      "written": 148
+    },
+    "eval": {
+      "kept": 84,
+      "unknown": 64,
+      "family:benchmark_qa": 64,
+      "family:mega_validation": 20,
+      "written": 84
+    }
+  },
+  "leakage_check": {
+    "group_overlap": 0,
+    "passed": true
+  },
+  "conflict_policy": {
+    "enabled": true,
+    "answerable_positive_conflicts_excluded": true,
+    "unknown_hard_conflicts_retained": true
+  },
+  "evaluation_policy": "eval.jsonl is generated and hashed before router training; the trainer refuses an optional hash mismatch.",
+  "warnings": [
+    "Local generated memory-policy files are useful hard negatives but are not public-human chat data.",
+    "Add redacted real user traces only after consent and PII removal.",
+    "Public download failures are recorded; failed sources contribute zero rows."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "attribute_names": 24,
+  "episodes": 300,
+  "answerable": 250,
+  "abstention": 50,
+  "mean_present_attributes": 23.83,
+  "top1_attribute_accuracy_answerable_pct": 49.2,
+  "chance_pct": 4.2,
+  "best_score_answerable_p50": 0.7134,
+  "best_score_abstention_p50": 0.689,
+  "best_score_auc_covered_vs_uncovered": 0.656,
+  "note": "training-free: cosine between the frozen query key and the frozen encoding of each attribute NAME actually present in the bank"
+}

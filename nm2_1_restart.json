@@ -1,0 +1,129 @@
+{
+  "model_path": "qwen3_5_4b_natural_memory_v2_1",
+  "history_passed_to_restart": false,
+  "fact": "我正在开发一个长期项目，项目内部代号是NM-V2-RESTART，使用中文。",
+  "query": "我正在开发的长期项目内部代号是什么？只回答代号。",
+  "expected": "NM-V2-RESTART",
+  "automatic_write": true,
+  "write_changed": true,
+  "before_save": {
+    "pages": 1,
+    "max_pages": 32768,
+    "page_capacity": 32,
+    "capacity_records": 1048576,
+    "open_pages": 1,
+    "records": 1,
+    "active_records": 1,
+    "superseded_records": 0,
+    "retracted_records": 0,
+    "quarantined_records": 0,
+    "hot_pages": 1,
+    "warm_pages": 0,
+    "cold_pages": 0,
+    "active_conflict_keys": 0,
+    "coarse_index_buckets": 1,
+    "last_coarse_candidates": 0,
+    "storage_mode": "embedded",
+    "resident_records": 1,
+    "resident_pages": 1,
+    "gpu_cache_records": 1,
+    "gpu_cache_tokens": 141,
+    "gpu_cache_bytes": 2293,
+    "gpu_cache_hits": 0,
+    "gpu_cache_misses": 1,
+    "gpu_cache_fallbacks": 0,
+    "gpu_cache_alloc_failures": 0,
+    "gpu_cache_device": "cuda:0",
+    "gpu_cache_limit_records": 256,
+    "gpu_cache_limit_tokens": 131072,
+    "gpu_cache_reserve_mb": 2048,
+    "gpu_cache_adaptive": true,
+    "gpu_cache_last_free_mb": 7685.0,
+    "kv_budget": {
+      "max_tokens": 32768,
+      "trigger_tokens": 29491
+    },
+    "enabled": true,
+    "router_ready": true
+  },
+  "after_restart": {
+    "response": "项目内部代号是 NM-V2-RESTART。",
+    "prefix_length": 141,
+    "prefix_used": true,
+    "decision": [
+      {
+        "need_memory": true,
+        "page_ids": [
+          "page_00000001"
+        ],
+        "record_ids": [
+          "mem_032f668fa6c8fbb4"
+        ],
+        "page_scores": [
+          3.549997901916504
+        ],
+        "record_scores": [
+          8.436647681137504
+        ],
+        "hop_count": 0,
+        "hop_trace": [],
+        "confidence": 1.0,
+        "stop_reason": "evidence_found",
+        "top_score": 8.436647681137504,
+        "score_margin": 8.436647681137504,
+        "evidence_score": 1.0
+      }
+    ],
+    "prefix_shape": [
+      1,
+      141
+    ],
+    "prefix_mask_shape": [
+      1,
+      141
+    ]
+  },
+  "router_recalled_after_restart": true,
+  "generated_contains_expected": true,
+  "cleanup_applied": true,
+  "after_cleanup": {
+    "pages": 0,
+    "max_pages": 32768,
+    "page_capacity": 32,
+    "capacity_records": 1048576,
+    "open_pages": 0,
+    "records": 0,
+    "active_records": 0,
+    "superseded_records": 0,
+    "retracted_records": 0,
+    "quarantined_records": 0,
+    "hot_pages": 0,
+    "warm_pages": 0,
+    "cold_pages": 0,
+    "active_conflict_keys": 0,
+    "coarse_index_buckets": 0,
+    "last_coarse_candidates": 0,
+    "storage_mode": "embedded",
+    "resident_records": 0,
+    "resident_pages": 0,
+    "gpu_cache_records": 0,
+    "gpu_cache_tokens": 0,
+    "gpu_cache_bytes": 0,
+    "gpu_cache_hits": 0,
+    "gpu_cache_misses": 0,
+    "gpu_cache_fallbacks": 0,
+    "gpu_cache_alloc_failures": 0,
+    "gpu_cache_device": "cuda:0",
+    "gpu_cache_limit_records": 256,
+    "gpu_cache_limit_tokens": 131072,
+    "gpu_cache_reserve_mb": 2048,
+    "gpu_cache_adaptive": true,
+    "gpu_cache_last_free_mb": null,
+    "kv_budget": {
+      "max_tokens": 32768,
+      "trigger_tokens": 29491
+    },
+    "enabled": true,
+    "router_ready": true
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "model": "hf-internal-testing/tiny-random-LlamaForCausalLM",
+    "full_stack": false,
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "FAIL ValueError: layer_indices must be inside [0, 2)"
+    },
+    "patches": [
+      "config.text_config = config",
+      "model.model.language_model = model.model"
+    ],
+    "architecture": "LlamaForCausalLM",
+    "model_type": "llama",
+    "hidden_size": 16,
+    "num_layers": 2,
+    "vocab_size": 32000,
+    "text_config_present": false,
+    "backbone_class": "LlamaForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "traceback": "Traceback (most recent call last):\n  File \"H:\\Memory\\V2_dpskw\\probe_nm2_portability.py\", line 219, in probe\n    layer_indices = memory_config.resolved_layers(num_layers)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\Memory\\V2_dpskw\\qwen_integration.py\", line 405, in resolved_layers\n    raise ValueError(f\"layer_indices must be inside [0, {num_hidden_layers})\")\nValueError: layer_indices must be inside [0, 2)\n"
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-Qwen2ForCausalLM",
+    "full_stack": false,
+    "stages": {
+      "1_config": "FAIL OSError: hf-internal-testing/tiny-random-Qwen2ForCausalLM is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'"
+    },
+    "patches": []
+  },
+  {
+    "model": "hf-internal-testing/tiny-random-OlmoeForCausalLM",
+    "full_stack": false,
+    "stages": {
+      "1_config": "needs patch: config.text_config",
+      "2_load_causal_lm": "ok",
+      "3_container": "needs patch: repo wants model.language_model.layers, found model.layers",
+      "4_convention": "MISMATCH: second positional is 'attention_mask', adapter forwards position_embeddings positionally",
+      "5_surgery": "FAIL ValueError: layer_indices must be inside [0, 2)"
+    },
+    "patches": [
+      "config.text_config = config",
+      "model.model.language_model = model.model"
+    ],
+    "architecture": "OlmoeForCausalLM",
+    "model_type": "olmoe",
+    "hidden_size": 64,
+    "num_layers": 2,
+    "vocab_size": 50304,
+    "text_config_present": false,
+    "backbone_class": "OlmoeForCausalLM",
+    "container_path": "model.layers",
+    "repo_layer_path_ok": false,
+    "layer_forward_params": [
+      "hidden_states",
+      "attention_mask",
+      "position_ids",
+      "past_key_values",
+      "use_cache",
+      "position_embeddings",
+      "kwargs"
+    ],
+    "second_positional_is_position_embeddings": false,
+    "traceback": "Traceback (most recent call last):\n  File \"H:\\Memory\\V2_dpskw\\probe_nm2_portability.py\", line 219, in probe\n    layer_indices = memory_config.resolved_layers(num_layers)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\Memory\\V2_dpskw\\qwen_integration.py\", line 405, in resolved_layers\n    raise ValueError(f\"layer_indices must be inside [0, {num_hidden_layers})\")\nValueError: layer_indices must be inside [0, 2)\n"
+  }
+]

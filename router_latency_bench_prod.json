@@ -1,0 +1,62 @@
+{
+  "deployed-raw": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.3917999967816286,
+    "single_ms_median": 1.4202500024111941,
+    "single_ms_max": 1.4593499872717075,
+    "single_ms_spread_pct": 4.853426544494915,
+    "batch64_qps_median": 32912.32980168063,
+    "batch256_qps_median": 164556.14829330458,
+    "batch64_qps_spread_pct": 114.27552828018537,
+    "batch256_qps_spread_pct": 100.66969991041144
+  },
+  "REPLAY-raw": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.3849000024492852,
+    "single_ms_median": 1.4242499964893796,
+    "single_ms_max": 1.4889499943819828,
+    "single_ms_spread_pct": 7.513177250969634,
+    "batch64_qps_median": 48454.74773474632,
+    "batch256_qps_median": 146676.29220835393,
+    "batch64_qps_spread_pct": 104.62934761847778,
+    "batch256_qps_spread_pct": 120.28874179775093
+  },
+  "PROD-20000-raw": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.4003499964019284,
+    "single_ms_median": 1.4122500069788657,
+    "single_ms_max": 1.4668000003439374,
+    "single_ms_spread_pct": 4.745242554557524,
+    "batch64_qps_median": 34427.11131036424,
+    "batch256_qps_median": 175954.69183010858,
+    "batch64_qps_spread_pct": 105.11538375582457,
+    "batch256_qps_spread_pct": 109.08403070633734
+  },
+  "v6best-wrapper": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.3731500002904795,
+    "single_ms_median": 1.4324499934446067,
+    "single_ms_max": 1.4962999994168058,
+    "single_ms_spread_pct": 8.968430186088543,
+    "batch64_qps_median": 47774.02885115436,
+    "batch256_qps_median": 170074.8062954871,
+    "batch64_qps_spread_pct": 95.85224975758882,
+    "batch256_qps_spread_pct": 119.04340928714593
+  },
+  "PROD-10000-wrapper": {
+    "parameters": 2037774,
+    "rounds": 7,
+    "single_ms_min": 1.4117499958956614,
+    "single_ms_median": 1.4342999929795042,
+    "single_ms_max": 1.479899998230394,
+    "single_ms_spread_pct": 4.827342130891661,
+    "batch64_qps_median": 45174.13210269589,
+    "batch256_qps_median": 167939.33216850934,
+    "batch64_qps_spread_pct": 32.187264548843906,
+    "batch256_qps_spread_pct": 131.42806515164995
+  }
+}

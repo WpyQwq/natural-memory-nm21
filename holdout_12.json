@@ -1,0 +1,35 @@
+{
+  "held_out_attributes": [
+    "主管姓名",
+    "办公城市",
+    "咖啡口味",
+    "常住城市",
+    "手机尾号",
+    "档案标识",
+    "紧急联系人姓氏",
+    "课程名称",
+    "通勤方式",
+    "邮箱域名",
+    "项目代号",
+    "默认语言"
+  ],
+  "trained_on_attributes": 12,
+  "eval_held_out_queries": 138,
+  "eval_kept_queries": 112,
+  "max_prob_held_out": {
+    "p10": 0.1377,
+    "p50": 0.1971,
+    "p90": 0.3075
+  },
+  "max_prob_kept": {
+    "p10": 0.3099,
+    "p50": 0.4342,
+    "p90": 0.5683
+  },
+  "openset_auc_held_out_vs_kept": 0.976,
+  "closed_set_false_claim_pct": 100.0,
+  "reject_threshold_from_kept_p05": 0.2875,
+  "held_out_rejected_pct_at_threshold": 80.43,
+  "kept_retained_pct_at_threshold": 94.64,
+  "note": "held-out attributes never appear as training labels, so this is the open-set case a real user bank faces"
+}

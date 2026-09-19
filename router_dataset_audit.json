@@ -1,0 +1,265 @@
+{
+  "train": {
+    "episodes": 87155,
+    "families": {
+      "benchmark_qa": 128,
+      "native_memory": 512,
+      "memory_policy": 6515,
+      "mega_validation": 80000
+    },
+    "categories": {
+      "(none)": 7155,
+      "conflict_update": 8000,
+      "distractor_128": 8000,
+      "distractor_32": 8000,
+      "forget_correction": 8000,
+      "long_context": 8000,
+      "multi_hop": 8000,
+      "paraphrase": 8000,
+      "random_position": 8000,
+      "single_fact": 8000,
+      "unknown_abstention": 8000
+    },
+    "per_category": {
+      "(none)": {
+        "episodes": 7155,
+        "unknown": 319,
+        "candidates_32": 7155,
+        "positives_0": 319,
+        "hop_0": 319,
+        "candidate_slots": 228960,
+        "positive_total": 6836,
+        "answerable": 6836,
+        "positives_1": 6836,
+        "hop_1": 6836
+      },
+      "conflict_update": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "distractor_128": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "distractor_32": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "forget_correction": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_2": 8000,
+        "hop_2": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 16000
+      },
+      "long_context": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "multi_hop": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "paraphrase": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "random_position": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "single_fact": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      },
+      "unknown_abstention": {
+        "episodes": 8000,
+        "answerable": 8000,
+        "candidates_32": 8000,
+        "positives_1": 8000,
+        "hop_1": 8000,
+        "candidate_slots": 256000,
+        "positive_total": 8000
+      }
+    },
+    "seconds": 10.4
+  },
+  "eval": {
+    "episodes": 21920,
+    "families": {
+      "benchmark_qa": 64,
+      "native_memory": 128,
+      "memory_policy": 1728,
+      "mega_validation": 20000
+    },
+    "categories": {
+      "(none)": 1920,
+      "conflict_update": 2000,
+      "distractor_128": 2000,
+      "distractor_32": 2000,
+      "forget_correction": 2000,
+      "long_context": 2000,
+      "multi_hop": 2000,
+      "paraphrase": 2000,
+      "random_position": 2000,
+      "single_fact": 2000,
+      "unknown_abstention": 2000
+    },
+    "per_category": {
+      "(none)": {
+        "episodes": 1920,
+        "unknown": 106,
+        "candidates_32": 1920,
+        "positives_0": 106,
+        "hop_0": 106,
+        "candidate_slots": 61440,
+        "positive_total": 1814,
+        "answerable": 1814,
+        "positives_1": 1814,
+        "hop_1": 1814
+      },
+      "conflict_update": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "distractor_128": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "distractor_32": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "forget_correction": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_2": 2000,
+        "hop_2": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 4000
+      },
+      "long_context": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "multi_hop": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "paraphrase": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "random_position": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "single_fact": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      },
+      "unknown_abstention": {
+        "episodes": 2000,
+        "answerable": 2000,
+        "candidates_32": 2000,
+        "positives_1": 2000,
+        "hop_1": 2000,
+        "candidate_slots": 64000,
+        "positive_total": 2000
+      }
+    },
+    "seconds": 2.5
+  },
+  "leakage": {
+    "group_id_overlap": 0,
+    "eval_queries_seen_in_train": 80,
+    "eval_queries_total": 4296,
+    "eval_candidate_texts_seen_in_train": 11,
+    "eval_candidate_texts_total": 420819,
+    "query_overlap_rate": 0.0186219739292365,
+    "candidate_overlap_rate": 2.613950415736932e-05
+  }
+}

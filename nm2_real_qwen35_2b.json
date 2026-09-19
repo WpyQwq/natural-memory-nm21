@@ -1,0 +1,18 @@
+[
+  {
+    "model": "H:\\modelscope_cache\\Qwen\\Qwen3___5-2B",
+    "full_stack": false,
+    "dtype": "bfloat16",
+    "stages": {
+      "1_config": "ok",
+      "2_load_causal_lm": "FAIL FileNotFoundError: No such file or directory: H:\\modelscope_cache\\Qwen\\Qwen3___5-2B\\model.safetensors-00001-of-00001.safetensors"
+    },
+    "patches": [],
+    "architecture": "Qwen3_5ForConditionalGeneration",
+    "model_type": "qwen3_5",
+    "hidden_size": 2048,
+    "num_layers": 24,
+    "vocab_size": 248320,
+    "text_config_present": true
+  }
+]

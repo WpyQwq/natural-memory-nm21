@@ -1,0 +1,2576 @@
+{
+  "package": "qwen3_5_4b_natural_memory_v2_1",
+  "label": "NM2.1 合体",
+  "tag": "nm2_1_combo",
+  "built_at": "2026-09-12T22:52:17",
+  "per_category": 10,
+  "overlap_cases": 48,
+  "results": {
+    "A_end_to_end": [
+      "| NM2.1 合体 | 110 | 88.18% | 100.00% | 56.67% | 0.00% | 302s |",
+      "wrote nm2_1_combo_e2e.md",
+      "wrote nm2_1_combo_e2e.json",
+      {
+        "NM2.1 合体": {
+          "summary": {
+            "router": "NM2.1 合体",
+            "cases": 110,
+            "accuracy_pct": 88.18181818181819,
+            "answerable_cases": 80,
+            "answerable_accuracy_pct": 100.0,
+            "unknown_cases": 30,
+            "unknown_refusal_pct": 56.666666666666664,
+            "wrong_abstention_pct": 0.0,
+            "seconds": 302.4,
+            "per_category": {
+              "(policy)": {
+                "cases": 10,
+                "accuracy_pct": 0.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 0.0
+              },
+              "conflict_update": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "distractor_128": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "distractor_32": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "forget_correction": {
+                "cases": 10,
+                "accuracy_pct": 70.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 70.0
+              },
+              "long_context": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "multi_hop": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "paraphrase": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "random_position": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "single_fact": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 10,
+                "answerable_accuracy_pct": 100.0,
+                "unknown": 0,
+                "unknown_refusal_pct": 0.0
+              },
+              "unknown_abstention": {
+                "cases": 10,
+                "accuracy_pct": 100.0,
+                "answerable": 0,
+                "answerable_accuracy_pct": 0.0,
+                "unknown": 10,
+                "unknown_refusal_pct": 100.0
+              }
+            }
+          },
+          "rows": [
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0000的驻地代号为？",
+              "reply": "关于对象测试实体 0000 的驻地代号，当前记忆库中无相关记录，无法回答。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0001的负责人代号是什么？",
+              "reply": "测试实体 0001 的负责人代号是成员-M-SBOIIYKN。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0002的维护日代号是什么？",
+              "reply": "关于测试实体0002的维护日代号，当前长期记忆中无相关记录，无法回答。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0003的安全级别代号为？",
+              "reply": "关于对象测试实体0003的安全级别代号，当前记忆库中无相关记录，无法提供确切答案。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0004的档案类别代号为？",
+              "reply": "关于对象测试实体0004的档案类别代号，当前记忆库中无相关记录，无法提供确切答案。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0005的驻地代号是什么？",
+              "reply": "关于测试实体 0005 的驻地代号，当前记忆库中无相关记录，无法提供确切答案。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0006的负责人代号是什么？",
+              "reply": "测试实体 0006 的负责人代号未知，因为当前长期记忆中仅包含项目项目-P-DRG2XUA1 的负责人是成员-M-W5075MN3 这一信息，未涉及",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "根据已记信息，测试实体0007的维护日代号是？",
+              "reply": "根据已记信息，实体0007的维护日代号是N-7HEQZ5KK。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "请问对象测试实体0008的安全级别代号为？",
+              "reply": "关于对象测试实体0008的安全级别代号，当前记忆库中无相关记录，无法提供确切答案。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "(policy)",
+              "query": "查询：测试实体0009的档案类别代号是什么？",
+              "reply": "关于测试实体0009的档案类别代号，当前长期记忆中无相关记录，无法提供确切答案。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的提醒时间最新值是什么？",
+              "reply": "您的提醒时间最新值是 V-IP4QHPYQ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-IP4QHPYQ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "您的备用联系人最新值是 V-2Q6Q2DJZ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2Q6Q2DJZ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "您的备用联系人最新值是 V-VRD5NYP5。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-VRD5NYP5"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的最喜欢的水果最新值是什么？",
+              "reply": "您的最喜欢的水果最新值是 V-9KQ59YCU。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-9KQ59YCU"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的常用语言最新值是什么？",
+              "reply": "您的常用语言最新值是 V-19G95S0K。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-19G95S0K"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的最喜欢的水果最新值是什么？",
+              "reply": "您的最喜欢的水果最新值是 V-BYOP8TUV。\n实体：user；属性：最喜欢的水果已经；已确认值：V-BYOP8TUV",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-BYOP8TUV"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的默认输出风格最新值是什么？",
+              "reply": "您的默认输出风格最新值是 V-JOXVAHZ4。user；默认输出风格已经；V-JOXVAHZ4",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-JOXVAHZ4"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的提醒时间最新值是什么？",
+              "reply": "您的提醒时间最新值是 V-ATDGUDV2。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-ATDGUDV2"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的备用联系人最新值是什么？",
+              "reply": "您的备用联系人最新值是 V-E2117W8I。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-E2117W8I"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "conflict_update",
+              "query": "我的常用语言最新值是什么？",
+              "reply": "您的常用语言最新值是 V-K6JMBW2G。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-K6JMBW2G"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是V-8QPA0VMT。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-8QPA0VMT"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的最喜欢的水果，它的值是什么？",
+              "reply": "您的最喜欢的水果是 V-NXX1GQ4X。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-NXX1GQ4X"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您的工作地点是 V-JT6NCJJ1。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-JT6NCJJ1"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "您的常用时区是V-QHHGZAGW。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-QHHGZAGW"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "我的常用时区是V-LD4C1APV。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-LD4C1APV"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是V-X1VE858H。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-X1VE858H"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是V-DP63RWFL。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-DP63RWFL"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的项目代号，它的值是什么？",
+              "reply": "您的项目代号是 V-L0831M52。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-L0831M52"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "您的备用联系人是V-WP36KJ60。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-WP36KJ60"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_128",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您的工作地点是 V-XA344E7X。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-XA344E7X"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您的工作地点是 V-XT50V4YZ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-XT50V4YZ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "您的备用联系人是V-LMDR4L0N。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-LMDR4L0N"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "您的备用联系人是V-ETN8LYM1。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-ETN8LYM1"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "您的常用时区是V-59JV38HA。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-59JV38HA"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的备用联系人，它的值是什么？",
+              "reply": "您的备用联系人是V-CDCIFX3M。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-CDCIFX3M"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是V-6PVKMPAF。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-6PVKMPAF"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用语言，它的值是什么？",
+              "reply": "您的常用语言是V-2XSHIXKQ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2XSHIXKQ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的工作地点，它的值是什么？",
+              "reply": "您的工作地点是 V-S9BPZTWI。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-S9BPZTWI"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的常用时区，它的值是什么？",
+              "reply": "您的常用时区是V-R94ALUDK。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-R94ALUDK"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "distractor_32",
+              "query": "在大量无关信息中，只读取我的默认输出风格，它的值是什么？",
+              "reply": "您的默认输出风格是V-XNMB7EXE。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-XNMB7EXE"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的项目代号是什么？如果已经删除，请回答没有记录。",
+              "reply": "关于您的项目代号，当前长期记忆中无相关记录，因此回答为没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用时区是什么？如果已经删除，请回答没有记录。",
+              "reply": "我的常用时区是 FORGET-MCNLCDXI。实体：user；属性：常用时区；已确认值：FORGET-MCNLCDXI。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的备用联系人是什么？如果已经删除，请回答没有记录。",
+              "reply": "您的备用联系人是FORGET-T2OB2HCK。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的工作地点是什么？如果已经删除，请回答没有记录。",
+              "reply": "关于工作地点，当前长期记忆中无相关记录。  \n实体：user；属性：工作地点；已确认值：没有记录",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的提醒时间是什么？如果已经删除，请回答没有记录。",
+              "reply": "关于您的提醒时间，当前系统记录中未找到相关数据，因此回答没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的默认输出风格是什么？如果已经删除，请回答没有记录。",
+              "reply": "没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的工作地点是什么？如果已经删除，请回答没有记录。",
+              "reply": "关于您的工作地点，当前长期记忆中无相关记录。",
+              "written": 6,
+              "correct": false,
+              "matched": [],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的提醒时间是什么？如果已经删除，请回答没有记录。",
+              "reply": "关于您的提醒时间，当前系统记录中未找到相关数据，因此回答没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用语言是什么？如果已经删除，请回答没有记录。",
+              "reply": "根据当前长期记忆证据，没有记录关于您常用语言的信息。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "forget_correction",
+              "query": "我的常用时区是什么？如果已经删除，请回答没有记录。",
+              "reply": "您的常用时区没有记录。",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+              "reply": "您的项目代号是 V-TOSZS1SN。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-TOSZS1SN"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用时区并回答。",
+              "reply": "您的常用时区是V-QI6FL69T。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-QI6FL69T"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的工作地点并回答。",
+              "reply": "您的工作地点是 V-0T74UW3G。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-0T74UW3G"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的提醒时间并回答。",
+              "reply": "您的提醒时间是V-ER09EO9W。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-ER09EO9W"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的提醒时间并回答。",
+              "reply": "您的提醒时间是V-KO406TIK。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-KO406TIK"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的项目代号并回答。",
+              "reply": "您的项目代号是 V-MLNFW7GI。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-MLNFW7GI"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用语言并回答。",
+              "reply": "您的常用语言是V-OS9RNC1M。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-OS9RNC1M"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的工作地点并回答。",
+              "reply": "您的工作地点是 V-RYEJ6530。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-RYEJ6530"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的备用联系人并回答。",
+              "reply": "您的备用联系人是V-5NJVAPHC。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-5NJVAPHC"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "long_context",
+              "query": "在长上下文压缩之后，检索我的常用时区并回答。",
+              "reply": "您的常用时区是 V-R9C2YGO0。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-R9C2YGO0"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-KP2F9GHO负责人的工作代号。",
+              "reply": "项目项目-P-KP2F9GHO的负责人是成员-M-4L5KLUVI，其工作代号是H-PVQ6LVWO。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-PVQ6LVWO"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-DG818670负责人的工作代号。",
+              "reply": "项目项目-P-DG818670的负责人是成员-M-P5VJQNHA，其工作代号是H-7AXL6FUM。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-7AXL6FUM"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-LXAVDTVY负责人的工作代号。",
+              "reply": "项目项目-P-LXAVDTVY的负责人是成员-M-6D53FTGJ，其工作代号是H-ZGFE3T3R。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-ZGFE3T3R"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-F1BVFMQ5负责人的工作代号。",
+              "reply": "项目项目-P-F1BVFMQ5的负责人是成员-M-1K2LL0AJ，其工作代号是H-C5RXAUOH。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-C5RXAUOH"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-CY5VYJU9负责人的工作代号。",
+              "reply": "项目项目-P-CY5VYJU9的负责人是成员-M-ISLCPRNN，其工作代号是H-92YV6R1K。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-92YV6R1K"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-Q1Y92XOA负责人的工作代号。",
+              "reply": "项目项目-P-Q1Y92XOA的负责人是成员-M-WTDX9E0X，其工作代号是H-55CMWHP3。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-55CMWHP3"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-7Y96TFNY负责人的工作代号。",
+              "reply": "项目项目-P-7Y96TFNY的负责人是成员-M-4CHMA1SE，其工作代号是H-QSTURGVD。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-QSTURGVD"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-8SKCFVHH负责人的工作代号。",
+              "reply": "项目项目-P-8SKCFVHH的负责人是成员-M-3JUKA95S，其工作代号是H-RI4P9BKJ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-RI4P9BKJ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-5ECU7LJU负责人的工作代号。",
+              "reply": "项目项目-P-5ECU7LJU的负责人是成员-M-8X6VMANP，其工作代号是H-W8VLQ55F。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-W8VLQ55F"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "multi_hop",
+              "query": "请通过项目负责人关系，找出项目项目-P-THNH77VT负责人的工作代号。",
+              "reply": "项目项目-P-THNH77VT的负责人是成员-M-NXNQ7316，其工作代号是H-26L87HLY。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "H-26L87HLY"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的最喜欢的水果内容是什么？",
+              "reply": "我之前登记的最喜欢的水果内容是V-2NMBZ2AJ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2NMBZ2AJ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "不要猜，回忆一下我在最喜欢的水果上的设置。",
+              "reply": "根据长期记忆证据，您在“最喜欢的水果”这一栏填写为 V-I4RYZQXJ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-I4RYZQXJ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于常用时区，你保存的用户信息是哪一个？",
+              "reply": "关于常用时区，我保存的用户信息是：user；常用时区偏好/设置；V-XV6N3LW0。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-XV6N3LW0"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于工作地点，你保存的用户信息是哪一个？",
+              "reply": "关于工作地点，您保存的用户信息是 V-EQXH5HRC。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-EQXH5HRC"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于常用时区，你保存的用户信息是哪一个？",
+              "reply": "关于常用时区，我保存的用户信息是：user；常用时区偏好/设置；V-VSBMYZQZ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-VSBMYZQZ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的常用语言内容是什么？",
+              "reply": "我之前登记的常用语言是V-N7VPMC2Z。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-N7VPMC2Z"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的项目代号内容是什么？",
+              "reply": "您之前登记的项目代号内容是 V-3C36T34J。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-3C36T34J"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "我之前登记的备用联系人内容是什么？",
+              "reply": "我之前登记的备用联系人值是 V-3XNIPH44。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-3XNIPH44"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "关于备用联系人，你保存的用户信息是哪一个？",
+              "reply": "关于备用联系人，我保存的用户信息是V-HBH1S9LW。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-HBH1S9LW"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "paraphrase",
+              "query": "不要猜，回忆一下我在默认输出风格上的设置。",
+              "reply": "根据长期记忆证据，您在默认输出风格上的设置值为：V-F269K2O1。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-F269K2O1"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "我的常用语言是V-K3H6NWGM。\nuser；常用语言；V-K3H6NWGM",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-K3H6NWGM"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的默认输出风格是什么？",
+              "reply": "您的默认输出风格是 V-CL84W7I5。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-CL84W7I5"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的项目代号是什么？",
+              "reply": "您的项目代号是 V-C3910A07。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-C3910A07"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的默认输出风格是什么？",
+              "reply": "您的默认输出风格是 V-T2GBDOHZ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-T2GBDOHZ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的备用联系人是什么？",
+              "reply": "我的备用联系人是V-SR348V36。\n实体：user\n属性：备用联系人\n已确认值：V-SR348V36",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-SR348V36"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的提醒时间是什么？",
+              "reply": "我的提醒时间是V-UX0MLNBV。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-UX0MLNBV"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "我的常用语言是V-HOBVEGZ6。实体：user；属性：常用语言；已确认值：V-HOBVEGZ6。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-HOBVEGZ6"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "我的常用语言是V-DIH6L2NX。\nuser；常用语言；V-DIH6L2NX",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-DIH6L2NX"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用语言是什么？",
+              "reply": "我的常用语言是V-OBMI42KX。实体：user；属性：常用语言；已确认值：V-OBMI42KX。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-OBMI42KX"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "random_position",
+              "query": "随机位置事实测试：我的常用时区是什么？",
+              "reply": "我的常用时区是V-2KCYHLZ9。实体：user；属性：常用时区；已确认值：V-2KCYHLZ9。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2KCYHLZ9"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的默认输出风格是什么？",
+              "reply": "您的默认输出风格是V-2RPEJ33G。实体：user；属性：默认输出风格；已确认值：V-2RPEJ33G。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2RPEJ33G"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的项目代号是什么？",
+              "reply": "我的项目代号是 V-2XPIDPCU。\n项目代号：V-2XPIDPCU",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-2XPIDPCU"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的默认输出风格是什么？",
+              "reply": "您的默认输出风格是V-9YLZSL98。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-9YLZSL98"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的项目代号是什么？",
+              "reply": "我的项目代号是 V-YWAY1MWW。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-YWAY1MWW"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的常用语言是什么？",
+              "reply": "我的常用语言是V-SLMAIG4D。实体：user；属性：常用语言；已确认值：V-SLMAIG4D。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-SLMAIG4D"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的最喜欢的水果是什么？",
+              "reply": "我的最喜欢的水果是V-7XF5F935。实体：user；属性：最喜欢的水果；已确认值：V-7XF5F935。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-7XF5F935"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的提醒时间是什么？",
+              "reply": "我的提醒时间是V-N8KJJGYI。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-N8KJJGYI"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的备用联系人是什么？",
+              "reply": "我的备用联系人是V-FALDVVTN。实体：user；属性：备用联系人；已确认值：V-FALDVVTN。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-FALDVVTN"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的常用语言是什么？",
+              "reply": "我的常用语言是V-5ATV1NRZ。实体：user；属性：常用语言；已确认值：V-5ATV1NRZ。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-5ATV1NRZ"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "single_fact",
+              "query": "跨对话后请回答：我的提醒时间是什么？",
+              "reply": "我的提醒时间是V-AI5UHEWY。",
+              "written": 6,
+              "correct": true,
+              "matched": [
+                "V-AI5UHEWY"
+              ],
+              "abstained": false,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008000是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008000\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008001是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008001\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定游戏、小说、虚构作品或内部系统中看到",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008002是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008002\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定游戏、小说、虚构作品或内部系统中看到",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008003是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008003\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定上下文（如游戏、小说、特定软件或",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008004是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008004\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008005是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008005\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008006是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008006\"并非任何已知的公开数据、系统记录或通用概念。在缺乏具体上下文（如特定的游戏、软件、数据库或虚构作品）的情况下，",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008007是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008007\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008008是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008008\"并非任何已知的系统、数据库、公开记录或通用标准中存在的概念。如果您是在某个特定上下文（如游戏、小说、特定软件或",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            },
+            {
+              "category": "unknown_abstention",
+              "query": "我的不存在的个人属性-0008009是什么？如果没有记录，请明确说不知道。",
+              "reply": "不知道。\n\n“不存在的个人属性 -0008009\"并非任何已知的系统、数据库、游戏或现实世界中的有效标识符。在没有任何上下文或记录的情况下，我无法提供关于该属性的具体信息",
+              "written": 6,
+              "correct": true,
+              "matched": [],
+              "abstained": true,
+              "wrongly_abstained": false
+            }
+          ]
+        }
+      }
+    ],
+    "B_zero_overlap_paraphrase": [
+      "| NM2.1 合体 | 16 | 68.75% | 18.75% | 93.75% | 6/16 | 6.06 | evidence_found:15, router_abstained:1 |",
+      "wrote nm2_1_combo_critical_e2e.md",
+      "wrote nm2_1_combo_critical_e2e.json",
+      {
+        "NM2.1 合体": {
+          "summary": {
+            "router": "NM2.1 合体",
+            "cases": 16,
+            "accuracy_pct": 68.75,
+            "wrong_attribute_pct": 18.75,
+            "read_pct": 93.75,
+            "cases_with_rule_hits": 6,
+            "stop_reasons": {
+              "evidence_found": 15,
+              "router_abstained": 1
+            },
+            "mean_records_selected": 6.0625,
+            "seconds": 86.8
+          },
+          "rows": [
+            {
+              "attribute": "常住城市",
+              "wanted": "CITY-A1B2C3",
+              "reply": "您的常住城市是 CITY-A1B2C3。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.2870910186502984,
+              "records_selected": 8
+            },
+            {
+              "attribute": "出生城市",
+              "wanted": "CITY-D4E5F6",
+              "reply": "根据现有记忆，您的老家信息未知。已知事实包括：我的工位在 3 号楼；我的常住城市是 CITY-A1B2C3；我的出生城市是 CITY-D4E5F6；我的办公城市",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 2.2259970108983125,
+              "records_selected": 8
+            },
+            {
+              "attribute": "办公城市",
+              "wanted": "CITY-G7H8J9",
+              "reply": "您的办公楼层是 DESK-U7V8W9，您的工位楼层是 FLOOR-A7B8C9。",
+              "correct": false,
+              "wrong_attribute_code": true,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 20,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.520044145734458,
+              "records_selected": 8
+            },
+            {
+              "attribute": "档案代号",
+              "wanted": "CODE-K1L2M3",
+              "reply": "系统分配给您的字符是：user；紧急联系人姓氏；KIN-X1Y2Z3；团队名称；TEAM-D1E2F3；主管姓名；BOSS-X4Y5Z6；邮箱域名；",
+              "correct": false,
+              "wrong_attribute_code": true,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.698177008675168,
+              "records_selected": 8
+            },
+            {
+              "attribute": "常用编辑器",
+              "wanted": "EDIT-N4P5Q6",
+              "reply": "您写代码时使用的软件是 EDIT-N4P5Q6。user；常用编辑器；EDIT-N4P5Q6",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 3,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.515892826960929,
+              "records_selected": 3
+            },
+            {
+              "attribute": "默认语言",
+              "wanted": "LANG-R7S8T9",
+              "reply": "我的默认语言是 LANG-R7S8T9。user；默认语言；LANG-R7S8T9",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 2.400822959183151,
+              "records_selected": 8
+            },
+            {
+              "attribute": "通勤方式",
+              "wanted": "COMMU-U1V2W3",
+              "reply": "您的通勤方式是 COMMU-U1V2W3。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.291031232642376,
+              "records_selected": 8
+            },
+            {
+              "attribute": "主管姓名",
+              "wanted": "BOSS-X4Y5Z6",
+              "reply": "这句话听起来带着几分疲惫、迷茫，或者是对现状的无力感。能感受到你此刻可能正经历一些难以独自应对的困境。\n\n“谁管我？”这个问题背后，或许藏着几个不同的需求，我想为你拆解一下",
+              "correct": false,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "router_abstained",
+              "need_memory": false,
+              "top_score": 0.0,
+              "records_selected": 0
+            },
+            {
+              "attribute": "工位楼层",
+              "wanted": "FLOOR-A7B8C9",
+              "reply": "您的工位楼层是 FLOOR-A7B8C9。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 4.041911891364496,
+              "records_selected": 8
+            },
+            {
+              "attribute": "团队名称",
+              "wanted": "TEAM-D1E2F3",
+              "reply": "您属于 TEAM-D1E2F3 小组。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.7999397155004493,
+              "records_selected": 8
+            },
+            {
+              "attribute": "邮箱域名",
+              "wanted": "MAIL-G4H5J6",
+              "reply": "关于别人发信需要写的后缀，当前记忆中没有相关信息，无法回答。已知信息仅包含：user；紧急联系人姓氏；KIN-X1Y2Z3。",
+              "correct": false,
+              "wrong_attribute_code": true,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 1,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.513982709418043,
+              "records_selected": 1
+            },
+            {
+              "attribute": "手机尾号",
+              "wanted": "PHONE-K7L8M9",
+              "reply": "您的电话号码最后几位是 PHONE-K7L8M9。user；手机尾号；PHONE-K7L8M9",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.600087038612998,
+              "records_selected": 8
+            },
+            {
+              "attribute": "项目代号",
+              "wanted": "PROJ-N1P2Q3",
+              "reply": "关于您正在做的工程名称，当前长期记忆中没有相关记录，无法回答。",
+              "correct": false,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 2,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.514652462471835,
+              "records_selected": 2
+            },
+            {
+              "attribute": "入职年份",
+              "wanted": "YEAR-R4S5T6",
+              "reply": "您的入职年份是 YEAR-R4S5T6。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 0,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 3.705354102880722,
+              "records_selected": 8
+            },
+            {
+              "attribute": "办公楼层",
+              "wanted": "DESK-U7V8W9",
+              "reply": "您的办公楼层是 DESK-U7V8W9。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 3,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.524232190583632,
+              "records_selected": 3
+            },
+            {
+              "attribute": "紧急联系人姓氏",
+              "wanted": "KIN-X1Y2Z3",
+              "reply": "您的紧急联系人姓氏是 KIN-X1Y2Z3。",
+              "correct": true,
+              "wrong_attribute_code": false,
+              "rule_address_hit": false,
+              "rule_lexical_hits": 20,
+              "stop_reason": "evidence_found",
+              "need_memory": true,
+              "top_score": 8.522833668863877,
+              "records_selected": 8
+            }
+          ]
+        }
+      }
+    ],
+    "C_same_shape_and_unknown": [
+      "",
+      "| blend | 用例 | 可回答 | 回答正确率 | 答成别的属性 | 未知泄漏率 | 平均选中记录 | 活跃记录 min/max |",
+      "|---|---:|---:|---:|---:|---:|---:|---|",
+      "| prior=1.00 blend=0.00 | 48 | 40 | 65.00% | 35.00% | 75.00% | 6.2500 | 23/24 |",
+      "",
+      "## 检索最高分分布（原始分，非百分比；用于判断阈值能否分开『未知』与『可回答』）",
+      "",
+      "| 组 | n | min | p10 | p50 | p90 | max |",
+      "|---|---:|---:|---:|---:|---:|---:|",
+      "| prior=1.00 blend=0.00 · 可回答 | 40 | 0.7 | 0.77 | 2.85 | 8.52 | 8.52 |",
+      "| prior=1.00 blend=0.00 · 不可回答 | 8 | 0.78 | 0.78 | 2.85 | 8.51 | 8.51 |",
+      "",
+      {
+        "eval_file": "data/zero_overlap/eval.jsonl",
+        "episodes": 48,
+        "candidate_count": 24,
+        "router": "checkpoints\\router_replay_v7_v2_128\\memory_router_v2.pt",
+        "results": {
+          "prior=1.00 blend=0.00": {
+            "router": "prior=1.00 blend=0.00",
+            "cases": 48,
+            "answerable_cases": 40,
+            "unknown_cases": 8,
+            "accuracy_pct": 65.0,
+            "wrong_attribute_pct": 35.0,
+            "unknown_leak_pct": 75.0,
+            "mean_records_selected": 6.25,
+            "records_active_min": 23,
+            "records_active_max": 24,
+            "stop_reasons": {
+              "evidence_found": 48
+            },
+            "top_score_answerable": {
+              "n": 40,
+              "min": 0.7,
+              "p10": 0.77,
+              "p50": 2.85,
+              "p90": 8.52,
+              "max": 8.52
+            },
+            "top_score_unknown": {
+              "n": 8,
+              "min": 0.78,
+              "p10": 0.78,
+              "p50": 2.85,
+              "p90": 8.51,
+              "max": 8.51
+            },
+            "seconds": 309.6
+          }
+        },
+        "rows": {
+          "prior=1.00 blend=0.00": [
+            {
+              "id": "zero-overlap-000259",
+              "attribute": "出生城市",
+              "answerable": true,
+              "expected": "VAL-M9VSJAEX",
+              "reply": "您的出生城市是 VAL-M9VSJAEX。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.564332926884773,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000219",
+              "attribute": "咖啡口味",
+              "answerable": true,
+              "expected": "VAL-M3W7MRJR",
+              "reply": "关于您早上那杯咖啡的豆子偏好，当前记忆中没有相关记录。已知信息仅包含：user；午餐偏好；VAL-Y4Z5H2FG。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.515033109300843,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000193",
+              "attribute": "午餐偏好",
+              "answerable": true,
+              "expected": "VAL-HG84H5TD",
+              "reply": "您的午餐偏好是 user；午餐偏好；VAL-HG84H5TD。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.6998433045297862,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000080",
+              "attribute": "入职年份",
+              "answerable": true,
+              "expected": "VAL-GFT4HRX2",
+              "reply": "关于您何时开始在这家公司上班，当前记忆中没有相关记录。已知信息：user；办公城市；VAL-TCNMN9HW。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.51429933919514,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000285",
+              "attribute": "起床时间",
+              "answerable": true,
+              "expected": "VAL-4K3RQQKF",
+              "reply": "我的闹钟设定时间是 VAL-4K3RQQKF。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 3.359343914853775,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000246",
+              "attribute": "常住城市",
+              "answerable": false,
+              "expected": "VAL-6BWJYDE4",
+              "reply": "关于您小时候待的地方，当前长期记忆中未包含此信息。已知信息如下：user；常住城市；VAL-6BWJYDE4；办公城市；VAL-88V99MPM；宿舍楼号",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.6527658945475845,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000204",
+              "attribute": "阅读工具",
+              "answerable": true,
+              "expected": "VAL-ZRLSPU5V",
+              "reply": "您的阅读工具是 VAL-ZRLSPU5V。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.9886870104974497,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000078",
+              "attribute": "常住城市",
+              "answerable": true,
+              "expected": "VAL-TQBY65U8",
+              "reply": "我的常住城市是 VAL-TQBY65U8。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.2650369691848753,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000104",
+              "attribute": "午餐偏好",
+              "answerable": true,
+              "expected": "VAL-SRFC842D",
+              "reply": "您的午餐偏好是 VAL-SRFC842D。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7423390823602677,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000281",
+              "attribute": "咖啡口味",
+              "answerable": true,
+              "expected": "VAL-3GP4STZX",
+              "reply": "关于您早上饮用的咖啡偏好哪种豆子，当前记忆中没有相关记录。已知信息仅包含：user；午餐偏好；VAL-XNN7T8EK。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.515033109300843,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000106",
+              "attribute": "咖啡口味",
+              "answerable": false,
+              "expected": "VAL-837DYYWV",
+              "reply": "关于您的闹钟设置时间，当前长期记忆中未包含相关证据，无法回答。已知信息包括：user；闹钟设置时间；未知。",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 3.273330240117752,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000091",
+              "attribute": "运动习惯",
+              "answerable": true,
+              "expected": "VAL-92MQHEDL",
+              "reply": "您的运动习惯是 VAL-92MQHEDL。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.0058205354213714,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000088",
+              "attribute": "设备型号",
+              "answerable": true,
+              "expected": "VAL-JY6S7EYF",
+              "reply": "关于您使用的机器档次，当前长期记忆中未包含此信息，无法回答。已知信息仅涉及：user；常用编辑器；VAL-3KPKRM4J。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.516791512356487,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000244",
+              "attribute": "午餐偏好",
+              "answerable": false,
+              "expected": "VAL-2VLHC26V",
+              "reply": "关于您服务的对象，当前长期记忆中未包含相关信息，无法回答。",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7779876451194286,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000282",
+              "attribute": "咖啡口味",
+              "answerable": true,
+              "expected": "VAL-Q2AQQMUP",
+              "reply": "关于您早上那杯咖啡的豆子偏好，当前记忆中没有相关记录。已知信息仅包含：user；午餐偏好；VAL-5ATEHVSM。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.515033109300843,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000056",
+              "attribute": "主管姓名",
+              "answerable": true,
+              "expected": "VAL-VDL8H7Y9",
+              "reply": "您的主管姓名是 user；主管姓名；VAL-VDL8H7Y9。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.9513123025616852,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000184",
+              "attribute": "项目代号",
+              "answerable": true,
+              "expected": "VAL-3H5TQEC4",
+              "reply": "您的团队名称是 VAL-Z98JC7BG。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 3.191310502301591,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000198",
+              "attribute": "手机尾号",
+              "answerable": true,
+              "expected": "VAL-7T3XVMVH",
+              "reply": "您随身那台设备的末端数字是 4N，该设备的完整型号为 VAL-9MWPDS4N。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.513663491707547,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000258",
+              "attribute": "阅读工具",
+              "answerable": true,
+              "expected": "VAL-SHRY3GNG",
+              "reply": "我翻书时依赖的阅读工具是 VAL-SHRY3GNG。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.9932317454522837,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000030",
+              "attribute": "课程名称",
+              "answerable": true,
+              "expected": "VAL-BQY3K5EV",
+              "reply": "您的课程名称是 VAL-BQY3K5EV。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7088197509944439,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000196",
+              "attribute": "手机尾号",
+              "answerable": true,
+              "expected": "VAL-ZHN2NMZV",
+              "reply": "您随身那台设备的末端数字是 W9，该设备的完整型号为 VAL-5VBJ22W9。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.513663491707547,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000268",
+              "attribute": "宿舍楼号",
+              "answerable": true,
+              "expected": "VAL-QVYMWTLK",
+              "reply": "关于您睡觉的地儿是第几排，当前长期记忆中未包含此信息。已知信息如下：user；宿舍楼号；VAL-QVYMWTLK。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.7659836388747943,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000006",
+              "attribute": "档案标识",
+              "answerable": true,
+              "expected": "VAL-8EFN3KGR",
+              "reply": "您的系统分配字符包括：紧急联系人姓氏 VAL-KLPQW2L2；课程名称 VAL-PVMQLCL9；团队名称 VAL-V4BVFB2N；客户名称 VAL-92LH7CHG",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 4.169416844133658,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000047",
+              "attribute": "咖啡口味",
+              "answerable": true,
+              "expected": "VAL-PW46K9K9",
+              "reply": "关于您早上饮用的咖啡偏好哪种豆子，当前记忆中没有相关记录。已知信息仅包含您的午餐偏好是 VAL-BFW4LVTV。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.515033109300843,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000173",
+              "attribute": "客户名称",
+              "answerable": false,
+              "expected": "VAL-P84HTKZR",
+              "reply": "您随身那台设备的末端数字是 Y。\n设备型号：VAL-NARXVSSY",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.513663491707547,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000000",
+              "attribute": "出生城市",
+              "answerable": true,
+              "expected": "VAL-PHB8FNF9",
+              "reply": "您的出生城市是 VAL-PHB8FNF9。user；出生城市；VAL-PHB8FNF9",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.8505235558902053,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000266",
+              "attribute": "出生城市",
+              "answerable": true,
+              "expected": "VAL-K7FT5XFB",
+              "reply": "您的出生城市是 VAL-K7FT5XFB。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.3051346188937454,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000051",
+              "attribute": "项目代号",
+              "answerable": false,
+              "expected": "VAL-KG4RZYH5",
+              "reply": "您的办公城市是 VAL-W9KGRD9U。",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.2606107878684996,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000061",
+              "attribute": "常住城市",
+              "answerable": true,
+              "expected": "VAL-3SUNPNRD",
+              "reply": "您的常住城市是 VAL-3SUNPNRD，通勤方式是 VAL-2CXTE3TB，出生城市是 VAL-GE828D22，办公城市是 VAL-XYRY8BUQ，入职年份",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.6213454890251158,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000214",
+              "attribute": "客户名称",
+              "answerable": true,
+              "expected": "VAL-MV382EEF",
+              "reply": "我服务的对象是 VAL-MV382EEF。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7693164377659559,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000092",
+              "attribute": "宿舍楼号",
+              "answerable": true,
+              "expected": "VAL-PLZZ659B",
+              "reply": "关于您睡觉的地儿是第几排，当前长期记忆中未包含此信息。已知信息如下：user；宿舍楼号；VAL-PLZZ659B。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.8819549524530643,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000140",
+              "attribute": "宿舍楼号",
+              "answerable": true,
+              "expected": "VAL-RMDSB297",
+              "reply": "关于您睡觉的地儿是第几排，当前长期记忆中未包含此信息。已知信息如下：user；宿舍楼号；VAL-RMDSB297。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.942847951625275,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000164",
+              "attribute": "客户名称",
+              "answerable": true,
+              "expected": "VAL-BB55YHW5",
+              "reply": "您的客户名称是 VAL-BB55YHW5。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.77552460052073,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000213",
+              "attribute": "通勤方式",
+              "answerable": true,
+              "expected": "VAL-M58DDQX2",
+              "reply": "您的通勤方式是 VAL-M58DDQX2。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.1366783114608343,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000122",
+              "attribute": "通勤方式",
+              "answerable": true,
+              "expected": "VAL-VULSNGJ3",
+              "reply": "您的通勤方式是 VAL-VULSNGJ3。user；通勤方式；VAL-VULSNGJ3",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.130069571965557,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000168",
+              "attribute": "常住城市",
+              "answerable": true,
+              "expected": "VAL-8TQ8737C",
+              "reply": "您的常住城市是 VAL-8TQ8737C。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.4585979866981504,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000175",
+              "attribute": "客户名称",
+              "answerable": true,
+              "expected": "VAL-QJNRRE8X",
+              "reply": "您的客户名称是 VAL-QJNRRE8X。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7712558816373348,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000144",
+              "attribute": "入职年份",
+              "answerable": false,
+              "expected": "VAL-GLHQMRN6",
+              "reply": "关于您睡觉的地儿是第几排，当前长期记忆中未包含此信息。已知信息如下：user；档案标识；VAL-AVX95V7L；手机尾号；VAL-LBRPQJRT",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.8524921381220096,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000002",
+              "attribute": "午餐偏好",
+              "answerable": true,
+              "expected": "VAL-HEE2QMH2",
+              "reply": "您的午餐偏好是 user；午餐偏好；VAL-HEE2QMH2。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 0.7196446585655213,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000171",
+              "attribute": "常住城市",
+              "answerable": true,
+              "expected": "VAL-KZA246K9",
+              "reply": "您的常住城市是 VAL-KZA246K9。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.286561994552612,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000154",
+              "attribute": "入职年份",
+              "answerable": true,
+              "expected": "VAL-7Z9CBUX8",
+              "reply": "关于您何时开始在这家公司上班，当前记忆中没有相关记录。已知信息：user；办公城市；VAL-BP7253WL。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.51429933919514,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000234",
+              "attribute": "工位楼层",
+              "answerable": true,
+              "expected": "VAL-87M7HVC7",
+              "reply": "关于您坐在哪一间房的信息，当前长期记忆中未包含该数据。已知信息如下：user；宿舍楼号；VAL-JTSHA7PM。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 3.1937497879965546,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000083",
+              "attribute": "办公城市",
+              "answerable": true,
+              "expected": "VAL-YBVYV97X",
+              "reply": "您的办公城市是 VAL-YBVYV97X。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.8081361769552853,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000079",
+              "attribute": "出生城市",
+              "answerable": true,
+              "expected": "VAL-7R8WVAFG",
+              "reply": "您的出生城市是 VAL-7R8WVAFG。",
+              "correct": true,
+              "wrong_attribute": false,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 2.7214163786326675,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000180",
+              "attribute": "客户名称",
+              "answerable": false,
+              "expected": "VAL-3F87H6UT",
+              "reply": "您随身那台设备的末端数字是 VAL-X5VZ48QF。",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.513663491707547,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000025",
+              "attribute": "紧急联系人姓氏",
+              "answerable": true,
+              "expected": "VAL-STECQ3PX",
+              "reply": "您的默认语言是 VAL-PRVTUCP7，您的起床时间是 VAL-PJC3D3W9，您的课程名称是 VAL-93ME7BJ5，您的出生城市是 VAL-KYBRBBKV，",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 8.516015553315961,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000187",
+              "attribute": "手机尾号",
+              "answerable": true,
+              "expected": "VAL-PXRHJ49F",
+              "reply": "您随身那台设备的末端数字是 H9，该设备的完整型号为 VAL-ZPUPV9H9。",
+              "correct": false,
+              "wrong_attribute": true,
+              "leaked": false,
+              "records_written": 24,
+              "records_active": 24,
+              "stop_reason": "evidence_found",
+              "records_selected": 1,
+              "top_score": 8.513663491707547,
+              "need_memory": true
+            },
+            {
+              "id": "zero-overlap-000045",
+              "attribute": "办公城市",
+              "answerable": false,
+              "expected": "VAL-CG4X6ZWD",
+              "reply": "您的办公城市是 VAL-SZ4R5GT3。",
+              "correct": false,
+              "wrong_attribute": false,
+              "leaked": true,
+              "records_written": 24,
+              "records_active": 23,
+              "stop_reason": "evidence_found",
+              "records_selected": 8,
+              "top_score": 1.1886139500141142,
+              "need_memory": true
+            }
+          ]
+        }
+      }
+    ],
+    "D_restart_persistence": [
+      "    \"enabled\": true,",
+      "    \"router_ready\": true",
+      "  }",
+      "}",
+      {
+        "model_path": "qwen3_5_4b_natural_memory_v2_1",
+        "history_passed_to_restart": false,
+        "fact": "我正在开发一个长期项目，项目内部代号是NM-V2-RESTART，使用中文。",
+        "query": "我正在开发的长期项目内部代号是什么？只回答代号。",
+        "expected": "NM-V2-RESTART",
+        "automatic_write": true,
+        "write_changed": true,
+        "before_save": {
+          "pages": 1,
+          "max_pages": 32768,
+          "page_capacity": 32,
+          "capacity_records": 1048576,
+          "open_pages": 1,
+          "records": 1,
+          "active_records": 1,
+          "superseded_records": 0,
+          "retracted_records": 0,
+          "quarantined_records": 0,
+          "hot_pages": 1,
+          "warm_pages": 0,
+          "cold_pages": 0,
+          "active_conflict_keys": 0,
+          "coarse_index_buckets": 1,
+          "last_coarse_candidates": 0,
+          "storage_mode": "embedded",
+          "resident_records": 1,
+          "resident_pages": 1,
+          "gpu_cache_records": 1,
+          "gpu_cache_tokens": 141,
+          "gpu_cache_bytes": 2293,
+          "gpu_cache_hits": 0,
+          "gpu_cache_misses": 1,
+          "gpu_cache_fallbacks": 0,
+          "gpu_cache_alloc_failures": 0,
+          "gpu_cache_device": "cuda:0",
+          "gpu_cache_limit_records": 256,
+          "gpu_cache_limit_tokens": 131072,
+          "gpu_cache_reserve_mb": 2048,
+          "gpu_cache_adaptive": true,
+          "gpu_cache_last_free_mb": 7685.0,
+          "kv_budget": {
+            "max_tokens": 32768,
+            "trigger_tokens": 29491
+          },
+          "enabled": true,
+          "router_ready": true
+        },
+        "after_restart": {
+          "response": "项目内部代号是 NM-V2-RESTART。",
+          "prefix_length": 141,
+          "prefix_used": true,
+          "decision": [
+            {
+              "need_memory": true,
+              "page_ids": [
+                "page_00000001"
+              ],
+              "record_ids": [
+                "mem_c40d7d5b89b8442f"
+              ],
+              "page_scores": [
+                3.549997901916504
+              ],
+              "record_scores": [
+                8.436647681137504
+              ],
+              "hop_count": 0,
+              "hop_trace": [],
+              "confidence": 1.0,
+              "stop_reason": "evidence_found",
+              "top_score": 8.436647681137504,
+              "score_margin": 8.436647681137504,
+              "evidence_score": 1.0
+            }
+          ],
+          "prefix_shape": [
+            1,
+            141
+          ],
+          "prefix_mask_shape": [
+            1,
+            141
+          ]
+        },
+        "router_recalled_after_restart": true,
+        "generated_contains_expected": true,
+        "cleanup_applied": true,
+        "after_cleanup": {
+          "pages": 0,
+          "max_pages": 32768,
+          "page_capacity": 32,
+          "capacity_records": 1048576,
+          "open_pages": 0,
+          "records": 0,
+          "active_records": 0,
+          "superseded_records": 0,
+          "retracted_records": 0,
+          "quarantined_records": 0,
+          "hot_pages": 0,
+          "warm_pages": 0,
+          "cold_pages": 0,
+          "active_conflict_keys": 0,
+          "coarse_index_buckets": 0,
+          "last_coarse_candidates": 0,
+          "storage_mode": "embedded",
+          "resident_records": 0,
+          "resident_pages": 0,
+          "gpu_cache_records": 0,
+          "gpu_cache_tokens": 0,
+          "gpu_cache_bytes": 0,
+          "gpu_cache_hits": 0,
+          "gpu_cache_misses": 0,
+          "gpu_cache_fallbacks": 0,
+          "gpu_cache_alloc_failures": 0,
+          "gpu_cache_device": "cuda:0",
+          "gpu_cache_limit_records": 256,
+          "gpu_cache_limit_tokens": 131072,
+          "gpu_cache_reserve_mb": 2048,
+          "gpu_cache_adaptive": true,
+          "gpu_cache_last_free_mb": null,
+          "kv_budget": {
+            "max_tokens": 32768,
+            "trigger_tokens": 29491
+          },
+          "enabled": true,
+          "router_ready": true
+        }
+      }
+    ]
+  }
+}
